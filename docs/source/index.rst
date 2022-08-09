@@ -17,6 +17,7 @@ Sections
 
 .. toctree::
 
+   Accueil <self>
    install
    walkthrough
    advanced
