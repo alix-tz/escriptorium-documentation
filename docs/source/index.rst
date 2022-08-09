@@ -8,14 +8,18 @@ and offers a *simple* and *intuitive* API.
 
 - this is a test.
 
-with an image:
+.. figure:: https://lectaurep.hypotheses.org/files/2020/12/articulation_seg_trans_baseline-768x341.png
+    :align: right
+    :figwidth: 300px
 
-![static img](https://lectaurep.hypotheses.org/files/2020/12/articulation_seg_trans_baseline-768x341.png)
+    Display a static image
 
 
-with a GIF 
+.. figure:: https://lectaurep.hypotheses.org/files/2020/12/description_to_images.gif
+    :align: right
+    :figwidth: 300px
 
-![gif test](https://lectaurep.hypotheses.org/files/2020/12/description_to_images.gif)
+    Display a GIF
 
 
 Check out the :doc:`usage` section for further information, including
