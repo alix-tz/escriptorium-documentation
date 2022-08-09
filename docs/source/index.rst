@@ -6,6 +6,18 @@ that creates recipes mixing random ingredients.
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
 and offers a *simple* and *intuitive* API.
 
+- this is a test.
+
+with an image:
+
+![static img](https://lectaurep.hypotheses.org/files/2020/12/articulation_seg_trans_baseline-768x341.png)
+
+
+with a GIF 
+
+![gif test](https://lectaurep.hypotheses.org/files/2020/12/description_to_images.gif)
+
+
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
