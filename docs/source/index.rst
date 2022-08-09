@@ -21,3 +21,4 @@ Sections
    install
    walkthrough
    advanced
+   contribute
