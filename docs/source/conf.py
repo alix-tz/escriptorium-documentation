@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Tutoriel eScriptorium'
+copyright = '2022'
+author = 'Alix Chagué'
 
 release = '0.1'
 version = '0.1.0'
