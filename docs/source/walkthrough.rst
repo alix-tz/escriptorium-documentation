@@ -11,11 +11,36 @@ Pas à pas
 1.1. Se connecter
 ^^^^^^^^^^^^^^^^^
 
+La connexion à l'application suppose de disposer d'un compte utilisateur associant un login, une adresse e-mail et un mot de passe. 
+
+On accède au formulaire de connexion en cliquant sur "Login" dans le menu. On entre ensuite soit le login, soit l'adresse mail, ainsi que le mot de passe. On cliquer ensuite sur Login pour se connecter. 
+
+En cas d'oublie de mot de passe, cliquer sur "Lost password?" pour accéder à un formulaire qui génère un email permettant de créer un nouveau mot de passe.
+
 1.2. Créer un projet
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+
+Une fois connecté, l'utilisateur arrive sur le tableau de bord des projets. Les projets sont des ensembles de documents, eux-mêmes composés de pages. 
+
+Pour débuter un travail sur eScriptorium, il faut créer son propre projet ou bien être invité dans le projet d'un autre utilisateur. 
+
+Pour créer un projet, il faut cliquer sur le bouton "Create new project" depuis le tableau de bord des projets. 
+
+Le formulaire ne contient qu'un seul champ : le nom du projet. Une fois ce champ rempli, on clique sur "Create". Le nouveau projet apparaît désormais dans le tableau de bord. 
 
 1.3. Créer un document
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+
+Lorsque l'on cliquer sur un projet depuis le tableau de bord des projet, on accède à la liste des documents qu'il contient. Chacun de ces documents est constitué d'une série d'images formant un ensemble cohérent. 
+
+Pour débuter un travail dans eScriptorium, il faut soit créer un document au sein d'un projet, soit être invité dans le document (ou projet contenant des documents) d'un autre utilisateur.
+
+Pour créer un document, il faut cliquer sur le bouton "Create new Document". 
+
+Dans le formulaire qui s'affiche alors, seul le champ "Name" (nom du document) est obligatoire. Les autres sont facultatifs et peuvent être remplis plus tard. Une fois ce champ rempli, on clique sur "Create". 
+
+Pour retourner au niveau du projet, on clique sur la flèche "⟵", à côté de "Description". Le nouveau document apparaît désormais dans le tableau de bord. 
+
 
 2. Charger des images
 ---------------------
@@ -128,8 +153,8 @@ Pas à pas
 - afficher le volet 3 puis cliquer sur la ligne à observer
 - l'historique s'affiche sous le texte, en rouge les deletions, en vert les additions
 
-5. Contrôler l'ordre de lecture des lignes
-------------------------------------------
+5. Contrôler l'ordre de lecture
+-------------------------------
 
 - les lignes sont lues zones par zones
 - on peut consulter l'ordre de lecture dans le volet 2
