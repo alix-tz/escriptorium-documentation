@@ -49,12 +49,19 @@ Pour retourner au niveau du projet, on clique sur la flèche "⟵", à côté de
 2.1. Charger des image depuis le système de fichiers local
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Pour accéder à la fenêtre permettant de charger des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Un rectangle déssiné par les pointillés définit une zone où l'utilisateur peut glisser-déposer des fichiers images, un par un ou en lot. Une fois les fichiers déposés, la progression du chargement de chaque image s'affiche. Il est vivement conseillé de ne pas rafraîchir la page durant cette étape. 
+
+Il est aussi possible de cliquer dans le rectangle pour ouvrir l'explorateur de fichiers et sélectionner les images à charger. Elles sont alors ordonnées selon l'ordre de sélection des fichiers. 
+
 2.2. Charger des images contenues dans un PDF
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Pour accéder à la fenêtre permettant de charger des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Cliquer sur le bouton "Import" puis "Images (PDF)" pour ouvrir l'explorateur de fichier. Cliquer sur le PDF à importer, chaque page en sera extraite sous la forme d'une image.
 
 2.3. Charger des images hébergées sur un serveur IIIF
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Pour accéder à la fenêtre permettant de charger des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Cliquer sur le bouton "Import" puis "Images (IIIF)". Dans la fenêtre qui s'affiche, entrer l'URL du manifeste IIIF référencant les fichiers à importer. Cliquer sur "Start importing". Les images sont importées une par une, ainsi que les métadonnées associées au manifeste. Elles sont consultables dans l'onglet "Description".
 
 3. Segmenter
 ------------
@@ -192,11 +199,21 @@ Pour retourner au niveau du projet, on clique sur la flèche "⟵", à côté de
 
 8.1. Importer depuis un fichier XML
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- importer la segmentation ou la transcription à partir des fichiers XML
-- hack pour importer un texte à plat
+
+Il est possible d'importer les coordonnées des régions, lignes et masques à appliquer à une image à partir d'un fichier XML. Il en va de même pour les transcriptions, dès lors que le texte est associé, à minima, à des lignes et des masques. 
+
+Les formats supportés sont les mêmes que ceux disponibles à l'export : XML ALTO et XML PAGE. 
+
+L'import de données depuis des fichiers XML se fait à partir de l'onglet "Images" dans un document. Cliquer sur "Import" puis "Transcriptions (XML)". L'explorateur de fichiers s'ouvre, l'utilisateur peut alors sélectionner un seul fichier : soit un fichier XML pour un import unique, soit un fichier ZIP contenant plusieurs fichiers XML pour un import en masse. Si un fichier XML ne correspond à aucune image, il est tout simplement ignoré. 
+
+**Attention :** importer la segmentation contenue dans un fichier XML peut causer l'écrasement de la segmentation existant dans l'application. L'utilisateur doit penser à enregistrer ses données au préalable si ce n'est pas l'effet souhaité. 
+
+> Note : il est possible d'importer des blocs de texte en se servant du 4e volet de visualisation. Après avoir vérifié l'ordre des lignes, on peut copier-coller des blocs de texte dans lesquels on a prélablement ajouté les sauts de ligne correspondants. 
 
 8.2. Importer un modèle
 ^^^^^^^^^^^^^^^^^^^^^^^
+
+Cliquer sur "My Models" dans le menu pour afficher la liste des modèles disponibles. Cliquer sur le bouton "Upload a Model" pour ouvrir l'explorateur de fichiers et choisir le fichier `.mlmodel` à importer. L'utilisateur peut alors remplir le champ "Name" s'il souhaite modifier le nom affiché dans l'application. Cliquer ensuite sur "Upload", le modèle apparaît désormais dans la liste des modèles de l'utilisateur qui peut y faire appel au sein de n'importe quel projet ou document.
 
 9. Entraîner un modèle
 -----------------------
