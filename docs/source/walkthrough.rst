@@ -1,7 +1,7 @@
 Pas à pas
 =========
 
-.. note::
+.. DANGER::
 	Cette page est une ébauche non encore rédigée.
 
 
@@ -10,6 +10,9 @@ Pas à pas
 
 1.1. Se connecter
 ^^^^^^^^^^^^^^^^^
+
+.. image:: ../img/form_login.png
+	:alt: aperçu du formulaire de connexion
 
 La connexion à une application suppose de disposer d'un compte utilisateur associant :
 - un login, 
@@ -21,12 +24,11 @@ On accède au formulaire de connexion en cliquant sur "Login" dans la barre de m
 En cas d'oubli de mot de passe, le lien "Lost password?" permet de générer un lien, envoyé à l'adresse mail indiquée, pour créer un nouveau mot de passe.
 
 
-.. image:: ../img/form_login.png
-	:alt: aperçu du formulaire de connexion
-
-
 1.2. Créer un projet
 ^^^^^^^^^^^^^^^^^^^^
+
+.. MISSING_IMG
+	Création d'un projet et affichage dans la liste des projets
 
 Une fois connecté-e, l'utilisateur-rice arrive sur le tableau de bord des projets. Les **projets** sont des ensembles de **documents**, eux-mêmes composés de **pages**. 
 
@@ -35,19 +37,23 @@ Pour débuter un travail sur eScriptorium, il faut créer un projet ou bien êtr
 Pour créer un projet, il faut cliquer sur le bouton "Create new project" depuis le tableau de bord des projets. 
 
 Le formulaire ne contient qu'un seul champ : le nom du projet. Une fois ce champ rempli, on clique sur "Create". Le nouveau projet apparaît désormais dans le tableau de bord. 
+	
 
 1.3. Créer un document
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Lorsque l'on cliquer sur un projet depuis le tableau de bord des projet, on accède à la liste des documents qu'il contient. Chacun de ces documents est constitué d'une série d'images formant un ensemble cohérent. 
+.. MISSING_IMG
+	Création d'un projet et affichage dans la liste des documents
 
-Pour débuter un travail dans eScriptorium, il faut soit créer un document au sein d'un projet, soit être invité dans le document (ou projet contenant des documents) d'un autre utilisateur.
+Lorsque l'on clique sur un projet depuis le tableau de bord des projet, on accède à la liste des documents qu'il contient. Chacun de ces documents est constitué d'une série d'images formant un ensemble cohérent. 
+
+Pour débuter un travail dans eScriptorium, il faut soit créer un document au sein d'un projet, soit être invité dans le document (ou projet contenant des documents) d'un-e autre utilisateur-rice.
 
 Pour créer un document, il faut cliquer sur le bouton "Create new Document". 
 
-Dans le formulaire qui s'affiche alors, seul le champ "Name" (nom du document) est obligatoire. Les autres sont facultatifs et peuvent être remplis plus tard. Une fois ce champ rempli, on clique sur "Create". 
+Dans le formulaire qui s'affiche alors, seul le champ "Name" (nom du document) est obligatoire. Les autres champs sont facultatifs et peuvent être remplis plus tard. On clique sur ensuite "Create". 
 
-Pour retourner au niveau du projet, on clique sur la flèche "⟵", à côté de "Description". Le nouveau document apparaît désormais dans le tableau de bord. 
+Pour retourner au niveau du projet, on peut cliquer sur la flèche "⟵", à côté de "Description". Le nouveau document apparaît désormais dans le tableau de bord. 
 
 
 2. Charger des images
@@ -57,19 +63,29 @@ Pour retourner au niveau du projet, on clique sur la flèche "⟵", à côté de
 2.1. Charger des image depuis le système de fichiers local
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Pour accéder à la fenêtre permettant de charger des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Un rectangle déssiné par les pointillés définit une zone où l'utilisateur peut glisser-déposer des fichiers images, un par un ou en lot. Une fois les fichiers déposés, la progression du chargement de chaque image s'affiche. Il est vivement conseillé de ne pas rafraîchir la page durant cette étape. 
+Pour accéder à la fenêtre de chargement des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Un rectangle déssiné par les pointillés définit une zone où l'utilisateur peut glisser-déposer des fichiers images, un par un ou en lot. Une fois les fichiers déposés, la progression du chargement de chaque image s'affiche. Il est vivement conseillé de ne pas rafraîchir la page durant cette étape. 
 
 Il est aussi possible de cliquer dans le rectangle pour ouvrir l'explorateur de fichiers et sélectionner les images à charger. Elles sont alors ordonnées selon l'ordre de sélection des fichiers. 
+
+.. MISSING_IMG
+	Chargement d'images depuis l'explorateur de fichiers
 
 2.2. Charger des images contenues dans un PDF
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Pour accéder à la fenêtre permettant de charger des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Cliquer sur le bouton "Import" puis "Images (PDF)" pour ouvrir l'explorateur de fichier. Cliquer sur le PDF à importer, chaque page en sera extraite sous la forme d'une image.
+Pour accéder à la fenêtre de chargement des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Cliquer sur le bouton "Import" puis "Images (PDF)" pour ouvrir l'explorateur de fichier. Cliquer sur le PDF à importer, chaque page en sera extraite sous la forme d'une image.
+
+.. MISSING_IMG
+	Chargement d'images depuis un PDF
 
 2.3. Charger des images hébergées sur un serveur IIIF
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Pour accéder à la fenêtre permettant de charger des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Cliquer sur le bouton "Import" puis "Images (IIIF)". Dans la fenêtre qui s'affiche, entrer l'URL du manifeste IIIF référencant les fichiers à importer. Cliquer sur "Start importing". Les images sont importées une par une, ainsi que les métadonnées associées au manifeste. Elles sont consultables dans l'onglet "Description".
+Pour accéder à la fenêtre de chargement des images, on clique sur un projet, puis sur un dossier, et enfin sur l'onglet "images". Cliquer sur le bouton "Import" puis "Images (IIIF)". Dans la fenêtre qui s'affiche, entrer l'URL du manifeste IIIF référencant les fichiers à importer. Cliquer sur "Start importing". Les images sont importées une par une, ainsi que les métadonnées associées au manifeste. Elles sont consultables dans l'onglet "Description".
+
+.. MISSING_IMG
+	Création d'images depuis IIIF
+
 
 3. Segmenter
 ------------
@@ -79,6 +95,14 @@ Pour accéder à la fenêtre permettant de charger des images, on clique sur un 
 
 3.1. Lancer une segmentation automatique
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Les tâches de segmentation sont lancées depuis la fenêtre "images" d'un document. Après sélection des images concernées, cliquer sur le bouton "Segment". Une fenêtre contextuelle apparaît et permet de préciser plusieurs options : 
+
+#. le modèle de segmentation à appliquer. 
+
+#. Le mode de segmentation : 
+.. - 
+
 - dans le volet image
 - selectionner les images
 - cliquer sur segment
