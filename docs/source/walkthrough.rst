@@ -22,6 +22,7 @@ En cas d'oubli de mot de passe, le lien "Lost password?" permet de générer un 
 
 
 .. image:: ../img/form_login.png
+	:alt: aperçu du formulaire de connexion
 
 
 1.2. Créer un projet
