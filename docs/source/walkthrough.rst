@@ -11,18 +11,25 @@ Pas à pas
 1.1. Se connecter
 ^^^^^^^^^^^^^^^^^
 
-La connexion à l'application suppose de disposer d'un compte utilisateur associant un login, une adresse e-mail et un mot de passe. 
+La connexion à une application suppose de disposer d'un compte utilisateur associant :
+- un login, 
+- une adresse e-mail 
+- un mot de passe. 
 
-On accède au formulaire de connexion en cliquant sur "Login" dans le menu. On entre ensuite soit le login, soit l'adresse mail, ainsi que le mot de passe. On cliquer ensuite sur Login pour se connecter. 
+On accède au formulaire de connexion en cliquant sur "Login" dans la barre de menu. On saisit ensuite le login (ou l'adresse mail) ainsi que le mot de passe. On clique ensuite sur le bouton Login pour se connecter. 
 
-En cas d'oublie de mot de passe, cliquer sur "Lost password?" pour accéder à un formulaire qui génère un email permettant de créer un nouveau mot de passe.
+En cas d'oubli de mot de passe, le lien "Lost password?" permet de générer un lien, envoyé à l'adresse mail indiquée, pour créer un nouveau mot de passe.
+
+
+.. image:: ../img/form_login.png
+
 
 1.2. Créer un projet
 ^^^^^^^^^^^^^^^^^^^^
 
-Une fois connecté, l'utilisateur arrive sur le tableau de bord des projets. Les projets sont des ensembles de documents, eux-mêmes composés de pages. 
+Une fois connecté-e, l'utilisateur-rice arrive sur le tableau de bord des projets. Les **projets** sont des ensembles de **documents**, eux-mêmes composés de **pages**. 
 
-Pour débuter un travail sur eScriptorium, il faut créer son propre projet ou bien être invité dans le projet d'un autre utilisateur. 
+Pour débuter un travail sur eScriptorium, il faut créer un projet ou bien être invité-e dans le projet d'un-e autre utilisateur-rice. 
 
 Pour créer un projet, il faut cliquer sur le bouton "Create new project" depuis le tableau de bord des projets. 
 
