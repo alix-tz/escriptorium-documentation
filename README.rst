@@ -6,4 +6,4 @@ with some basic Sphinx docs.
 
 Read the tutorial here:
 
-- https://escriptorium-tutorial.readthedocs.io/fr/latest/
+- https://escriptorium-tutorial.readthedocs.io/en/latest/
