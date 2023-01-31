@@ -15,9 +15,9 @@ mkdocs:
   configuration: mkdocs.yml
 
 # Optionally declare the Python requirements required to build your docs
-#python:
-#   install:
-#   - requirements: docs/requirements.txt
+python:
+   install:
+   - requirements: requirements.txt
 
 # enabling search
 # for more info on config see: https://docs.readthedocs.io/en/stable/config-file/v2.html#search
