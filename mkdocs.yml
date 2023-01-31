@@ -1,0 +1,45 @@
+site_name: eScriptorium Tutorial
+
+repo_url: https://github.com/alix-tz/escriptorium-tutorial.git
+site_description: A collaborative tutorial to use the eScriptorium application.
+
+# Documentation layout
+#site_url: https://example.com/foo/
+
+nav:
+    - Home: index.md
+    - Contribute to the documentation: contribute.md
+    - About this documentation: about.md
+    - Quick-start:
+        - Quick-start: quick-start.md
+        - FAQ : FAQ.md
+    - Walkthrough: 
+        - "Import images, transcriptions or models": walkthrough_import.md
+        - "Predict a segmentation or a transcription": walkthrough_predict.md
+        - "Segment": walkthrough_segment.md
+        - "Annotate": walkthrough_annotate.md
+        - "Transcribe": walkthrough_transcribe.md
+        - "Train models": walkthrough_train.md
+        - "Export images, transcriptions or models": walkthrough_export.md
+        - "Collaborate with other users": walkthrough_collaborate.md
+        - "The search feature": walkthrough_search.md
+        - "User-related features": walkthrough_users.md
+        - "eScriptorium's API": walkthrough_api.md
+        - "Administrators": walkthrough_administrators.md
+
+theme:
+    name: readthedocs
+    locale: en
+    prev_next_buttons_location: both
+    navigation_depth: 3
+    logo: img/logo_esriptorium_tutorial.png
+
+markdown_extensions:
+    - abbr
+    - admonition
+    - footnotes
+    - md_in_html
+    - sane_lists
+    - smarty
+    - tables
+    - toc
