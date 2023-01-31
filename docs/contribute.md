@@ -6,6 +6,8 @@ authors:
 date: 2023-01-31
 ---
 
+# How to contribute to the documentation?
+
 !!! Warning
     This page is about contributing to the ***documentation*** of eScriptorium. To contribute to eScriptorium's source code, see: [contributing](https://gitlab.com/scripta/escriptorium/-/wikis/contributing)
 
