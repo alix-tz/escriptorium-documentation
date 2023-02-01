@@ -1,4 +1,4 @@
-<img src="./docs/img/logo_esriptorium_tutorial.png" width=400 align="left" alt="eScriptorium Tutorial">
+<img src="./docs/img/logo_esriptorium_tutorial.png" width=500 align="center" alt="eScriptorium Tutorial">
 
 This GitHub repository stores the source code for the [eScriptorium tutorial](https://escriptorium-tutorial.readthedocs.io). It is a collective initiative, open to anyone and designed to be modified by anyone. 
 
