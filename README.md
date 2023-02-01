@@ -1,3 +1,5 @@
+<img src="./docs/img/logo_esriptorium_tutorial.png" width=150 align=right>
+
 # eScriptorium Tutorial - Source Code
 
 This GitHub repository stores the source code for the eScriptorium tutorial. It is a collective initiative, open to anyone and designed to be modified by anyone. 
