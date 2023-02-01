@@ -5,7 +5,7 @@ site_description: A collaborative tutorial to use the eScriptorium application.
 
 # Documentation layout
 #site_url: https://example.com/foo/
-edit_uri: /edit/main/docs/
+edit_uri: edit/main/docs/
 
 nav:
     - Home: index.md
