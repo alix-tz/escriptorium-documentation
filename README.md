@@ -1,4 +1,4 @@
-<img src="./docs/img/logo_esriptorium_tutorial.png" width=150 align=right>
+<img src="./docs/img/logo_esriptorium_tutorial.png" width=300 align=right>
 
 # eScriptorium Tutorial - Source Code
 
