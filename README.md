@@ -1,8 +1,6 @@
-<img src="./docs/img/logo_esriptorium_tutorial.png" width=300 align=right>
+<img src="./docs/img/logo_esriptorium_tutorial.png" width=400 align="left" alt="eScriptorium Tutorial">
 
-# eScriptorium Tutorial - Source Code
-
-This GitHub repository stores the source code for the eScriptorium tutorial. It is a collective initiative, open to anyone and designed to be modified by anyone. 
+This GitHub repository stores the source code for the [eScriptorium tutorial](https://escriptorium-tutorial.readthedocs.io). It is a collective initiative, open to anyone and designed to be modified by anyone. 
 
 The eScriptorium Tutorial website is powered by MkDocs and hosted on readthedocs. All the source files of the pages are written in Markdown, which is a light markup language facilitating future editions. 
 
