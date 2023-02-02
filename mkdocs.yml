@@ -1,11 +1,70 @@
 site_name: eScriptorium Tutorial
 
 repo_url: https://github.com/alix-tz/escriptorium-tutorial/
+edit_uri: edit/main/docs/
 site_description: A collaborative tutorial to use the eScriptorium application.
 
-# Documentation layout
-#site_url: https://example.com/foo/
-edit_uri: edit/main/docs/
+theme:
+    name: readthedocs
+    locale: en
+    prev_next_buttons_location: both
+    navigation_depth: 3
+    logo: img/logo_esriptorium_tutorial.png
+
+markdown_extensions:
+    - abbr
+    - admonition
+    - footnotes
+    - md_in_html
+    - sane_lists
+    - smarty
+    - tables
+    - toc: 
+        permalink: true
+    - pymdownx.details
+    - pymdownx.smartsymbols
+    - pymdownx.highlight:
+        linenums: true
+    - pymdownx.keys:
+        separator: "\uff0b"
+        key_map: {
+                'alt': '⎇ ALt',
+                'left-alt': '⎇ Left ALt',
+                'right-alt': '⎇ Right ALt',
+                'command': '⌘ Command',
+                'left-command': '⌘ Command',
+                'right-command': '⌘ Command',
+                'control': '⌃Ctrl',
+                'left-control': '⌃Ctrl',
+                'right-control': '⌃Ctrl',
+                'shift': '⇧ Shift',
+                'left-shift': '⇧ Left Shift',
+                'right-shift': '⇧ Right Shift',
+                'windows': '⊞ Win',
+                'left-windows': '⊞ Win',
+                'right-windows': '⊞ Win',
+                'arrow-down': '↓ Down',
+                'arrow-left': '← Left',
+                'arrow-right': '→ Right',
+                'arrow-up': '↑ Up',
+                'backspace': '⌫ Backspace',
+                'backtab': '⇤ Back Tab',
+                'caps-lock': '⇪ Caps Lock',
+                'clear': '⌧ Clr',
+                'delete': '⌦ Del',
+                'end': '⤓ End',
+                'escape': '⎋ Esc',
+                'home': '⤒ Home',
+                'page-down': '⇟ Page Down',
+                'page-up': '⇞ Page Up',
+                'tab': 'Tab ⇥',
+                'enter': 'Enter ⏎',
+                'left-button': '→🖰 Left Click',
+                'right-button': '🖰← Right Click'
+            }
+
+extra_css:
+  - src/css/extra.css
 
 nav:
     - Home: index.md
@@ -27,20 +86,4 @@ nav:
         - "User-related features": walkthrough_users.md
         - "eScriptorium's API": walkthrough_api.md
         - "Administrators": walkthrough_administrators.md
-
-theme:
-    name: readthedocs
-    locale: en
-    prev_next_buttons_location: both
-    navigation_depth: 3
-    logo: img/logo_esriptorium_tutorial.png
-
-markdown_extensions:
-    - abbr
-    - admonition
-    - footnotes
-    - md_in_html
-    - sane_lists
-    - smarty
-    - tables
-    - toc
+        
