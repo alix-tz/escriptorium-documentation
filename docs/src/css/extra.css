@@ -1,0 +1,28 @@
+/* KEYS */
+
+kbd {
+  padding: .1em .6em;
+  border: 1px solid rgba(63, 63, 63, 0.25);
+  -webkit-box-shadow: 0 1px 0 rgba(63, 63, 63, 0.25);
+  box-shadow: 0 1px 0 rgba(63, 63, 63, 0.25);
+  font-size: 0.9em;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 .1em;
+  white-space: nowrap;
+}
+
+/*
+// Other option:
+kbd {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  margin: 0 0.2em;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  background-color: #f7f7f7;
+}*/
