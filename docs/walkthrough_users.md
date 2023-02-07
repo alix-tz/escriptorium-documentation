@@ -10,3 +10,85 @@ date: 2023-01-31
 
 !!! warning
     The section needs to be completed.
+
+This section details several features related to being a user on the application.
+
+## Login and Logout
+
+Logging in the application requires a user account, which is associated to several pieces of information:
+- username
+- password
+- email address
+- First Name and Last Name
+
+Most pages on eScriptorium are only accessible to logged-in users.
+
+The login page is accessible from any page of the application, in the top-right corner of the navigation bar (or at `{base_url}/login`). A small logging form appears: in "username", type your username (not your email address), then in "password", type your password. 
+
+<!-- todo: Add a screen shot of the location of the login process -->
+
+To log out, go to the menu on the top-right cornier and select "Logout".
+
+<!-- todo: Add a screen shot of the location of the logout menu-->
+
+## Retrieve a lost password or change password
+
+If you lost your password, you can request to receive a link to reset it. On the login page (`{base_url}/login`), click on "Lost password?" before typing the email address associated to your account. You will receive an email containing a link to reset the password.  
+
+If you lost the email address associated to your eScriptorium account, you should get in touch with the administrator of your eScriptorium server.  
+
+You can also change your password directly from the user's menu, on the top-right corner of the navigation bar. Click on "Hello, {first name}" and then on "Change password" (also accessible at `{base_url}/password_change/`). Fill the fields and click on "Change my password".
+
+<!-- todo: Add a capture of the process -->
+
+## Review and edit your profile
+
+Each user can access their profile page which is composed of five elements :  
+
+- `Information`: where the user can change their First and Last name, as well as their email address. 
+- `API Key`: where a user can create, renew or delete an API Authentification Token.
+- `Files`: where every archive generated during an export <!-- todo: add a link to Export --> can be accessed
+- `Teams`: where a user can create, manage or leave a Team. <!-- todo: add a link to Sharing and teams -->
+- `Invitations`: where a user can see the status of previously sent invitation (provided that have the right to send invitations). <!-- todo: add a link to Invitation -->
+
+## Task reports
+
+!!! Warning 
+    The documentation on this feature is not complete.
+
+A user can access information on the tasks they started from the user menu by clicking on "Task Report" page (also accessible at `{base_url}/quotas`). The corresponding page is composed of two elements:  
+
+- Information on recent hardware usage (Disk, CPU and GPU), which is helpful to get an overall idea of your usage of the server.
+- A list of all the previous tasks, including information about the date and time of execution, its duration, its state, its CPU or GPU cost. Additionnally, for each item in the list, it is possible to view a more detailled report by clicking on "Details". This is useful when a tasks fails.
+
+## Task monitoring
+
+!!! Warning 
+    The documentation on this feature is not complete.
+
+A user can access the list of all the tasks they started on eScriptorium from the user menu by clicking "Task Monitoring" (also accessible at `{base_url}/documents/tasks/`). The main purpose of this page is to manage tasks and cancel one or several running tasks at once.
+
+??? Note "Task monitoring for administrators"
+    Users with administrator rights can view all the running tasks and have an additional filter available based on usernames.
+
+<!-- todo: collect more information on task monitoring -->
+
+## Invite  
+
+Not all users are allowed to send invitations. If you have that right, you will see "Invite" in the user menu on the top-right corner of the navigation bar, or be able to access `{base_url}/invite/`. 
+
+The corresponding page contains a form necessary to provide the information required to send an invitation to a new user. When a user sends an invitation, they can associate the future user to a team they already belong to.
+
+## Teams  
+
+Users can be grouped by Teams. They main purpose of a team is to facilitate sharing documents or projects<!-- todo: add link to sharing documents and sharing projects -->. Teams are also helpful to identify a group of people working on the same project or coming from the same institution.  
+
+It is possible to manage teams from the Profile page. <!-- todo: add link to "Profile" -->Team management include creating a team, leaving a team, adding or removing members from a team, transfering ownership to another memer.  
+
+Only the owner of a team is allowed to add or remove members or to transfer ownership. The owner of a team cannot leave it without first transfering the ownership to another user.
+
+??? Note "No deleting, no renaming"
+    It is currently impossible to delete a team or to rename a team.
+
+??? Note "One owner per team"
+    There can only be one owner at a time.  
