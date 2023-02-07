@@ -39,9 +39,9 @@ You can select the version of the transcription to export in the first drop-down
 ### Selecting the annotation format to export
 
 You can select three exporting formats from the second drop-down menu:
-    * Text for plain text
-    * PAGE for [PAGE XML](http://www.primaresearch.org/publications/ICPR2010_Pletschacher_PAGE)
-    * ALTO for [XML ALTO](https://www.loc.gov/standards/alto/) (Analyzed Layout and Text Object)
+* Text for plain text   
+* PAGE for [PAGE XML](http://www.primaresearch.org/publications/ICPR2010_Pletschacher_PAGE)
+* ALTO for [XML ALTO](https://www.loc.gov/standards/alto/) (Analyzed Layout and Text Object)
     
 ![Image: Illustration of the drop-down menu for selecting the exporting format](img/export/escriptorium_export_format.gif)
 
@@ -60,13 +60,9 @@ To do so, tick the checkboxex associated to the region types you want to export.
 ![Image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif)
 
 !!! Note
-    By default, there are __six region types__ available to export : Illustration, Commentary, Main, Title, (Undefined region type), (Orphan lines).
-
-    (Undefined region type) are regions without a name. 
-
-    (Orphan lines) are lines not linked to any region. Make sure to always tick the checkbox for (Orphan lines) to avoid loosing any not-linked annotation.
-
-    You can export a region type even though no annotations are linked to it. It will be mentioned in the resulting exported file, but no annotations will be linked to it. 
+    By default, there are __six region types__ available to export : Illustration, Commentary, Main, Title, (Undefined region type), (Orphan lines). (Undefined region type) are regions without a name. (Orphan lines) are lines not linked to any region. Make sure to always tick the checkbox for (Orphan lines) to avoid loosing any not-linked annotation.
+    
+You can export a region type even though no annotations are linked to it. It will be mentioned in the resulting exported file, but no annotations will be linked to it. 
 
 !!! Note
     Region types' name will only appear when exporting in ALTO and PAGE. When exporting as plain text, only the annotations will be exported.
