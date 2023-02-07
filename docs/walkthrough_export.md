@@ -34,7 +34,7 @@ You can select the version of the transcription to export in the first drop-down
     * Imported annotations, when batch imported with a zip file, are registered as the __Zip import__ version.
     * Annotations done with a transcription model are named with the model's name.
     
-![Image: Illustration of the drop-down menu for selecting the version of the transcription](escriptorium_export_transcription_version.gif)
+![Image: Illustration of the drop-down menu for selecting the version of the transcription](img/export/escriptorium_export_transcription_version.gif)
 
 ### Selecting the annotation format to export
 
@@ -49,7 +49,7 @@ You can select three exporting formats from the second drop-down menu:
 
 You can tick the checkbox if you want to include images that are linked to the annotations. As it is mentioned in the export pop-up box, and depending on the images' sizes, including image in the export can significantly increase the time to produce and download the export.
 
-![Image: Ticking the checkbox for including images in the export](escriptorium_export_include_images.gif)
+![Image: Ticking the checkbox for including images in the export](img/export/escriptorium_export_include_images.gif)
 
 ### Selecting the region types to export
 
@@ -57,7 +57,7 @@ You can select the region types you want to export. <!-- todo: add link to the s
 
 To do so, tick the checkboxex associated to the region types you want to export. 
 
-![Image: Ticking the region types' checkboxes chosen for the export](escriptorium_export_region_types.gif)
+![Image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif)
 
 !!! Note
     By default, there are __six region types__ available to export : Illustration, Commentary, Main, Title, (Undefined region type), (Orphan lines).
@@ -79,7 +79,7 @@ When exporting ALTO and PAGE, the export is downloaded as a zip file containg ea
 
 When exporting plain text, the download will open a new tab with a new URL, containing the plain text. All annotations will be concatenated as one file text.
 
-![Image: Illustration of the export](escriptorium_export_download.png)
+![Image: Illustration of the export](img/export/escriptorium_export_download.png)
 
 !!! Tip
     To avoid confusions between exports, make sure to click on the cross icon in the download pop-up box before creating a new export.
