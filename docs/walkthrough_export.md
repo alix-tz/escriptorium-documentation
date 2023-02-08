@@ -65,15 +65,14 @@ You can include or exclude lines or whole regions and their associated lines wit
 
 To do so, tick the checkboxes associated to the region types you want to export or uncheck the ones you want to ignore.  
 
-![Image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif)
-
-!!! Note
-    By default, there are __six region types__ available to export : Illustration, Commentary, Main, Title, (Undefined region type), (Orphan lines). (Undefined region type) are regions without a name. (Orphan lines) are lines not linked to any region. Make sure to always tick the checkbox for (Orphan lines) to avoid losing isolated lines.
+The list of region types corresponds to the region types activated in the "Ontology" tab <!-- todo: add link to that once it's available -->. Two additional options allow you to include or ignore untyped-regions <!-- todo: add link to segmentation, which would hopefully explain that --> or orphan lines (lines that are not linked <!-- todo: add link to linking segments to regions -->to any region).
 
 You can export a region type even though it does not contain any transcription. In ALTO and PAGE files, the resulting regions will simply be an empty element.  
 
 !!! Note
-    Region types' name will only appear when exporting in ALTO and PAGE. In a plain text export, only the text contained in the transcription is kept.
+    Regions' type will only appear in ALTO and PAGE. In a plain text export, only the text contained in the transcription is kept.
+
+![Image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif)  
 
 ### Download the export
 
