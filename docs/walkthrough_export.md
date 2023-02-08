@@ -19,9 +19,9 @@ All models linked to a specific account are listed there with their metadata.
 You can export a model with the download button, located after all its metadata on the right. It will then download a file with the `.mlmodel` extension.
 
 !!! Note
-A model will either have the `Segment` role if it is a segmentation model, or the `Recognize` role if it is a transcription model.  <!-- todo: add link to train -->
+    A model will either have the `Segment` role if it is a segmentation model, or the `Recognize` role if it is a transcription model.  <!-- todo: add link to train -->
 
-![Image: Illustration of the download button for downloading transcription and segmenting models.](img/export/escriptorium_export_model.png)
+![Image: Illustration of the download button for downloading transcription and segmenting models.](img/export/escriptorium_export_model.png "Downloading a model with the download button.")
 
 ## Export annotations
 
@@ -96,7 +96,7 @@ When exporting ALTO and PAGE, the exported file is saved as a zip file containg 
 
 When exporting plain text, clicking on "Download" will redirect you to a new URL, displaying the plain text. All the transcriptions are concatenated as a single text file.
 
-![image: Illustration of the export](img/export/escriptorium_export_download.png "Stating the export task and downloading the result.")
+![image: Illustration of the export](img/export/escriptorium_export_download.gif "Stating the export task and downloading the result.")
 
 !!! Tip
     If you plan on doing several exports, we recommand to close the green message-box after each export (after downloading the file of course).  
