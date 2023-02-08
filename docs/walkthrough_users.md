@@ -29,7 +29,7 @@ The login page is accessible from any page of the application, in the top-right 
 - in "username", type your username (not your email address!), 
 - then in "password", type your password.
 
-To log out, go to the menu on the top-right cornier and select "Logout".
+To log out, go to the menu on the top-right corner and select "Logout".
 
 ![image: Illustration of the login and logout processes.](img/users/login_logout.gif "Logging in and out of eScriptorium.")
 
@@ -49,7 +49,7 @@ Each user can access their profile page which is broken down into five tabs :
 - `API Key`: where the user can create, renew or delete an API Authentification Token.  
 - `Files`: where every archive generated during a former [export](walkthrough_export.md) can be accessed.  
 - `Teams`: where the user can create, manage or leave a [team](#teams).  
-- `Invitations`: where the user can see the status of previously sent [invitations](#invite) (provided that have the right to send invitations).  
+- `Invitations`: where the user can see the status of previously sent [invitations](#invite) (provided that they have the right to send invitations).  
 
 ![image: Illustration of the profile page](img/users/review_edit_profile.gif "Browsing the Profile page")
 
@@ -61,7 +61,7 @@ Each user can access their profile page which is broken down into five tabs :
 A user can access information on the tasks they started from the user menu by clicking on "Task Report" page (also accessible at `{base_url}/quotas`). The corresponding page is composed of two elements:  
 
 - Information on recent hardware usage (Disk, CPU and GPU), which is helpful to get an overall idea of your usage of the server.
-- A list of all the previous tasks, including information about the date and time of execution, its duration, its state, its CPU or GPU cost. Additionnally, for each item in the list, it is possible to view a more detailled report by clicking on "Details". This is useful when a tasks fails.
+- A list of all the previous tasks, including information about the date and time of execution, its duration, its state, its CPU or GPU cost. Additionnally, for each item in the list, it is possible to view a more detailed report by clicking on "Details". This is useful when a task fails.
 
 <!-- todo: collect more information on task reports -->
 
@@ -85,16 +85,16 @@ The corresponding page contains a form necessary to provide the information requ
 
 ## Teams  
 
-Users can be grouped by Teams. They main purpose of a team is to facilitate [sharing documents or projects](walkthrough_collaborate.md). Teams are also helpful to identify a group of people working on the same project or coming from the same institution.  
+Users can be grouped by Teams. The main purpose of a team is to facilitate [sharing documents or projects](walkthrough_collaborate.md). Teams are also helpful to identify a group of people working on the same project or coming from the same institution.  
 
 It is possible to manage teams from the [Profile page](#review-and-edit-your-profile). Team management includes:  
 
 - Creating a team,  
 - Leaving a team,  
 - Adding or removing members from a team,  
-- Transfering ownership to another memer.  
+- Transfering ownership to another member.  
 
-Only the owner of a team is allowed to add or remove members or to transfer ownership. The owner of a team cannot leave it without first transfering the ownership to another user.
+Only the owner of a team is allowed to add or remove members or to transfer ownership. The owner of a team cannot leave it without first transferring the ownership to another user.
 
 ??? Note "No deleting, no renaming"
     It is currently impossible to delete a team or to rename a team.
