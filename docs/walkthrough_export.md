@@ -67,12 +67,12 @@ To do so, tick the checkboxes associated to the region types you want to export 
 
 The list of region types corresponds to the region types activated in the "Ontology" tab <!-- todo: add link to that once it's available -->. Two additional options allow you to include or ignore untyped-regions <!-- todo: add link to segmentation, which would hopefully explain that --> or orphan lines (lines that are not linked <!-- todo: add link to linking segments to regions -->to any region).
 
-You can export a region type even though it does not contain any transcription. In ALTO and PAGE files, the resulting regions will simply be an empty element.  
+You can export a region type even though it does not contain any transcription. In ALTO and PAGE files, the resulting regions will simply be empty elements.  
 
 !!! Note
     Regions' type will only appear in ALTO and PAGE. In a plain text export, only the text contained in the transcription is kept.
 
-![Image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif "Selecting and unselecting region types for the export.")  
+![image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif "Selecting and unselecting region types for the export.")  
 
 ### Download the export
 
@@ -84,7 +84,7 @@ When exporting ALTO and PAGE, the exported file is saved as a zip file containg 
 
 When exporting plain text, clicking on "Download" will redirect you to a new URL, displaying the plain text. All the transcriptions are concatenated as a single text file.
 
-![Image: Illustration of the export](img/export/escriptorium_export_download.png "Stating the export task and downloading the result.")
+![image: Illustration of the export](img/export/escriptorium_export_download.png "Stating the export task and downloading the result.")
 
 !!! Tip
     If you plan on doing several exports, we recommand to close the green message-box after each export (after downloading the file of course).  
