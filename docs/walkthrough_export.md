@@ -55,7 +55,7 @@ In the second drop-down menu, you can select between three output formats:
 
 You can include the images corresponding to the selected document-parts by ticking the "Include images" checkbox.
 
-As mentioned in the export pop-up box, and depending on the images' sizes, including image in the export can significantly increase the time to produce and download the export.
+As mentioned in the export pop-up box, and depending on the images' size, including images in the export can significantly increase the time to produce and download the export.
 
 ![image: Ticking the checkbox for including images in the export](img/export/escriptorium_export_include_images.gif "Checking the box to include images in the export.")
 
