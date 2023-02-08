@@ -20,7 +20,7 @@ Go to `{base_url}/document/{document-id}/images/` to access the main dashboard t
 
 Simply load the files using drag-and-drop or click in the box to open the file explorer.  
 
-![image: Demonstration of importing images from the local file system](img/import/escriptorium_import_images_locales.gif "Importing images from the local file system")
+![image: Demonstration of importing images from the local file system](img/import/import_local_files.gif "Importing images from the local file system")
 
 !!! Note  
     You must wait until all the images are loaded before refreshing the page!
@@ -32,7 +32,7 @@ Simply load the files using drag-and-drop or click in the box to open the file e
 
 Go to `{base_url}/document/{document-id}/images/` to access the main dashboard to control images. Locate the "**Import**" button just under the drag-and-drop rectangle. Click on the "**Import**" button, then "**Images (PDF)**" option to load a PDF file and automatically extract the images.  
 
-![image: Demonstration of importing images from a PDF](img/import/escriptorium_import_images_pdf.gif "Importing images from a PDF")
+![image: Demonstration of importing images from a PDF](img/import/import_pdf.gif "Importing images from a PDF")
 
 !!! Note
     Only the images are imported. If the PDF contains a text layer corresponding to the transcription, it is not imported.
@@ -44,6 +44,7 @@ Go to `{base_url}/document/{document-id}/images/` to access the main dashboard t
 !!! Tip inline end
     Example URL to try the IIIF import feature: [https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json](https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json)
 
+![image: Demonstration of importing images from a IIIF server](img/import/import_iiif.gif "Importing images from a IIIF server")
 
 ## Import models
 
@@ -56,7 +57,7 @@ Click "Upload a model" to open a page where you can:
 
 Click "Upload". The model now appears in the models list.
 
-<!-- todo: add illustration? -->
+![image: Demonstration of importing a transcription model](img/import/import_models.gif "Importing a transcription model")
 
 ## Import segmentation and transcription
 
@@ -70,10 +71,13 @@ A pop-up allows you to set several actions before clicking "Start importing":
 - Check the "override" option, which will have the existing segmentation removed and replaced with the imported segmentation. If unchecked, the segmentation imported from XML files will be added to the existing segmentation.
 - Select the file (one at a time) to import from the file browser. This file can be a single ALTO XML or PAGE XML file, as well as a ZIP file containing several XML files.
 
-![image: Settings for the XML import feature](img/import/escriptorium_import_xml_popup.png "Settings for XML import")
+![image: Demonstration of importing a transcription from a series of XML files](img/import/import_xml.gif "Importing segmentation and transcription from XML files")
 
 !!! Note
     It is not necessary to select the pages which will be affected by the segmentation import: the mapping is automatically calculated based on the image file name and the information contained in the XML files.  
+
+!!! Warning "Knwon bug"
+    If you delete a transcription version <!-- todo: add link to transcription versions --> named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
 
 !!! Tip  
     When importing XML files generated with other tools such as Transkribus, it can be usefull to run a segmentation task targetting only the line masks <!-- todo: add link to mask recalculation --> or to preprocess the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
