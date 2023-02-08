@@ -61,7 +61,7 @@ As mentioned in the export pop-up box, and depending on the images' size, includ
 
 ### Include or exclude certain region types or lines
 
-You can include or exclude lines or whole regions and their associated lines with the last parameters. <!-- todo: add link to the subsection about segment version -->
+You can include or exclude lines or whole regions and their associated lines with the last parameter. <!-- todo: add link to the subsection about segment version -->
 
 To do so, tick the checkboxes associated to the region types you want to export or uncheck the ones you want to ignore.  
 
@@ -76,9 +76,9 @@ You can export a region type even though it does not contain any transcription. 
 
 ### Download the export
 
-Once all options are set, click on the "Export" button at the bottom of the pop-up. 
+Once all options are set, click on the "Export" button at the bottom of the pop-up.  
 
-Once the export is ready, a green message box will appear in the upper-right section of the interface, providing you with a download link. Click on "Download" to download the txt file or the zip file resulting from your export.
+As soon as the export is ready, a green message box will appear in the upper-right section of the interface, providing you with a download link. Click on "Download" to download the txt file or the zip file resulting from your export.
 
 When exporting ALTO and PAGE, the exported file is saved as a zip file containg an XML file per document-part, the corresponding images if included, as well as a METS XML file describing the ensemble.
 
@@ -87,7 +87,7 @@ When exporting plain text, clicking on "Download" will redirect you to a new URL
 ![Image: Illustration of the export](img/export/escriptorium_export_download.png "Stating the export task and downloading the result.")
 
 !!! Tip
-    If you plan on doing several exports, we recommand to close the green message-box after each export (after downloading the file).  
+    If you plan on doing several exports, we recommand to close the green message-box after each export (after downloading the file of course).  
 
 ### Find previous exports
 
