@@ -16,20 +16,22 @@ This section details several features related to being a user on the application
 ## Login and Logout
 
 Logging in the application requires a user account, which is associated to several pieces of information:
-- username
-- password
-- email address
-- First Name and Last Name
+
+- Username
+- Password
+- Email address
+- First name and last name
 
 Most pages on eScriptorium are only accessible to logged-in users.
 
-The login page is accessible from any page of the application, in the top-right corner of the navigation bar (or at `{base_url}/login`). A small logging form appears: in "username", type your username (not your email address), then in "password", type your password. 
+The login page is accessible from any page of the application, in the top-right corner of the navigation bar (or at `{base_url}/login`). A small logging form appears: 
 
-<!-- todo: Add a screen shot of the location of the login process -->
+- in "username", type your username (not your email address!), 
+- then in "password", type your password.
 
 To log out, go to the menu on the top-right cornier and select "Logout".
 
-<!-- todo: Add a screen shot of the location of the logout menu-->
+![image: Illustration of the login and logout processes.](img/users/login_logout.gif "Logging in and out of eScriptorium.")
 
 ## Retrieve a lost password or change password
 
@@ -39,17 +41,17 @@ If you lost the email address associated to your eScriptorium account, you shoul
 
 You can also change your password directly from the user's menu, on the top-right corner of the navigation bar. Click on "Hello, {first name}" and then on "Change password" (also accessible at `{base_url}/password_change/`). Fill the fields and click on "Change my password".
 
-<!-- todo: Add a capture of the process -->
-
 ## Review and edit your profile
 
-Each user can access their profile page which is composed of five elements :  
+Each user can access their profile page which is broken down into five tabs :  
 
-- `Information`: where the user can change their First and Last name, as well as their email address. 
-- `API Key`: where a user can create, renew or delete an API Authentification Token.
-- `Files`: where every archive generated during an export <!-- todo: add a link to Export --> can be accessed
-- `Teams`: where a user can create, manage or leave a Team. <!-- todo: add a link to Sharing and teams -->
-- `Invitations`: where a user can see the status of previously sent invitation (provided that have the right to send invitations). <!-- todo: add a link to Invitation -->
+- `Information`: where the user can change their first and last names, as well as their email address.  
+- `API Key`: where the user can create, renew or delete an API Authentification Token.  
+- `Files`: where every archive generated during a former [export](walkthrough_export.md) can be accessed.  
+- `Teams`: where the user can create, manage or leave a [team](#teams).  
+- `Invitations`: where the user can see the status of previously sent [invitations](#invite) (provided that have the right to send invitations).  
+
+![image: Illustration of the profile page](img/users/review_edit_profile.gif "Browsing the Profile page")
 
 ## Task reports
 
@@ -60,6 +62,8 @@ A user can access information on the tasks they started from the user menu by cl
 
 - Information on recent hardware usage (Disk, CPU and GPU), which is helpful to get an overall idea of your usage of the server.
 - A list of all the previous tasks, including information about the date and time of execution, its duration, its state, its CPU or GPU cost. Additionnally, for each item in the list, it is possible to view a more detailled report by clicking on "Details". This is useful when a tasks fails.
+
+<!-- todo: collect more information on task reports -->
 
 ## Task monitoring
 
@@ -75,15 +79,20 @@ A user can access the list of all the tasks they started on eScriptorium from th
 
 ## Invite  
 
-Not all users are allowed to send invitations. If you have that right, you will see "Invite" in the user menu on the top-right corner of the navigation bar, or be able to access `{base_url}/invite/`. 
+Not all users are allowed to send invitations. If you have that right, you will see "Invite" in the user menu on the top-right corner of the navigation bar, or be able to access `{base_url}/invite/`.  
 
 The corresponding page contains a form necessary to provide the information required to send an invitation to a new user. When a user sends an invitation, they can associate the future user to a team they already belong to.
 
 ## Teams  
 
-Users can be grouped by Teams. They main purpose of a team is to facilitate sharing documents or projects<!-- todo: add link to sharing documents and sharing projects -->. Teams are also helpful to identify a group of people working on the same project or coming from the same institution.  
+Users can be grouped by Teams. They main purpose of a team is to facilitate [sharing documents or projects](walkthrough_collaborate.md). Teams are also helpful to identify a group of people working on the same project or coming from the same institution.  
 
-It is possible to manage teams from the Profile page. <!-- todo: add link to "Profile" -->Team management include creating a team, leaving a team, adding or removing members from a team, transfering ownership to another memer.  
+It is possible to manage teams from the [Profile page](#review-and-edit-your-profile). Team management includes:  
+
+- Creating a team,  
+- Leaving a team,  
+- Adding or removing members from a team,  
+- Transfering ownership to another memer.  
 
 Only the owner of a team is allowed to add or remove members or to transfer ownership. The owner of a team cannot leave it without first transfering the ownership to another user.
 
