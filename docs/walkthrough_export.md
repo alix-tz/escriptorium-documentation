@@ -8,7 +8,17 @@ date: 2023-02-01
 
 # Walkthrough : Export from eScriptorium
 
-## Exporting models
+## Exporting transcription and segmenting models
+
+eScriptorium allows users to export models that were previously imported, or models they trained. 
+
+To do so, go to the "My Models" page, accessible via the navigation bar, in the upper right section of the interface, or via `{base_url}/models/`.
+
+All models linked to a specific account are listed there with their metadata.
+
+You can export a model the download green button, after all metadata on the right. It will then download a file with the `.mlmodel` extension.
+
+![Image: Illustration of the download button for downloading transcription and segmenting models.](img/export/escriptorium_export_model.png)
 
 ## Exporting annotations
 
