@@ -8,7 +8,7 @@ date: 2023-02-01
 
 # Walkthrough : Export from eScriptorium
 
-## Exporting transcription and segmenting models
+## Export transcription and segmentation models
 
 eScriptorium allows users to export models that were previously imported, or models they trained. 
 
@@ -16,7 +16,10 @@ To do so, go to the "My Models" page, accessible via the navigation bar, in the 
 
 All models linked to a specific account are listed there with their metadata.
 
-You can export a model the download green button, after all metadata on the right. It will then download a file with the `.mlmodel` extension.
+You can export a model with the download button, located after all its metadata on the right. It will then download a file with the `.mlmodel` extension.
+
+!!! Note
+A model will either have the `Segment` role if it is a segmentation model, or the `Recognize` role if it is a transcription model.  <!-- todo: add link to train -->
 
 ![Image: Illustration of the download button for downloading transcription and segmenting models.](img/export/escriptorium_export_model.png)
 
@@ -38,9 +41,9 @@ Select the relevant document-parts by ticking their checkboxes, then click on th
 In the first drop-down menu, you can select which transcription version is to be exported.  
 
 !!! Note
-    * Manual transcriptions are registered as the __manual__ version.
-    * Imported transcriptions, when batch imported with a zip file, are registered as the __Zip import__ version. <!-- todo: add link to import -->
-    * Transcriptions predicted with a model are named with the model. <!-- todo: add link to predict transcription -->
+    - Manual transcriptions are registered as the **manual** version.
+    - Imported transcriptions, when batch imported with a zip file, are registered as the **Zip import** version. <!-- todo: add link to import -->
+    - Transcriptions predicted with a model are named with the model. <!-- todo: add link to predict transcription -->
 
 ![image: Illustration of the drop-down menu for selecting the version of the transcription](img/export/escriptorium_export_transcription_version.gif "Choosing a transcription version")
 
@@ -54,9 +57,9 @@ In the first drop-down menu, you can select which transcription version is to be
 
 In the second drop-down menu, you can select between three output formats:
 
-* Text for plain text  
-* PAGE for [PAGE XML](http://www.primaresearch.org/publications/ICPR2010_Pletschacher_PAGE)
-* ALTO for [XML ALTO](https://www.loc.gov/standards/alto/) (Analyzed Layout and Text Object)
+- Text for plain text  
+- PAGE for [PAGE XML](http://www.primaresearch.org/publications/ICPR2010_Pletschacher_PAGE)
+- ALTO for [XML ALTO](https://www.loc.gov/standards/alto/) (Analyzed Layout and Text Object)
 
 ![image: Illustration of the drop-down menu for selecting the output format](img/export/escriptorium_export_format.gif "Choosing the output format.")
 
