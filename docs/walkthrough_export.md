@@ -21,7 +21,7 @@ Select the relevant document-parts by ticking their checkboxes, then click on th
 !!! Tip
     You can select multiple documents at once by pressing the ++shift++ key.
 
-![image: Demonstration of selecting document-parts and then clicking on the 'Export' button](img/export/escriptorium_export_select_partdocuments.gif)
+![image: Demonstration of selecting document-parts and then clicking on the 'Export' button](img/export/escriptorium_export_select_partdocuments.gif "Selecting document-parts and starting the export.")
 
 ### Select the transcription version
 
@@ -33,7 +33,7 @@ In the first drop-down menu, you can select which transcription version is to be
     * Imported transcriptions, when batch imported with a zip file, are registered as the __Zip import__ version. <!-- todo: add link to import -->
     * Transcriptions predicted with a model are named with the model. <!-- todo: add link to predict transcription -->
 
-![Image: Illustration of the drop-down menu for selecting the version of the transcription](img/export/escriptorium_export_transcription_version.gif)
+![image: Illustration of the drop-down menu for selecting the version of the transcription](img/export/escriptorium_export_transcription_version.gif "Choosing a transcription version")
 
 !!! Note  
     When a document-part does not contain any segmentation, an XML file will still be created.  
@@ -49,7 +49,7 @@ In the second drop-down menu, you can select between three output formats:
 * PAGE for [PAGE XML](http://www.primaresearch.org/publications/ICPR2010_Pletschacher_PAGE)
 * ALTO for [XML ALTO](https://www.loc.gov/standards/alto/) (Analyzed Layout and Text Object)
 
-![Image: Illustration of the drop-down menu for selecting the output format](img/export/escriptorium_export_format.gif)
+![image: Illustration of the drop-down menu for selecting the output format](img/export/escriptorium_export_format.gif "Choosing the output format.")
 
 ### Including or exclude images
 
@@ -57,7 +57,7 @@ You can include the images corresponding to the selected document-parts by ticki
 
 As mentioned in the export pop-up box, and depending on the images' sizes, including image in the export can significantly increase the time to produce and download the export.
 
-![Image: Ticking the checkbox for including images in the export](img/export/escriptorium_export_include_images.gif)
+![image: Ticking the checkbox for including images in the export](img/export/escriptorium_export_include_images.gif "Checking the box to include images in the export.")
 
 ### Include or exclude certain region types or lines
 
@@ -72,7 +72,7 @@ You can export a region type even though it does not contain any transcription. 
 !!! Note
     Regions' type will only appear in ALTO and PAGE. In a plain text export, only the text contained in the transcription is kept.
 
-![Image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif)  
+![Image: Ticking the region types' checkboxes chosen for the export](img/export/escriptorium_export_region_types.gif "Selecting and unselecting region types for the export.")  
 
 ### Download the export
 
@@ -84,11 +84,11 @@ When exporting ALTO and PAGE, the exported file is saved as a zip file containg 
 
 When exporting plain text, clicking on "Download" will redirect you to a new URL, displaying the plain text. All the transcriptions are concatenated as a single text file.
 
-![Image: Illustration of the export](img/export/escriptorium_export_download.png)
+![Image: Illustration of the export](img/export/escriptorium_export_download.png "Stating the export task and downloading the result.")
 
 !!! Tip
     If you plan on doing several exports, we recommand to close the green message-box after each export (after downloading the file).  
 
 ### Find previous exports
 
-Each export is provided a unique permanent link. You can save it, for example to automatically re-download it later without having to set the whole export again but it is also possible to find the links to all your previous exports in the Profile page, under the "Files" tab.<!-- todo: add link to "review and edit your profile" which should logically be : [Profile page, under the "Files" tab](walkthrough_users.md#review-and-edit-your-profile)-->
+Each export is provided a unique permanent link. You can save it, for example to automatically re-download it later without having to set the whole export again but it is also possible to find the links to all your previous exports in the Profile page, under the "Files" tab.<!-- todo: add link to "review and edit your profile" which should logically be : [Profile page, under the "Files" tab](walkthrough_users.md#review-and-edit-your-profile)-->  
