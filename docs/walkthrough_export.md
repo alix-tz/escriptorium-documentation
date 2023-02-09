@@ -6,7 +6,7 @@ authors:
 date: 2023-02-01
 ---
 
-# Walkthrough : Export from eScriptorium
+# Walkthrough: Export from eScriptorium
 
 ## Export transcription and segmentation models
 
