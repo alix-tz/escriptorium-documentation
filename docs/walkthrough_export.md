@@ -27,7 +27,7 @@ You can export a model with the download button, located after all its metadata 
 
 eScriptorium allows users to export annotations (segmentation and transcription), with or without images, to three different [output formats](#selecting-the-output-format).  
 
-The exporting feature is located in the "images" tab (also accessible at `{base_url}/document/{document-id}/images/`), inside an eScriptorium document.  
+The exporting feature is located in the "Images" tab (also accessible at `{base_url}/document/{document-id}/images/`), inside an eScriptorium document.  
 
 Select the relevant document-parts by ticking their checkboxes, then click on the "Export" button, next to the "Import" button. A pop-up box then appears. It allows to set four parameters for the export.
 
@@ -42,8 +42,8 @@ In the first drop-down menu, you can select which transcription version is to be
 
 !!! Note
     - Manual transcriptions are registered as the **manual** version.
-    - Imported transcriptions, when batch imported with a zip file, are registered as the **Zip import** version. <!-- todo: add link to import -->
-    - Transcriptions predicted with a model are named with the model. <!-- todo: add link to predict transcription -->
+    - Imported transcriptions, when batch imported with a zip file, are registered as the **Zip import** version by default. You can name a transcription version during import. <!-- todo: add link to import -->
+    - Transcriptions predicted with a model are named after the model. <!-- todo: add link to predict transcription -->
 
 ![image: Illustration of the drop-down menu for selecting the version of the transcription](img/export/escriptorium_export_transcription_version.gif "Choosing a transcription version")
 
@@ -63,7 +63,7 @@ In the second drop-down menu, you can select between three output formats:
 
 ![image: Illustration of the drop-down menu for selecting the output format](img/export/escriptorium_export_format.gif "Choosing the output format.")
 
-### Including or exclude images
+### Include or exclude images
 
 You can include the images corresponding to the selected document-parts by ticking the "Include images" checkbox.
 
