@@ -81,9 +81,15 @@ A user can access the list of all the tasks they started on eScriptorium from th
 
 Not all users are allowed to send invitations. If you have that right, you will see "Invite" in the user menu on the top-right corner of the navigation bar, or be able to access `{base_url}/invite/`.  
 
-The corresponding page contains a form necessary to provide the information required to send an invitation to a new user. When a user sends an invitation, they can associate the future user to a team they already belong to.
+The corresponding page contains a form where the recipient's information can be filled in. Only the email address is mandatory, other information are optional. When a user sends an invitation, they can associate the future user to a team they already belong to.
 
-## Teams  
+![Image: Demonstration of inviting a new user to a eScriptorium instance.](img/users/invite.gif "Demonstration of inviting a new user to a eScriptorium instance.")
+
+The signup form looks like this:
+
+![Image: The recipient's form for signing-up to eScriptorium.](img/users/signup_form.png "The recipient's form for signing-up to eScriptorium.")
+
+## Teams <!-- This section has been relocated to the Collaborate walkthrough. It can be safely deleted here. --> 
 
 Users can be grouped by Teams. The main purpose of a team is to facilitate [sharing documents or projects](walkthrough_collaborate.md). Teams are also helpful to identify a group of people working on the same project or coming from the same institution.  
 
