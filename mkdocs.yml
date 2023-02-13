@@ -79,6 +79,7 @@ nav:
         - "Segment": walkthrough_segment.md
         - "Annotate": walkthrough_annotate.md
         - "Transcribe": walkthrough_transcribe.md
+        - "Virtual Keyboard": walkthrough_virtual_keyboard.md
         - "Train models": walkthrough_train.md
         - "Export images, transcriptions or models": walkthrough_export.md
         - "Collaborate with other users": walkthrough_collaborate.md
