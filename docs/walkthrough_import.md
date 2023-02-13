@@ -2,8 +2,8 @@
 title: Import to eScriptorium
 summary: About import features in eScriptorium.
 authors:
-    - Alix Chagué
-date: 2023-01-31
+    - Alix Chagué, Hugo Scheithauer, Floriane Chiffoleau
+date: 2023-02-13
 ---
 
 # Walkthrough : import to eScriptorium
@@ -12,7 +12,7 @@ eScriptorium allows users to import data from various types of external resource
 
 ## Import images
 
-There three ways to import images into eScriptorium.
+There are three ways to import images into eScriptorium.
 
 ### 1. From the local file system
 
@@ -39,16 +39,20 @@ Go to `{base_url}/document/{document-id}/images/` to access the main dashboard t
 
 ### 3. From IIIF
 
-Go to `{base_url}/document/{document-id}/images/` to access the main dashboard to control images. Locate the "**Import**" button just under the drag-and-drop rectangle. Click on the "**Import**" button, then the "**Images (IIIF)**" option, then enter the URL of an IIIF manifesto. All the images associated with the manifesto are then copied locally, as well as the metadata, which is visible in the "**Description**" tab.
+Go to `{base_url}/document/{document-id}/images/` to access the main dashboard to control images. Locate the "**Import**" button just under the drag-and-drop rectangle. Click on the "**Import**" button, then the "**Images (IIIF)**" option, then enter the URL of an IIIF manifest. All the images associated with the manifest are then copied locally, as well as the metadata, which are visible in the "**Description**" tab.
 
-!!! Tip inline end
+
+??? Note "What is IIIF"
+    IIIF is an international framework to share images garanteeing interoperability. For more information, check [iiif.io](https://iiif.io/)
+
+!!! Tip
     Example URL to try the IIIF import feature: [https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json](https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json)
 
 ![image: Demonstration of importing images from a IIIF server](img/import/import_iiif.gif "Importing images from a IIIF server")
 
 ## Import models
 
-Segmentation and Transcription models trained with Kraken can be imported from the "My Models" page (`{base_url}/models`), which lists the models accessible to a user. Such models could be trained by the user, shared with them or uploaded by them.  
+Segmentation and Transcription models trained with Kraken can be imported from the "My Models" page (`{base_url}/models`), which lists the models accessible to a user. Such models can be trained by the user, shared with them or uploaded by them.  
 
 Click "Upload a model" to open a page where you can:
 
@@ -61,7 +65,9 @@ Click "Upload". The model now appears in the models list.
 
 ## Import segmentation and transcription
 
-It is possible to import a layout information, with or without transcription, from XML files.
+It is possible to import a layout information, with or without transcription, from XML files. 
+
+When using this feature, it is not necessary to select the pages which will be affected by the segmentation import: the mapping is automatically calculated based on the image file name and the information contained in the XML files.
 
 Go to `{base_url}/document/{document-id}/images/` to access the main document dashboard. Locate the "**Import**" button just under the drag-and-drop rectangle. Click on the "**Import**" button, then the "**Transcriptions (XML)**" option.  
 
@@ -69,18 +75,15 @@ A pop-up allows you to set several actions before clicking "Start importing":
 
 - Specify a name for the transcription extracted from the XML files. This name will appear in the list of transcription versions available for the document. <!-- todo: add link to the subsection about transcription version -->
 - Check the "override" option, which will have the existing segmentation removed and replaced with the imported segmentation. If unchecked, the segmentation imported from XML files will be added to the existing segmentation.
-- Select the file (one at a time) to import from the file browser. This file can be a single ALTO XML or PAGE XML file, as well as a ZIP file containing several XML files.
+- Select the file to import from the file browser. This file can be either a single ALTO XML or PAGE XML file, or a ZIP file containing several XML files for batch import.
 
 ![image: Demonstration of importing a transcription from a series of XML files](img/import/import_xml.gif "Importing segmentation and transcription from XML files")
 
-!!! Note
-    It is not necessary to select the pages which will be affected by the segmentation import: the mapping is automatically calculated based on the image file name and the information contained in the XML files.  
-
-!!! Warning "Knwon bug"
+!!! Warning "Known bug"
     If you delete a transcription version <!-- todo: add link to transcription versions --> named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
 
 !!! Tip  
-    When importing XML files generated with other tools such as Transkribus, it can be usefull to run a segmentation task targetting only the line masks <!-- todo: add link to mask recalculation --> or to preprocess the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
+    When importing XML files generated with other tools such as [Transkribus](https://readcoop.eu/transkribus/), it can be useful to run a segmentation task targeting only the line masks <!-- todo: add link to mask recalculation --> or to preprocess the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
 
 
 [^lss]: Layout Segmentation Simplifier.
