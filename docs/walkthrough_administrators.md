@@ -23,3 +23,13 @@ Another page only accessible to administrators is the leaderboard. It can be acc
 > For example : `escriptorium.example/quotas/instance/`.
 
 The page displays information on CPU, GPU and Disk usage from the users of the application.  
+
+## Task monitoring and task reports
+
+!!! Warning 
+    The documentation on these features is not complete.
+
+See in [User-related features](walkthrough_users.md):
+
+- [Task reports](walkthrough_users.md#task-reports)
+- [Task monitoring](walkthrough_users.md#task-monitoring)
