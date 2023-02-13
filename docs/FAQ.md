@@ -45,3 +45,7 @@ A listing of known existing documentations on eScriptorium is available here: ht
 It intends to cover documentation is all available languages. If you know of other ressources not listed there, you should consider adding it, even if you were not its creator.
 
 ## How can I contribute to eScriptorium? 
+
+## What is the onboarding? How can I reset it?
+
+<!-- todo: go to profile/ information tab, then press "reset onboarding">
