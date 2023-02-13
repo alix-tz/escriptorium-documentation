@@ -86,8 +86,8 @@ Unicode normalization is an important parameter to be aware of when creating tra
 
 This normalization refer to the way characters are encoded, it can follow different paradigms:
 
-- Decomposed (NFD or NFKD): where ++è++ = ++e+`++
-- Composed (NFC or NFKC): where ++è++ = ++è++
+- Decomposed (NFD or NFKD): where ++"è"++ = ++"e"+"`"++
+- Composed (NFC or NFKC): where ++"è"++ = ++"è"++
 
 For more information, see Kraken's documentation on [text normalization and unicode](https://kraken.re/master/ketos.html#text-normalization-and-unicode)
 
