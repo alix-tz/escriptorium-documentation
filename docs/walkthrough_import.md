@@ -41,11 +41,10 @@ Go to `{base_url}/document/{document-id}/images/` to access the main dashboard t
 
 Go to `{base_url}/document/{document-id}/images/` to access the main dashboard to control images. Locate the "**Import**" button just under the drag-and-drop rectangle. Click on the "**Import**" button, then the "**Images (IIIF)**" option, then enter the URL of an IIIF manifest. All the images associated with the manifest are then copied locally, as well as the metadata, which are visible in the "**Description**" tab.
 
-
 ??? Note "What is IIIF"
-    IIIF is an international framework to share images garanteeing interoperability. For more information, check [iiif.io](https://iiif.io/)
+    IIIF is an international framework to share images guaranteeing interoperability. For more information, check [iiif.io](https://iiif.io/)
 
-!!! Tip
+!!! Tip 
     Example URL to try the IIIF import feature: [https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json](https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json)
 
 ![image: Demonstration of importing images from a IIIF server](img/import/import_iiif.gif "Importing images from a IIIF server")
@@ -83,7 +82,7 @@ A pop-up allows you to set several actions before clicking "Start importing":
     If you delete a transcription version <!-- todo: add link to transcription versions --> named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
 
 !!! Tip  
-    When importing XML files generated with other tools such as [Transkribus](https://readcoop.eu/transkribus/), it can be useful to run a segmentation task targeting only the line masks <!-- todo: add link to mask recalculation --> or to preprocess the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
+    When importing XML files generated with other tools such as Transkribus, it can be usefull to run a segmentation task targetting only the line masks <!-- todo: add link to mask recalculation --> or to preprocess the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
 
 
 [^lss]: Layout Segmentation Simplifier.
