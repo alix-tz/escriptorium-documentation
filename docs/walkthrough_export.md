@@ -2,7 +2,7 @@
 title: Exporting models and annotations from eScriptorium
 summary: Tutorial on export features in eScriptorium.
 authors:
-    - Hugo Scheithauer, Alix Chagué
+    - Hugo Scheithauer, Alix Chagué, Floriane Chiffoleau
 date: 2023-02-01
 ---
 
