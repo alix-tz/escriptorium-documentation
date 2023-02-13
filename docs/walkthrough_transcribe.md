@@ -6,7 +6,8 @@ authors:
 date: 2023-02-09
 ---
 
-# Walkthrough : transcribe with eScriptorium
+
+# Walkthrough: transcribe with eScriptorium  
 
 
 Once the [segmentation of the images](walkthrough_segment.md) have been achieved and [some annotations](walkthrough_annotate.md) have been added, if needed, the next step in eScriptorium will be the text recognition of the documents.  
@@ -56,14 +57,6 @@ Click on the "Edit" button of the first image you selected for the transcription
 
 ![image: History of the transcription.](img/transcribe/toggle_history.gif "History of the transcription")
 
-## Virtual Keyboard
-
-!!! warning
-    The section needs to be completed.
-
-A virtual keyboard is available in the "Text" pane in the "Edit" tab. To activate it, click on the icon "Toggle Virtual Keyboard for this document", then click on one of the line.  
-The virtual keyboard lets you predefine a series of keyboard shortcuts and virtual buttons to facilitate the writing of frequent special caracters. The "Manage Keyboard" button allows the management of this setting, and it is also possible to import a new configuration via a JSON file or a link to a JSON file.
-
 ## Versions of transcription
 
 ### Manage transcription
@@ -80,12 +73,22 @@ To delete a transcription version, click on the "Transcription management" butto
     Even when a text recognition model is applied to only part of the images in a document, the entirety of the document-parts will be associated to this new version of the transcription. This means that, even if the display is at document-part level, the creation or **deletion** of a transcription version will impact all the images of the document.
 
 ### Compare transcriptions
+
 It is possible to compare several versions of a transcription. To do so, click on the "Transcription management" button (blue button with the gear) in the top-right corner. Choose the versions you want to compare by ticking the checkboxes under "Compare", then close the pop-up box, by clicking on the cross or simply by clicking somewhere on the page. Then, select any line in the "Transcription" pane and click on "+Toggle transcription comparison" to see the difference.  
 The parts in red indicate the deleted characters and those in green indicate the added characters.
 
 ![image: Comparison of transcriptions.](img/transcribe/transcription_comparison.gif "Comparison of transcriptions")
 
-## Note on text normalization
+<!-- todo: move unicode text normalization to a tip page. -->
+## Note on unicode text normalization
 
-!!! warning
-    The section needs to be completed.
+Unicode normalization is an important parameter to be aware of when creating transcriptions with Kraken and eScriptorium. 
+
+This normalization refer to the way characters are encoded, it can follow different paradigms:
+
+- Decomposed (NFD or NFKD): where ++è++ = ++e+`++
+- Composed (NFC or NFKC): where ++è++ = ++è++
+
+For more information, see Kraken's documentation on [text normalization and unicode](https://kraken.re/master/ketos.html#text-normalization-and-unicode)
+
+When you apply a recognition model set to follow a decomposed normalization, the text typed manually will likely follow the "composed" paradigm, while the text resulting from prediction will fall within the "decomposed" paradigm. Before working with the overall resulting text, you should consider applying a normalization to it first. 
