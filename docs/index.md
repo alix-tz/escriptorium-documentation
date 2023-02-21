@@ -7,7 +7,7 @@ date: 2023-01-31
 ---
 
 !!! warning
-    This construction of this tutorial is still in progress!
+    The section needs to be completed.
 
 **eScriptorium** is a web application offering a workspace to manage the various steps of a transcription campaign. These steps can involve manual or automatic processes and be applied to printed documents or handwritten ones. The application uses [Kraken](https://kraken.re/) as a segmentation/transcription engine. Since its beginning in 2019, the [SCRIPTA PSL](https://scripta.psl.eu/) research group is responsible for its creation and development.
 
