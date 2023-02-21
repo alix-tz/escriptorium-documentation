@@ -91,7 +91,16 @@ The parts in red indicate the deleted characters and those in green indicate the
 
 ![image: Comparison of transcriptions.](img/transcribe/transcription_comparison.gif "Comparison of transcriptions")
 
-## Note on text normalization
+<!-- todo: move unicode text normalization to a tip page. -->
+## Note on unicode text normalization
 
-!!! warning
-    The section needs to be completed.
+Unicode normalization is an important parameter to be aware of when creating transcriptions with Kraken and eScriptorium. 
+
+This normalization refer to the way characters are encoded, it can follow different paradigms:
+
+- Decomposed (NFD or NFKD): where ++"è"++ = ++"e"+"`"++
+- Composed (NFC or NFKC): where ++"è"++ = ++"è"++
+
+For more information, see Kraken's documentation on [text normalization and unicode](https://kraken.re/master/ketos.html#text-normalization-and-unicode)
+
+When you apply a recognition model set to follow a decomposed normalization, the text typed manually will likely follow the "composed" paradigm, while the text resulting from prediction will fall within the "decomposed" paradigm. Before working with the overall resulting text, you should consider applying a normalization to it first. 
