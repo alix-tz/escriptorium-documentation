@@ -8,7 +8,7 @@ date: 2023-02-22
 
 # Walkthrough: annotation with eScriptorium
 
-??? Warning "Annotation vs. Segmentation"
+???+ Warning
     This section details the "Annotation" components, not the "Segmentation" features, which are two different things.
 
 Annotation can be performed at two levels:  
