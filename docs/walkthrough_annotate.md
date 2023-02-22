@@ -38,22 +38,22 @@ To create an new category for image annotation, go to the "Ontology" tab, then i
 - Name of the category
 - Abbreviation (3 letters max)
 - Type
-- Select the marker type (rectangle of polygon) depending on the type of shape you want to draw
+- Select the marker type (rectangle or polygon) depending on the type of shape you want to draw
 - Leave the default color or change it
-- Check "Allow Comments" if you want to be able to add comment to the image annotations
+- Check "Allow Comments" if you want to be able users to comment on the annotations
 
-![image: illustration of the process to create a new category for image annotation](img/annotate/create_image_annotation.gif "Create a new category named 'Fingerprints' for image annotation, in the Ontology pannel")
+![image: illustration of the process to create a new category for image annotation](img/annotate/create_image_annotation.gif "Create a new category named 'Fingerprints' for image annotation, in the Ontology panel")
 
-Once a new category is created, the value of "Abbreviation" will be used to create a button in th "Source Image" panel in the "Edit" page.  
+Once a new category is created, the value of "Abbreviation" will be used to create a button in the "Source Image" panel in the "Edit" page.  
 
 !!! Note "On the importance of the value of the Abbreviation field"
-    The value entered in the Abbreviation field is very important because if you change this value later, it will equate to [deleting the existing category](#delete-a-category-for-image-annotation) and creating a new one. On the contrary, you can change the value of all the other fields without losing the existing anntoations of that category.  
+    The value entered in the Abbreviation field is very important because if you change this value later, it will equate to [deleting the existing category](#delete-a-category-for-image-annotation) and creating a new one. On the contrary, you can change the value of all the other fields without losing the existing annotations of that category.  
 
 ### Draw an annotation on an image
 
 To draw an annotation on an image, go to the "Edit" page and activate the "Source Image" panel (++control+1++). Click on the button corresponding to the desired category, then draw the shape on the image. If commenting is allowed, a dialog box will appear with a text field.  
 
-![image: illustration of the process to draw an image annotation over a fingerprint](img/annotate/use_image_annotation.gif "Draw an annotation over a fingerprint, in the Source Image pannel, after activating the 'FP' button")
+![image: illustration of the process to draw an image annotation over a fingerprint](img/annotate/use_image_annotation.gif "Draw an annotation over a fingerprint, in the Source Image panel, after activating the 'FP' button")
 
 ### Remove an annotation from the image
 
@@ -74,11 +74,11 @@ To delete an existing category for image annotation, go to "Ontology", then acti
 
 Text annotation is very similar to Image annotation: you can create, remove, modify them from the document's ontology page.  
 
-To apply a text annotation, activate the "Text" pannel from the Edit page (or ++control+4++). Click on the button corresponding to the category of annotation you want to add and then select a portion of text. Click on "OK" to save the annotation.  
+To apply a text annotation, activate the "Text" panel from the Edit page (or ++control+4++). Click on the button corresponding to the category of annotation you want to add and then select a portion of text. Click on "OK" to save the annotation.  
 
 ![image: illustration of how to apply a text annotation](img/annotate/use_text_annotation.gif "In this case, we apply an already existing text annotation to the text by activating the annotation category and selecting the corresponding text")
 
-Removing a text annotation is similare to removing an image annotation: click on the annotation and click on the trash-can icon.
+Removing a text annotation is similar to removing an image annotation: click on the annotation and click on the trash-can icon.
 
 ![image: illustration of how to remove a text annotation](img/annotate/remove_text_annotation.gif "To remove a text annotation, select it and click on the trash-can")
 
