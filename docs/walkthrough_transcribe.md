@@ -24,18 +24,15 @@ To start transcribing, click on the corresponding zone. An input window is displ
 
 ![image: Illustration of the transcription of the text by hand.](img/transcribe/by_hand.gif "Illustration of the transcription of the text by hand")
 
-### Transcription by copy/paste
-When the only available format of the transcription is text, it is possible to add it swiftly on eScriptorium.  
-To do so, make sure that the "Text" pane is open. Then, from the text file of your transcription, copy the portion of text present in the image. You can then check, with the "Transcription" pane if everything correspond to the image.
-
-![image: Illustration of the transcription of the text via copy/paste.](img/transcribe/via_copy.gif "Illustration of the transcription of the text via copy/paste")
-
 !!! Note
     If the transcription does not match the segmentation of the image, you have the possibility to modify the transcription in the lines through one of the two panes, until it matches completly.
 
 ## Automatic transcription
-1. You need a model to transcribe automatically;
-2. There are different ways to have a model: [training on escriptorium](walkthrough_train.md), [share a model](walkthrough_train.md), import a model either (because the model can be shared on [Zenodo](https://zenodo.org/communities/ocr_models/), can be trained in command line with [kraken](https://kraken.re), or can be sent to you by someone else as a file).
+You need a model to transcribe automatically and there are different ways to have it: 
+
+- by [training on escriptorium](walkthrough_train.md) or in command line with [kraken](https://kraken.re),
+- through the [sharing of a model](walkthrough_collaborate.md#share-a-model), as it can be sent to you by someone else as a file,
+- by importing a model, via [Zenodo](https://zenodo.org/communities/ocr_models/) for example.
 
 ### Predicting the transcription
 To learn how to apply the text recognition model and obtain a prediction, see the section ["Predict a segmentation or a transcription"](walkthrough_predict.md)
@@ -46,16 +43,11 @@ If you want to edit the transcription, click on the "Edit" button, available at 
 ![image: Correction of the transcription.](img/transcribe/correction.gif "Correction of the transcription")
 
 !!! Tip
+    If you have special characters in your transcription and they are not available on your own keyboard, you have the possibility to use a [virtual keyboard](walkthrough_virtual_keyboard.md).
+
+!!! Tip
     To follow the changes made on the transcription line, you can click on it and select "+Toggle history" in which you can see the changes made.
     ![image: History of the transcription.](img/transcribe/toggle_history.gif "History of the transcription")
-
-## Virtual Keyboard
-
-!!! warning
-    The section needs to be completed.
-
-A virtual keyboard is available in the "Text" pane in the "Edit" tab. To activate it, click on the icon "Toggle Virtual Keyboard for this document", then click on one of the line.  
-The virtual keyboard lets you predefine a series of keyboard shortcuts and virtual buttons to facilitate the writing of frequent special caracters. The "Manage Keyboard" button allows the management of this setting, and it is also possible to import a new configuration via a JSON file or a link to a JSON file.
 
 ## Transcription versions
 
