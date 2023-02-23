@@ -8,13 +8,13 @@ date: 2023-02-09
 
 # Walkthrough: collaborate within eScriptorium
 
-This walkthrough details features related to collaboration in eScriptorium.
+eScriptorium allows collaboration between users of the same instance with features such as teams and sharing
 
 ## Teams
 
 Users can be grouped by Teams. The main purpose of a team is to facilitate [sharing documents or projects](#share-a-project-or-a-document). Teams are also helpful to identify a group of people working on the same project or coming from the same institution.  
 
-It is possible to manage teams from the [Profile page](walkthrough_users.md). Team management includes:  
+It is possible to manage teams from the [Profile page](walkthrough_users.md#review-and-edit-your-profile). Team management includes:  
 
 - Creating a team,  
 - Leaving a team,  
@@ -31,29 +31,36 @@ Only the owner of a team is allowed to add or remove members or to transfer owne
 
 ## Invite a user
 
-eScriptorium allows you to invite new users to your instance.
+In eScriptorium, some users can have the right to invite new users to an instance. The invitation rights are not activated for everyone.
 
-You can find more information about inviting new users in the [user-related features walkthrough](walkthrough_users.md#Invite) section.
+You can find more information about inviting new users in the [user-related features walkthrough](walkthrough_users.md#invite) section.
 
 ## Share a project or a document
 
-You can share projects and documents to others users of your eScriptorium instance.
+You can share projects and documents to others users of the same eScriptorium instance.
 
 ### Share a project
 
-You can share an opened project you own by clicking on the "Share this project" button. It will then open a pop-up box where you have two options:
+You can share an opened project you own by clicking on the "Share this project" button, located in the project dashboard at {base_url}/project/{project_slug}/documents/. **Only the owner of a project can share it.** It will then open a pop-up box where you have two options:
 
-- A form in which you can enter any username existing on your eScriptorium instance,
+- A form in which you can enter any username existing on your eScriptorium instance. There is not auto-completion for username in that field, so you should be in touch with the other user by any other means in order to know their username on that instance.
 - Or a succession of tick boxes associated to usernames belonging to the team you are a part of. You can check as many boxes as you want.
-
-Then you can click on the "Share" button.
 
 !!! Note
     You can stop sharing a project in the same pop-up box by unchecking tick boxes associated to usernames.
 
+Then you can click on the "Share" button, a green pop-up message will then be displayed stating that sharing is successful.
+
+![image: Sharing a project from a project page](img/collaborate/escriptorium_collaborate_share_project.gif "Sharing a project")
+
+!!! Note
+    If you enter an incorrect username, the application will still consider that sharing was successful and will then displayed the green pop-up message. One way to make sure the project is actually shared to the user you want is to click again on "Share this project" and check that they appear in the list of Users, with the box checked.
+
 ### Share a document
 
 Go to a document you own and that you want to share, and then click on the "Description" tab. You can then click on the "Share this document" button, and the same pop-up box used for sharing a project will open.
+
+![image: Sharing a document from the "Description" tab of a document](img/collaborate/escriptorium_collaborate_share_document.gif "Sharing a document")
 
 ## Share a model
 
@@ -61,9 +68,9 @@ eScriptorium allows you to share your models with other users of your eScriptori
 
 To do so, go to the "My Models" page, accessible via the navigation bar, in the upper right section of the interface, or via `{base_url}/models/`.
 
-You can share a model for which you are the owner with the share button. Once clicked, it will open a new URL, `{base_url}/models/{your model's number}/rights/`, where you can choose to share a model to users from the teams you belong to, or to a whole team.
+You can only share a model that you own. For this, click on the "Share model" button. Once clicked, it will open a new URL, `{base_url}/models/{your model's number}/rights/`, where you can choose to share a model to users from the teams you belong to, or to a whole team.
 
-To share a model, choose an user or a team from either one of the two dropdown menus, and click on the "Add right" button.
+To share a model, choose a user or a team from either one of the two dropdown menus, and click on the "Add right" button.
 
 All users or teams you shared the model to are also listed here. Users will have the `User` type, and teams the `Group` type. You also have the name of the user or the team, and the full name or identifier.
 
