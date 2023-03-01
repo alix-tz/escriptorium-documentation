@@ -48,7 +48,7 @@ You can also modify an existing transcription. The technique is the same as for 
 
 ### The "Text" panel
 
-This panel will display the transcription as a plain succession of text lines, according to the line order from the segmentation. This line order will be either determined by the segmentation model, or by the order chosen by the user when they segmented the image (See in [Segmentation](walkthrough_segment.md)).
+This panel will display the transcription as a plain succession of text lines, according to the line order from the segmentation. 
 
 ![image: Text panel on eScriptorium (access button framed in red)](img/transcribe/text_panel.png "Text panel on eScriptorium (access button framed in red)")
 
@@ -59,6 +59,10 @@ To start transcribing, click on the line you want to edit (it will be highlighte
 You can also modify an existing transcription. The technique is the same as for the manual transcription: you click on the line, modify what is necessary and then press ++enter++.
 
 ![image: Correction of the transcription in the Text panel.](img/transcribe/correction_2.gif "Correction of the transcription in the Text panel")
+
+This line order is either determined by the segmentation model, or by the order chosen by the user when they segmented the image (See in [Segmentation](walkthrough_segment.md)). When it is done by a model, it is possible for some lines to be mixed up, as it can be seen in the "Image" panel and its `Toggle ordering display` button. When it is the case, the "Text" panel offers the possibility to modify this order, by clicking on the `Toggle sorting mode` button at the top of the panel and then moving the line to its rightful place. 
+
+![image: Modification of the line order in the segmentation.](img/transcribe/line_order.gif "Modification of the line order in the segmentation")
   
 !!! Tip
     If you need to have special characters in your transcription and they are not available on your own keyboard, you can set and use a [virtual keyboard](walkthrough_virtual_keyboard.md).
