@@ -3,7 +3,7 @@ title: Transcribe with eScriptorium
 summary: About transcription features in eScriptorium.
 authors:
     - Floriane Chiffoleau, Alix Chagué
-date: 2023-02-27
+date: 2023-03-01
 ---
 
 # Walkthrough: transcribe with eScriptorium
@@ -42,13 +42,13 @@ Pressing ++enter++ or ++arrow-down++ will record the text and display the input 
 
 ![image: Illustration of the transcription edit in the Transcription panel.](img/transcribe/by_hand.gif "Illustration of the transcription edit in the Transcription panel")
 
-You can also modify an existing transcription. The technique is the same as for the manual transcription: you click on the line, modify what is necessary and then press ++enter++. Each modification will be save in a history listing the user or model responsible for the editions.
+You can also modify an existing transcription. The technique is the same as for the manual transcription: you click on the line, modify what is necessary and then press ++enter++. Each modification will be saved in a history listing the user or model responsible for each of them.
 
 ![image: Correction of the transcription in the Transcription panel.](img/transcribe/correction.gif "Correction of the transcription in the Transcription panel")
 
 ### The "Text" panel
 
-This panel will display the transcription as a plain succession of text lines, according to the order from the segmentation.
+This panel will display the transcription as a plain succession of text lines, according to the line order from the segmentation. This line order will be either determined by the segmentation model, or by the order chosen by the user when they segmented the image (See in [Segmentation](walkthrough_segment.md)).
 
 ![image: Text panel on eScriptorium (access button framed in red)](img/transcribe/text_panel.png "Text panel on eScriptorium (access button framed in red)")
 
@@ -56,7 +56,7 @@ To start transcribing, click on the line you want to edit (it will be highlighte
 
 ![image: Illustration of the transcription edit in the Text panel.](img/transcribe/by_hand_2.gif "Illustration of the transcription edit in the Text panel")
 
-You can also modify  an existing transcription. The technique is the same as for the manual transcription: you click on the line, modify what is necessary and then press ++enter++.
+You can also modify an existing transcription. The technique is the same as for the manual transcription: you click on the line, modify what is necessary and then press ++enter++.
 
 ![image: Correction of the transcription in the Text panel.](img/transcribe/correction_2.gif "Correction of the transcription in the Text panel")
   
