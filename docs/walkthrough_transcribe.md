@@ -12,6 +12,7 @@ Once the [segmentation of the images](walkthrough_segment.md) have been achieved
 
 ## Automatic transcription
 
+<!-- todo: move "obtaining a model" to predict.md -->
 ### Obtaining a model
 
 You need a model to transcribe automatically, here are some ways to get one:  
