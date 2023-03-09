@@ -82,7 +82,7 @@ nav:
         - "Train models": walkthrough_train.md
         - "Export images, transcriptions or models": walkthrough_export.md
         - "Collaborate with other users": walkthrough_collaborate.md
-        - "The search feature": walkthrough_search.md
+        - "Search": walkthrough_search.md
         - "User-related features": walkthrough_users.md
         - "eScriptorium's API": walkthrough_api.md
         - "Administrators": walkthrough_administrators.md
