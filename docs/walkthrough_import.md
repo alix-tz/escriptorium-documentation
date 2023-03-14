@@ -72,7 +72,7 @@ Go to `{base_url}/document/{document-id}/images/` to access the main document da
 
 A pop-up allows you to set several actions before clicking "Start importing":
 
-- Specify a name for the transcription extracted from the XML files. This name will appear in the list of transcription versions available for the document. <!-- todo: add link to the subsection about transcription version -->
+- Specify a name for the transcription extracted from the XML files. This name will appear in the list of [transcription versions](walkthrough_transcribe.md#transcription-versions) available for the document.  
 - Check the "override" option, which will have the existing segmentation removed and replaced with the imported segmentation. If unchecked, the segmentation imported from XML files will be added to the existing segmentation.
 - Select the file to import from the file browser. This file can be either a single ALTO XML or PAGE XML file, or a ZIP file containing several XML files for batch import.
 
