@@ -34,7 +34,7 @@ From the "Images" tab:
 - Select the document parts you want to use to train the model,
 - Click on "Train", then select "Recognizer",
 - In the form, select the [transcription version](walkthrough_transcribe.md) <!-- target transcription version in particular -->, give an explicit name to your new model and/or select an existing model to perform [fine tuning](#fine-tuning),
-- Once the form is filled, click on "train".
+- Once the form is filled, click on "Train".
 
 The training task is now placed in a queue and will start soon. When training is finished, you will receive a notification.  
 
@@ -81,7 +81,7 @@ There are two ways to access a list of models:
 
 In both of these display, you can see the "Training Status" of a model: either currently training or "done".  
 
-When a model is trained on eScriptorium, you can see the models resulting from each epoch by clicking on the "Toggle Versions" button. It will display a list of all the epochs along with their accuracy (and corresponding error count). It is then possible to download each model as an individual file.
+When a model is trained on eScriptorium, you can see the models resulting from each [epoch](#epoch) by clicking on the "Toggle Versions" button. It will display a list of all the epochs along with their [accuracy](#accuracy-and-errors) (and corresponding error count). It is then possible to download each model as an individual file.
 
 eScriptorium follows Kraken's behavior when selecting the best model. It is not always the model with the highest score since the selection is designed to minimize [overfitting](#overfitting).
 
@@ -109,7 +109,7 @@ Ground truth is another way to call the training data. Ground Truth is considere
 
 ### Epoch
 
-In machine learning, a model iterates over the training dataset several times. Each iteration on the training set is called an epoch. At the end of each epoch, Kraken models assess their performance against a testing set and adjust their learning strategy. To assess the performance of a model, an accuracy rate is calculated.  
+In machine learning, a model iterates over the training dataset several times. Each iteration on the training set is called an epoch. At the end of each epoch, Kraken models assess their performance against a testing set and adjust their learning strategy. To assess the performance of a model, an [accuracy](#accuracy-and-errors) rate is calculated.  
 
 ### Fine tuning  
 
@@ -133,7 +133,7 @@ If a model makes 330 errors out of 3330 characters to recognize, its CER will be
 
 The CER is inversely proportional to the accuracy: if a model has a character accuracy of 90%, it also has a CER of 10%.
 
-Even though eScriptorium offers a simple accuracy rate for **Segmentation models**, such metric is generally computed at pixel level (via IoU for example), which is less meaningful. For this reason, a segmentation model with an accuracy of 60% might still be a rather good model. It is usually necessary to try.  
+Even though eScriptorium offers a simple accuracy rate for **Segmentation models**, such metric is generally computed at pixel level (via [IoU](https://en.wikipedia.org/wiki/Jaccard_index) for example), which is less meaningful. For this reason, a segmentation model with an accuracy of 60% might still be a rather good model. It is usually necessary to try.  
 
 As stated in [Kraken's best practices for segmentation](https://kraken.re/master/ketos.html#segmentation-model-training):
 
