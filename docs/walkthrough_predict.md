@@ -2,11 +2,11 @@
 title: Predict with eScriptorium
 summary: About prediction features in eScriptorium.
 authors:
-    - Floriane Chiffoleau
-date: 2023-04-07
+    - Floriane Chiffoleau, Alix Chagué
+date: 2023-04-18
 ---
 
-# Walkthrough : predict with eScriptorium
+# Walkthrough: predict with eScriptorium
 
 In eScriptorium, it is possible to automatically generated a transcription or a segmentation, i.e. to predict it, generally after you [trained a model](walkthrough_train.md) for it. This prediction, whether it is of the segmentation or the transcription, is managed from the "Images" tab: `{base_url}/document/{document-id}/images/`
 
