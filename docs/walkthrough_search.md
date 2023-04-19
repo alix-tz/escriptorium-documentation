@@ -3,10 +3,10 @@ title: Search in eScriptorium
 summary: About the search feature in eScriptorium.
 authors:
     - Alix Chagué
-date: 2023-01-31
+date: 2023-04-19
 ---
 
-# Walkthrough : search in eScriptorium
+# Walkthrough: search in eScriptorium
 
 !!! warning
     The section needs to be completed.
@@ -20,6 +20,8 @@ If you run eScriptorium on your own machine and want to activate the Search feat
 When Search is activated, it appears as a search bar in the middle of the navigation bar, at the top of the page.
 
 ![image: Screenshot of the search bar](img/search/search_bar.png "The search bar is located in the navigation bar.")
+
+The results of the query will be displayed as a list of text extracts along with the corresponding line of text.  
 
 ## Use search
 
@@ -37,10 +39,15 @@ A search query can be performed in all the projects at once, or inside only one 
 !!! Note "Patience"
     A transcription is not immediately available to search since it needs to be indexed by ElasticSearch. For this reason, you shouldn't expect the query to return anything if you have just uploaded your transcription or applied a transcription model.
 
+![image: Starting a query from eScriptorium homepage, using th search bar](img/search/query_from_search_bar.gif "Search can be started from anywhere on the application. The results show the text of the line, the image of the line, the section of the text that matched the query and the corresponding document and transcription version. You can go to the corresponding document from the result page.")
 
-## Explore search results
 
-The results of the query will be displayed as a list of text extracts along with the corresponding line of text.  
+## Search matches
 
-<!-- todo: complete this documentation once I can actually run a successful query... -->
+Results will contain exact matches (1), fuzzy matches (2) or contextual matches (3).  
 
+Fuzzy matches include different cases, but also textual variation ("testaments" is a match to the "testament" query). Currently, it is not possible to tune how strict the fuzzy matching should be.  
+
+Contextual matches are lines who's context (previous or next line) contain the query.  
+
+![image: Illustration of the different types of results](img/search/search_results_anot.png "The query return exact matches (1), fuzzy matches (2) and contextual matches (3).")
