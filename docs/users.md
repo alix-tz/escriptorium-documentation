@@ -6,7 +6,7 @@ authors:
 date: 2023-02-13
 ---
 
-# Walkthrough :  being a user in eScriptorium
+# Being a user in eScriptorium
 
 !!! warning
     The section needs to be completed.
@@ -46,28 +46,28 @@ You can also change your password directly from the user's menu, on the top-righ
 Each user can access their profile page which is broken down into five tabs :  
 
 - `Information`: where the user can change their first and last names, as well as their email address.  
-- `API Key`: where the user can create, renew or delete an API Authentification Token.  
+- `API Key`: where the user can create, renew or delete an API Authentication Token.  
 - `Files`: where every archive generated during a former [export](export.md) can be accessed.  
-- `Teams`: where the user can create, manage or leave a [team](collaborate.md). <!-- todo: add link to anchor -->  
+- `Teams`: where the user can create, manage or leave a [team](collaborate.md#teams).
 - `Invitations`: where the user can see the status of previously sent [invitations](#invite) (provided that they have the right to send invitations).  
 
 ![image: Illustration of the profile page](img/users/review_edit_profile.gif "Browsing the Profile page")
 
 ## Task reports
 
-!!! Warning 
+!!! Warning
     The documentation on this feature is not complete.
 
 A user can access information on the tasks they started from the user menu by clicking on "Task Report" page (also accessible at `{base_url}/quotas`). The corresponding page is composed of two elements:  
 
 - Information on recent hardware usage (Disk, CPU and GPU), which is helpful to get an overall idea of your usage of the server.
-- A list of all the previous tasks, including information about the date and time of execution, its duration, its state, its CPU or GPU cost. Additionnally, for each item in the list, it is possible to view a more detailed report by clicking on "Details". This is useful when a task fails.
+- A list of all the previous tasks, including information about the date and time of execution, its duration, its state, its CPU or GPU cost. Additionally, for each item in the list, it is possible to view a more detailed report by clicking on "Details". This is useful when a task fails.
 
 <!-- todo: collect more information on task reports -->
 
 ## Task monitoring
 
-!!! Warning 
+!!! Warning
     The documentation on this feature is not complete.
 
 A user can access the list of all the tasks they started on eScriptorium from the user menu by clicking "Task Monitoring" (also accessible at `{base_url}/documents/tasks/`). The main purpose of this page is to manage tasks and cancel one or several running tasks at once.
@@ -81,11 +81,10 @@ A user can access the list of all the tasks they started on eScriptorium from th
 
 Not all users are allowed to send invitations. If you have that right, you will see "Invite" in the user menu on the top-right corner of the navigation bar, or be able to access `{base_url}/invite/`.  
 
-The corresponding page contains a form where the recipient's information can be filled in. Only the email address is mandatory, other information are optional. When a user sends an invitation, they can associate the future user to a [Team](collaborate.md) <!-- todo: add link to anchor-->they already belong to.
+The corresponding page contains a form where the recipient's information can be filled in. Only the email address is mandatory, other information are optional. When a user sends an invitation, they can associate the future user to a [Team](collaborate.md#teams) they already belong to.
 
 ![Image: Demonstration of inviting a new user to a eScriptorium instance.](img/users/invite.gif "Demonstration of inviting a new user to a eScriptorium instance.")
 
-On the other side, the signup form looks like this:
+On the other side, the sign-up form looks like this:
 
 ![Image: The recipient's form for signing-up to eScriptorium.](img/users/signup_form.png "The recipient's form for signing-up to eScriptorium.")
-
