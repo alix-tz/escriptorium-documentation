@@ -1,6 +1,6 @@
 ---
-title: eScriptorium's administration
-summary: About the back end of eScriptorium.
+title: Administration of eScriptorium
+summary: About the back end of eScriptorium and other administrator-related features.
 authors:
     - Alix Chagué
 date: 2023-01-31
