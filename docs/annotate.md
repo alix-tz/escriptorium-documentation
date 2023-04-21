@@ -1,14 +1,14 @@
 ---
-title: Annotate with eScriptorium
+title: Annotation in eScriptorium
 summary: About the annotation features in eScriptorium.
 authors:
     - Alix Chagué
-date: 2023-02-22
+date: 2023-04-21
 ---
 
-# Walkthrough: annotation with eScriptorium
+# Annotation in eScriptorium
 
-???+ Warning
+!!! Note
     This section details the "Annotation" components, not the "Segmentation" features, which are two different things.
 
 Annotation can be performed at two levels:  
@@ -59,7 +59,7 @@ To draw an annotation on an image, go to the "Edit" page and activate the "Sourc
 
 To remove an annotation from the image, click on it and press the trash-can icon. It is also possible to press ++delete++ after selecting the annotation.
 
-![image: illustration of the process to reove an annotation from an image](img/annotate/remove_image_annotation.gif "Remove an annotation by pressing the trash-can button or the delete key")
+![image: illustration of the process to remove an annotation from an image](img/annotate/remove_image_annotation.gif "Remove an annotation by pressing the trash-can button or the delete key")
 
 ### Delete a category for image annotation
 
