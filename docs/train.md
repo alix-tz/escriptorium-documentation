@@ -6,10 +6,7 @@ authors:
 date: 2023-03-09
 ---
 
-# Walkthrough: training models with eScriptorium
-
-!!! warning
-    The section needs to be completed.
+# Training models with eScriptorium
 
 ## Training rights
 
@@ -33,7 +30,7 @@ From the "Images" tab:
 
 - Select the document parts you want to use to train the model,
 - Click on "Train", then select "Recognizer",
-- In the form, select the [transcription version](transcribe.md) <!-- target transcription version in particular -->, give an explicit name to your new model and/or select an existing model to perform [fine tuning](#fine-tuning),
+- In the form, select the [transcription version](transcribe.md#transcription-versions), give an explicit name to your new model and/or select an existing model to perform [fine tuning](#fine-tuning),
 - Once the form is filled, click on "Train".
 
 The training task is now placed in a queue and will start soon. When training is finished, you will receive a notification.  
