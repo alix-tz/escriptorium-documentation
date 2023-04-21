@@ -6,7 +6,7 @@ authors:
 date: 2023-01-31
 ---
 
-# Walkthrough :  eScriptorium's administration
+# Administration of eScriptorium
 
 ## Back-end
 
@@ -26,7 +26,7 @@ The page displays information on CPU, GPU and Disk usage from the users of the a
 
 ## Task monitoring and task reports
 
-!!! Warning 
+!!! Warning  
     The documentation on these features is not complete.
 
 See in [User-related features](users.md):
