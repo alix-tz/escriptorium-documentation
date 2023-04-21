@@ -24,8 +24,8 @@ To work on the transcription manually, you need to be on the "Edit" tab of a doc
 
 Two panels allow you to manually modify the transcription:
 
-- the 4th panel, called "Transcription",
-- and the 5th panel, called "Text".
+- the 4th panel, called "Transcription" (++control+4++),
+- and the 5th panel, called "Text" (++control+5++).
 
 ![image: Screenshot of the 5 activated panels (Transcription panel framed in red, Text panel framed in blue) ](img/transcribe/transcription_text_panels.png "The 4th and the 5th panels are for manually editing the transcription")
 
