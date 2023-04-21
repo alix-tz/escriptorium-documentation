@@ -72,17 +72,17 @@ Go to `{base_url}/document/{document-id}/images/` to access the main document da
 
 A pop-up allows you to set several actions before clicking "Start importing":
 
-- Specify a name for the transcription extracted from the XML files. This name will appear in the list of [transcription versions](walkthrough_transcribe.md#transcription-versions) available for the document.  
+- Specify a name for the transcription extracted from the XML files. This name will appear in the list of [transcription versions](transcribe.md#transcription-versions) available for the document.  
 - Check the "override" option, which will have the existing segmentation removed and replaced with the imported segmentation. If unchecked, the segmentation imported from XML files will be added to the existing segmentation.
 - Select the file to import from the file browser. This file can be either a single ALTO XML or PAGE XML file, or a ZIP file containing several XML files for batch import.
 
 ![image: Demonstration of importing a transcription from a series of XML files](img/import/import_xml.gif "Importing segmentation and transcription from XML files")
 
 !!! Warning "Known bug"
-    If you delete a [transcription version](walkthrough_transcribe.md#transcription-versions) named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
+    If you delete a [transcription version](transcribe.md#transcription-versions) named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
 
 !!! Tip  
-    When importing XML files generated with other tools such as Transkribus, it can be useful to run a segmentation task targeting only the [line masks](walkthrough_segment.md) or to pre-process the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
+    When importing XML files generated with other tools such as Transkribus, it can be useful to run a segmentation task targeting only the [line masks](segment.md) or to pre-process the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
 
 
 [^lss]: Layout Segmentation Simplifier.

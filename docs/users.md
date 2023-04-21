@@ -47,8 +47,8 @@ Each user can access their profile page which is broken down into five tabs :
 
 - `Information`: where the user can change their first and last names, as well as their email address.  
 - `API Key`: where the user can create, renew or delete an API Authentification Token.  
-- `Files`: where every archive generated during a former [export](walkthrough_export.md) can be accessed.  
-- `Teams`: where the user can create, manage or leave a [team](walkthrough_collaborate.md). <!-- todo: add link to anchor -->  
+- `Files`: where every archive generated during a former [export](export.md) can be accessed.  
+- `Teams`: where the user can create, manage or leave a [team](collaborate.md). <!-- todo: add link to anchor -->  
 - `Invitations`: where the user can see the status of previously sent [invitations](#invite) (provided that they have the right to send invitations).  
 
 ![image: Illustration of the profile page](img/users/review_edit_profile.gif "Browsing the Profile page")
@@ -81,7 +81,7 @@ A user can access the list of all the tasks they started on eScriptorium from th
 
 Not all users are allowed to send invitations. If you have that right, you will see "Invite" in the user menu on the top-right corner of the navigation bar, or be able to access `{base_url}/invite/`.  
 
-The corresponding page contains a form where the recipient's information can be filled in. Only the email address is mandatory, other information are optional. When a user sends an invitation, they can associate the future user to a [Team](walkthrough_collaborate.md) <!-- todo: add link to anchor-->they already belong to.
+The corresponding page contains a form where the recipient's information can be filled in. Only the email address is mandatory, other information are optional. When a user sends an invitation, they can associate the future user to a [Team](collaborate.md) <!-- todo: add link to anchor-->they already belong to.
 
 ![Image: Demonstration of inviting a new user to a eScriptorium instance.](img/users/invite.gif "Demonstration of inviting a new user to a eScriptorium instance.")
 

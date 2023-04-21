@@ -21,7 +21,7 @@ When search is activated, it appears as a search bar in the middle of the naviga
 
 ## Search scope
 
-A search query can be performed in all the projects at once, or inside only one project, or, withing a document, on a specific [transcription version](walkthrough_transcribe.md#transcription-versions).
+A search query can be performed in all the projects at once, or inside only one project, or, withing a document, on a specific [transcription version](transcribe.md#transcription-versions).
 
 On the home page and on the "My Project", the scope of the search will be, by default, set to "all projects", as mentioned in the search hint.
 
@@ -33,7 +33,7 @@ On a project's dashboard, the scope of the search will be, by default, set to th
 
 ![image: Screenshot of the search bar on the projects page](img/search/search_project2.png "When you are on a project dashboard, the scope of the search is the current project.")
 
-On a document's dashboard, a selection menu allows you to narrow the search down to a specific [transcription version](walkthrough_transcribe.md#transcription-versions), or, as set by default, to apply it to all the transcription versions available for the current document.
+On a document's dashboard, a selection menu allows you to narrow the search down to a specific [transcription version](transcribe.md#transcription-versions), or, as set by default, to apply it to all the transcription versions available for the current document.
 
 ![image: Screenshot of the search bar on the projects page](img/search/search_document_tlevels.gif "When you are on a project dashboard, you can select the scope of the query as far as the transcription level is concerned.")
 

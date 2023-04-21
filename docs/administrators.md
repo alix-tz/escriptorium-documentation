@@ -29,7 +29,7 @@ The page displays information on CPU, GPU and Disk usage from the users of the a
 !!! Warning 
     The documentation on these features is not complete.
 
-See in [User-related features](walkthrough_users.md):
+See in [User-related features](users.md):
 
-- [Task reports](walkthrough_users.md#task-reports)
-- [Task monitoring](walkthrough_users.md#task-monitoring)
+- [Task reports](users.md#task-reports)
+- [Task monitoring](users.md#task-monitoring)

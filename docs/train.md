@@ -19,11 +19,11 @@ Training models starts from the "Images" tab (also accessible at `base_url/docum
 
 ![image: the train button is visible when the user has the right to train](img/train/train_rights_yes.png "The train button is visible when the user has the right to train models")
 
-- If you don't, the button won't be visible and you will not be able to start a training task through the [API](walkthrough_api.md)
+- If you don't, the button won't be visible and you will not be able to start a training task through the [API](api.md)
 
 ![image: the train button is not visible when the user doesn't have the right to train](img/train/train_rights_no.png "The train button is not visible when the user doesn't have the right to train models")
 
-If you are the administrator of your application you can activate this right in the [back-end](walkthrough_administrators.md#back-end). Otherwise, you should simply get in touch with the administrator of the server you are using.
+If you are the administrator of your application you can activate this right in the [back-end](administrators.md#back-end). Otherwise, you should simply get in touch with the administrator of the server you are using.
 
 ## Train a transcription model
 
@@ -33,7 +33,7 @@ From the "Images" tab:
 
 - Select the document parts you want to use to train the model,
 - Click on "Train", then select "Recognizer",
-- In the form, select the [transcription version](walkthrough_transcribe.md) <!-- target transcription version in particular -->, give an explicit name to your new model and/or select an existing model to perform [fine tuning](#fine-tuning),
+- In the form, select the [transcription version](transcribe.md) <!-- target transcription version in particular -->, give an explicit name to your new model and/or select an existing model to perform [fine tuning](#fine-tuning),
 - Once the form is filled, click on "Train".
 
 The training task is now placed in a queue and will start soon. When training is finished, you will receive a notification.  
@@ -45,7 +45,7 @@ The training task is now placed in a queue and will start soon. When training is
 
 ## Train a segmentation model
 
-To train a segmentation model in eScriptorium, the process is the same as previously described. You need [training data](walkthrough_segment.md) to train a segmentation model. All the mobilized images/segment annotations must be in the same document.  
+To train a segmentation model in eScriptorium, the process is the same as previously described. You need [training data](segment.md) to train a segmentation model. All the mobilized images/segment annotations must be in the same document.  
 
 From the "Images" tab:
 
@@ -89,7 +89,7 @@ eScriptorium follows Kraken's behavior when selecting the best model. It is not 
 
 ### Using task reports
 
-[Task reports](walkthrough_users.md#task-reports) provide users with more detailed information on various tasks, including training.  
+[Task reports](users.md#task-reports) provide users with more detailed information on various tasks, including training.  
 
 It displays information about the status of the task (queued, running, finished, crashed, canceled), its execution time and the resources used to complete it (CPU/GPU). You can click on "Details" to get more information on the task.  
 

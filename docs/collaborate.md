@@ -14,7 +14,7 @@ eScriptorium allows collaboration between users of the same instance with featur
 
 Users can be grouped inside a team. The main purpose of teams is to facilitate [sharing documents or projects](#share-a-project-or-a-document). Teams are also helpful to identify a group of people working on the same project or coming from the same institution. Users can be part of several teams at a time.  
 
-It is possible to manage teams from the [Profile page](walkthrough_users.md#review-and-edit-your-profile). Team management includes:  
+It is possible to manage teams from the [Profile page](users.md#review-and-edit-your-profile). Team management includes:  
 
 - Creating a team,  
 - Leaving a team,  
@@ -33,7 +33,7 @@ Only the owner of a team is allowed to add or remove members or to transfer owne
 
 In eScriptorium, some users can have the right to invite new users. The invitation rights are not activated for everyone.
 
-You can find more information about inviting new users in the [user-related features walkthrough](walkthrough_users.md#invite) section.
+You can find more information about inviting new users in the [user-related features walkthrough](users.md#invite) section.
 
 ## Share a project or a document
 

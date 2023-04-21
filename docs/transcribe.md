@@ -8,7 +8,7 @@ date: 2023-03-09
 
 # Walkthrough: transcribe with eScriptorium
 
-Once the [segmentation of the images](walkthrough_segment.md) have been achieved and [some annotations](walkthrough_annotate.md) have been added, if needed, the next step in eScriptorium will be the text recognition of the documents and it is possible to do this step manually or automatically.
+Once the [segmentation of the images](segment.md) have been achieved and [some annotations](annotate.md) have been added, if needed, the next step in eScriptorium will be the text recognition of the documents and it is possible to do this step manually or automatically.
 
 ## Automatic transcription
 
@@ -17,13 +17,13 @@ Once the [segmentation of the images](walkthrough_segment.md) have been achieved
 
 You need a model to transcribe automatically, here are some ways to get one:  
 
-- by [training one with eScriptorium](walkthrough_train.md) or (via the command line) with [kraken](https://kraken.re),
-- by having one shared with you, either within [eScriptorium](walkthrough_collaborate.md#share-a-model), or sent to you as a file through other means of communication,
+- by [training one with eScriptorium](train.md) or (via the command line) with [kraken](https://kraken.re),
+- by having one shared with you, either within [eScriptorium](collaborate.md#share-a-model), or sent to you as a file through other means of communication,
 - by importing a model from a file. Such files can be retrieved on the [Zenodo community](https://zenodo.org/communities/ocr_models/) dedicated to Kraken models.
 
 ### Predicting the transcription
 
-To learn how to apply the text recognition model and obtain a prediction, see ["Predict a segmentation or a transcription"](walkthrough_predict.md).  
+To learn how to apply the text recognition model and obtain a prediction, see ["Predict a segmentation or a transcription"](predict.md).  
 
 ## Manual transcription
 
@@ -32,7 +32,7 @@ To work on the transcription manually, you need to be on the "Edit" tab of your 
 Out of the five panels available in eScriptorium, two allow you to create and edit the transcription: "Transcription" and "Text".
 
 !!! Tip
-    If you need to have special characters in your transcription and they are not available on your own keyboard, you can set and use a [virtual keyboard](walkthrough_virtual_keyboard.md). 
+    If you need to have special characters in your transcription and they are not available on your own keyboard, you can set and use a [virtual keyboard](virtual_keyboard.md). 
 
 
 ### The "Transcription" panel
@@ -67,9 +67,9 @@ You can also modify an existing transcription. The technique is the same as for 
 
 ## Sorting lines
 
-Line ordering is automatically calculated during [segmentation](walkthrough_segment.md).  
+Line ordering is automatically calculated during [segmentation](segment.md).  
 
-When [controlling lines order](walkthrough_segment.md)<!-- todo: add a more precise link to controlling line ordering -->, you may notice that some lines are mixed up. It is possible de manually change the order inside the "Text" panel, by clicking on the "Toggle sorting mode" button, at the top of the panel.  
+When [controlling lines order](segment.md)<!-- todo: add a more precise link to controlling line ordering -->, you may notice that some lines are mixed up. It is possible de manually change the order inside the "Text" panel, by clicking on the "Toggle sorting mode" button, at the top of the panel.  
 
 In Sorting mode, you can select one or several lines at a time before using drag and drop to place them in the rightful place.
 
@@ -83,13 +83,13 @@ A document can be associated simultaneously to several versions of transcription
 
 - There is always a default version, called "manual",
 - Predicting a transcription with a model will create a new transcription version named after the model (ex: kraken:demo_model),
-- Importing a transcription from an XML file will create a new transcription version named after the name set during [import](walkthrough_import.md) or the default import name, "Zip Import".
+- Importing a transcription from an XML file will create a new transcription version named after the name set during [import](import.md) or the default import name, "Zip Import".
 
 !!! Note
     Currently, you cannot manually create a new transcription version.
 
 !!! Warning
-    Segmentation, on the contrary, has only one version (see [here](walkthrough_segment.md)).
+    Segmentation, on the contrary, has only one version (see [here](segment.md)).
 
 To display the list of available transcription versions, click on the drop-down menu in the top-right corner and choose the version you want to see.
 
