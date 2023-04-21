@@ -2,14 +2,12 @@
 title: Segment with eScriptorium
 summary: About segmentation features in eScriptorium.
 authors:
-    - Alix Chagué
+    - Alix Chagué, Floriane Chiffoleau
 date: 2023-04-07
 ---
 
-# Walkthrough : segment with eScriptorium
+# Segment with eScriptorium
 
-!!! warning
-    The section needs to be completed.
 
 ## Overview of the segmentation panel
 
@@ -45,7 +43,6 @@ All the operations that can be carried out in this panel are detailed in a help 
 - so make sure to draw all the lines before calculating the masks.
 - You can also have the option to calculate the masks en masse in the Images tab -> segment -> choose 'Only masks'.
 
-
 - ++left-button++ on a line to select it, then you can drag its closest control point.
 - **Double click** on the line will create a new control point at the mouse location.
 - You can reverse the order of the line's points by selecting a line (or multiple) and using reverse (++i++).
@@ -64,7 +61,7 @@ You can go through your changes history back and forth with ++ctrl+z++ (undo) an
 - ++ctrl++ and drag allows to move all the selected control points at once (or the selected lines if no control points are selected).
 
 - The red trash button deletes all selected lines/regions,
-- The yellow trash button only deletes selected control points. 
+- The yellow trash button only deletes selected control points.
 
 <!--## Editing lines
 
