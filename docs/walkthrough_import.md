@@ -6,7 +6,7 @@ authors:
 date: 2023-02-13
 ---
 
-# Walkthrough : import to eScriptorium
+# Walkthrough: import to eScriptorium
 
 eScriptorium allows users to import data from various types of external resources.
 
@@ -44,7 +44,7 @@ Go to `{base_url}/document/{document-id}/images/` to access the main dashboard t
 ??? Note "What is IIIF"
     IIIF is an international framework to share images guaranteeing interoperability. For more information, check [iiif.io](https://iiif.io/)
 
-!!! Tip 
+!!! Tip  
     Example URL to try the IIIF import feature: [https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json](https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json)
 
 ![image: Demonstration of importing images from a IIIF server](img/import/import_iiif.gif "Importing images from a IIIF server")
@@ -55,7 +55,7 @@ Segmentation and Transcription models trained with Kraken can be imported from t
 
 Click "Upload a model" to open a page where you can:
 
-1. open the file browser to select the desired .mlmodel file.
+1. open the file browser to select the desired `.mlmodel` file.
 2. (opt) give a name to the model.
 
 Click "Upload". The model now appears in the models list.
@@ -79,10 +79,10 @@ A pop-up allows you to set several actions before clicking "Start importing":
 ![image: Demonstration of importing a transcription from a series of XML files](img/import/import_xml.gif "Importing segmentation and transcription from XML files")
 
 !!! Warning "Known bug"
-    If you delete a transcription version <!-- todo: add link to transcription versions --> named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
+    If you delete a [transcription version](walkthrough_transcribe.md#transcription-versions) named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
 
 !!! Tip  
-    When importing XML files generated with other tools such as Transkribus, it can be usefull to run a segmentation task targetting only the line masks <!-- todo: add link to mask recalculation --> or to preprocess the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
+    When importing XML files generated with other tools such as Transkribus, it can be useful to run a segmentation task targeting only the [line masks](walkthrough_segment.md) or to pre-process the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
 
 
 [^lss]: Layout Segmentation Simplifier.
