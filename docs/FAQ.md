@@ -6,9 +6,7 @@ authors:
 date: 2023-02-22
 ---
 
-# Frequently asked questions about eScriptorium
-
-???+ Tip "Missing answers!"
+!!! Tip
     Feeling like we missed an important question? See how to [contribute](contribute.md) to this tutorial and submit your idea!
 
 [TOC]
