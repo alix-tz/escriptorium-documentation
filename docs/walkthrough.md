@@ -10,7 +10,7 @@ date: 2023-02-21
 
 The documentation of the features available in eScriptorium is broken down into several sections which intend to form logical ensembles. If this is your first time on this documentation and if you have never used eScriptorium before, you should probably start with reading the "[Quick Start](quick-start.md)" page.
 
-If you are looking for the presentation of a specific feature, you can use the [search engine](search.html?q=) of this website.
+If you are looking for the presentation of a specific feature, you can use the [search engine](search.html?q=) <!-- todo: fix with correct url --> of this website.
 
 Below is a description of the content of each page of the walkthrough section:
 
