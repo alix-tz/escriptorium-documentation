@@ -3,14 +3,16 @@ title: eScriptorium's API
 summary: About the API of eScriptorium.
 authors:
     - Alix Chagué
-date: 2023-01-31
+date: 2023-04-21
 ---
 
-# Walkthrough : eScriptorium's API
+# eScriptorium's API
 
-eScriptorium has an RESTful API endpoint accessible at `{base_url}/api/`. 
+!!! Note
+    An API (for Application Programming Interface) is an interface that allows a program to interact with the application without using human actions on the graphic interface. 
+
+eScriptorium has an RESTful API endpoint accessible at `{base_url}/api/`.  
 
 > For example : `escriptorium.example/api`.
 
-!!! warning
-    The section needs to be completed.
+You can use the escriptorium-connector Python library to interact with the application's API. You can find more information about it here: https://pypi.org/project/escriptorium-connector/
