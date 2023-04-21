@@ -6,7 +6,7 @@ authors:
 date: 2023-02-24
 ---
 
-# Walkthrough: collaborate within eScriptorium
+# Collaborate within eScriptorium
 
 eScriptorium allows collaboration between users of the same instance with features such as teams and sharing.
 
@@ -53,7 +53,6 @@ Then you can click on the "Share" button, a green pop-up message will then be di
 !!! Note
     If you enter an incorrect username, the application will still consider that sharing was successful and will then displayed the green pop-up message. One way to make sure the project is actually shared to the user you want is to click again on "Share this project" and check that they appear in the list of Users, with the box checked.
 
-
 ### Share a document
 
 Go to a document you own and that you want to share, and then click on the "Description" tab. You can then click on the "Share this document" button, and the same pop-up box used for sharing a project will open.
@@ -77,7 +76,6 @@ Click on the "Share model" button. It will open a new URL, `{base_url}/models/{y
 Choose a user or a team from either one of the two dropdown menus, and click on the "Add right" button.
 
 All users or teams you shared the model with are also listed here. Users will have the `User` type, and teams the `Group` type. You also have the name of the user or the team, and the full name or identifier.
-
 
 !!! Note
     You can only share a model that you own.
