@@ -6,10 +6,7 @@ authors:
 date: 2023-04-19
 ---
 
-# Walkthrough: search in eScriptorium
-
-!!! warning
-    The section needs to be completed.
+# Search in eScriptorium
 
 ## Activate search
 
