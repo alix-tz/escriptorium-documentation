@@ -25,9 +25,11 @@ The [**FAQ**](FAQ.md) section covers frequent questions around the application a
 
 ## Walkthrough
 
-Since covering every features in an application like eScriptorium produces a long documentation, it is broken down into several pages under the "Walkthrough" section. For example, [**Import data**](import.md) covers feature related to importing images, transcriptions or models in the application. The **Predict** section covers features related to using models to predict the lay out (segmentation) or the transcription of a document.
+Covering every features in an application like eScriptorium produces a long documentation, so we have broken it down into several pages in the "Walkthrough" section. 
 
-For a more details index of the walkthrough section, see [**Walkthrough**](walkthrough.md)"
+For example, [**Import data**](import.md) covers feature related to importing images, transcriptions or models in the application. The [**Automatic prediction**](predict.md) section covers features related to using models to predict the lay out (segmentation) or the transcription of a document.
+
+For a more details index of the walkthrough section, see [**Walkthrough**](walkthrough.md).
 
 ## Contribute
 
