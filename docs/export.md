@@ -1,12 +1,12 @@
 ---
-title: Exporting models and annotations from eScriptorium
+title: Exporting data from eScriptorium
 summary: Tutorial on export features in eScriptorium.
 authors:
     - Hugo Scheithauer, Alix Chagué, Floriane Chiffoleau
 date: 2023-02-13
 ---
 
-# Export from eScriptorium
+# Export data from eScriptorium
 
 ## Export transcription and segmentation models
 
