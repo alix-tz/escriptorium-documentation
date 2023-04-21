@@ -25,5 +25,5 @@ Before opening a ticket, make sure that it is not already handled by another iss
 
 If you want to help us with already identified problems, you can also browse the [issues tagged with "help wanted"](https://github.com/alix-tz/escriptorium-tutorial/labels/help%20wanted).
 
-!!! note
+!!! Note
     When you contribute, feel free to add your name to the list of authors in the page's metadata!
