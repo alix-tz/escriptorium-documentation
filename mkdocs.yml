@@ -81,14 +81,14 @@ nav:
         - Quick-start: quick-start.md
         - FAQ : FAQ.md
     - Walkthrough: 
-        - "Import images, transcriptions or models": import.md
-        - "Predict a segmentation or a transcription": predict.md
-        - "Segment": segment.md
-        - "Annotate": annotate.md
-        - "Transcribe": transcribe.md
-        - "Virtual Keyboard": virtual_keyboard.md
+        - "Import data": import.md
+        - "Automatic prediction": predict.md
+        - "Manual segmentation": segment.md
+        - "Manual transcription": transcribe.md
+        - "Manual annotation": annotate.md
+        - "Virtual keyboard": virtual_keyboard.md
         - "Train models": train.md
-        - "Export images, transcriptions or models": export.md
+        - "Export data": export.md
         - "Collaborate with other users": collaborate.md
         - "Search": search.md
         - "User-related features": users.md
