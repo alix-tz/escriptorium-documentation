@@ -6,58 +6,57 @@ authors:
 date: 2023-03-09
 ---
 
-# Walkthrough: transcribe with eScriptorium
+# Manual transcription in eScriptorium
 
-Once the [segmentation of the images](segment.md) have been achieved and [some annotations](annotate.md) have been added, if needed, the next step in eScriptorium will be the text recognition of the documents and it is possible to do this step manually or automatically.
+!!! Note
+    For more information on automatic transcription, see the [prediction](predict.md#predict-the-segmentation) section.
 
-## Automatic transcription
+Transcription is a step that comes after [manually](segment.md) or [automatically segmenting](predict.md#predict-the-segmentation) the image. Make sure to review these pages first if necessary.
 
-<!-- todo: move "obtaining a model" to predict.md -->
-### Obtaining a model
+Manual transcription is usually necessary to produce training materials or when reviewing the result of an automatic transcription. The following section introduces the two panels dedicated to creating or modifying the transcription, as well as some related features.
 
-You need a model to transcribe automatically, here are some ways to get one:  
+## Where to find the transcription features
 
-- by [training one with eScriptorium](train.md) or (via the command line) with [kraken](https://kraken.re),
-- by having one shared with you, either within [eScriptorium](collaborate.md#share-a-model), or sent to you as a file through other means of communication,
-- by importing a model from a file. Such files can be retrieved on the [Zenodo community](https://zenodo.org/communities/ocr_models/) dedicated to Kraken models.
+To work on the transcription manually, you need to be on the "Edit" tab of a document dashboard (`{base_url}/document/{document-id}/images/`), which is available:
 
-### Predicting the transcription
+- by clicking on the "Edit" button once you are in your document dashboard (it will send you to the last edited page of the document),
+- or by clicking on the "Edit" button of a page thumbnail, in the Images tab
 
-To learn how to apply the text recognition model and obtain a prediction, see ["Predict a segmentation or a transcription"](predict.md).  
+Two panels allow you to manually modify the transcription:
 
-## Manual transcription
+- the 4th panel, called "Transcription",
+- and the 5th panel, called "Text".
 
-To work on the transcription manually, you need to be on the "Edit" tab of your document, which is available either by clicking on the "Edit" button once you are in your document or in a square when you hover upon the thumbnail of an image once your are in the following URL: `{base_url}/document/{document-id}/images/`.
-
-Out of the five panels available in eScriptorium, two allow you to create and edit the transcription: "Transcription" and "Text".
+![image: Screenshot of the 5 activated panels (Transcription panel framed in red, Text panel framed in blue) ](img/transcribe/transcription_text_panels.png "The 4th and the 5th panels are for manually editing the transcription")
 
 !!! Tip
-    If you need to have special characters in your transcription and they are not available on your own keyboard, you can set and use a [virtual keyboard](virtual_keyboard.md). 
+    If your requires special characters, you can set and use a [virtual keyboard](virtual_keyboard.md).
 
-
-### The "Transcription" panel
+## Editing with the "Transcription" panel
 
 The "Transcription" panel displays the text in a way that imitates the layout of the document.  
 
 ![image: Transcription panel on eScriptorium (access button framed in red)](img/transcribe/transcription_panel.png "Transcription panel on eScriptorium (access button framed in red)")  
 
-To start transcribing, click on the line you want to edit (it will be highlighted in the "Image" panel). An input window is then displayed.  
+To start transcribing, click on the line you want to edit (it will be highlighted in the "Image" panel). An input window will appear where you can type the text corresponding to the line image that is displayed.  
 
-Pressing ++enter++ or ++arrow-down++ will record the text and display the input field for the next segment. You can also use ++arrow-up++ to go back to the previous segment.  
+Pressing ++enter++ or ++arrow-down++ will record the text and move to the next line. You can also use ++arrow-up++ to go back to the previous line.
 
 ![image: Illustration of the transcription edit in the Transcription panel.](img/transcribe/by_hand.gif "Illustration of the transcription edit in the Transcription panel")
 
-You can also modify an existing transcription. The technique is the same as for the manual transcription: you click on the line, modify what is necessary and then press ++enter++. Each modification will be saved in a history listing the user or model responsible for each of them.
+You can also modify an existing transcription. The technique is the same as for the manual transcription: you click on the line, modify what is necessary and then press ++enter++. Each modification will be saved in a [history](#transcription-history) listing the user or model responsible for each of them.
 
 ![image: Correction of the transcription in the Transcription panel.](img/transcribe/correction.gif "Correction of the transcription in the Transcription panel")
 
-### The "Text" panel
+## Editing with the "Text" panel
 
-This panel will display the transcription as a plain succession of text lines, according to the line order from the segmentation. 
+This panel displays the transcription as a plain succession of text lines, according to the line order visible in the [segmentation](segment.md) panel. Hovering over a line in the "Text" panel will highlight it on the image if the "segmentation" panel is toggled.
 
 ![image: Text panel on eScriptorium (access button framed in red)](img/transcribe/text_panel.png "Text panel on eScriptorium (access button framed in red)")
 
-To start transcribing, click on the line you want to edit (it will be highlighted in the "Image" panel). To record a transcription, press ++enter++ or click outside of the panel: a "Saving" icon will appear above the panel, indicating that it is recording your changes.
+Transcribing with the text panel is similar to typing in a simple text editor: pressing ++enter++ will make you switch to the next line and you can use ++arrow-up++ and ++arrow-down++ to navigate between the lines.
+
+Clicking outside of the "Text panel" will automatically save your editions: a "Saving" icon will appear above the panel, indicating that it is recording your changes.
 
 ![image: Illustration of the transcription edit in the Text panel.](img/transcribe/by_hand_2.gif "Illustration of the transcription edit in the Text panel")
 
@@ -89,7 +88,7 @@ A document can be associated simultaneously to several versions of transcription
     Currently, you cannot manually create a new transcription version.
 
 !!! Warning
-    Segmentation, on the contrary, has only one version (see [here](segment.md)).
+    Contrary to transcription, there can only be one version of segmentation in a document (see [here](segment.md)).
 
 To display the list of available transcription versions, click on the drop-down menu in the top-right corner and choose the version you want to see.
 
