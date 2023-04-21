@@ -8,8 +8,30 @@ date: 2023-04-07
 
 # Segment with eScriptorium
 
+<!-- todo:
+
+This section should provide solid definition of the elements involved in segmentation (masks/polygons, baselines/toplines, zones, reading order, reading direction, type for region and lines, line ordering (partially covered in transcribe).)
+
+It should also make sure that the importance of when segmentation is done is understood (risk of erasing data if done after a round of transcription), and mention the fact that segmentation can result from prediction, manual segmentation or import.
+
+-->
+
+Segmentation consists in locating lines of text on the image and identifying the layout. Segmentation includes drawing **baselines** <!-- todo: add a definition -->, **polygones** (or masks) <!-- todo: add a definition --> and **regions** (or zones)<!--todo: add a definition -->. Such 
+
+It is possible to perform [segmentation automatically](predict.md#predict-the-segmentation) or manually. This section covers how to create segmentation information from scratch as well as how to modify an existing segmentation.
+
+Therefore, this section mainly introduces the **segmentation panels** and some related features. The segmentation panel is one of the panels available in the "Edit" page, inside a document's dashboard (`{base_url}/document/{document-id}/images/`), which is available:
+
+- by clicking on the "Edit" button once you are in your document dashboard (it will send you to the last edited page of the document),
+- or by clicking on the "Edit" button of a page thumbnail, in the Images tab.
+
+The segmentation panel is toggled by clicking on the "Segmentation" button at the top of the page (or by pressing ++control+3++).
+
+![image: Screenshot of the 5 activated panels (Segmentation panel framed in red) ](img/segment/segment_panel.png "The 3d panel is used to manually edit the segmentation")
 
 ## Overview of the segmentation panel
+
+<!-- rewrite this section-->
 
 The segment editing panel allows you to perform several essential operations:
 
