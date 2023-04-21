@@ -23,10 +23,10 @@ It is possible to manage teams from the [Profile page](users.md#review-and-edit-
 
 Only the owner of a team is allowed to add or remove members or to transfer ownership. The owner of a team cannot leave it without first transferring the ownership to another user.
 
-??? Note "No deleting, no renaming"
+!!! Note "No deleting, no renaming"
     It is currently impossible to delete a team or to rename a team.
 
-??? Note "One owner per team"
+!!! Note "One owner per team"
     There can only be one owner at a time.
 
 ## Invite a user

@@ -84,5 +84,4 @@ A pop-up allows you to set several actions before clicking "Start importing":
 !!! Tip  
     When importing XML files generated with other tools such as [Transkribus](https://readcoop.eu/transkribus/), it can be useful to run a segmentation task targeting only the [line masks](segment.md) or to pre-process the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
 
-
 [^lss]: Layout Segmentation Simplifier.

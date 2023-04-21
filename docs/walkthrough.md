@@ -3,7 +3,7 @@ title: Walkthrough eScriptorium
 summary: An advanced documentation of eScriptorium features.
 authors:
     - Alix Chagué
-date: 2023-02-21
+date: 2023-04-21
 ---
 
 # Description of the walkthrough section
