@@ -30,7 +30,7 @@ Two panels allow you to manually modify the transcription:
 ![image: Screenshot of the 5 activated panels (Transcription panel framed in red, Text panel framed in blue) ](img/transcribe/transcription_text_panels.png "The 4th and the 5th panels are for manually editing the transcription")
 
 !!! Tip
-    If your requires special characters, you can set and use a [virtual keyboard](virtual_keyboard.md).
+    If your transcription project requires using special characters, you can set and use a [virtual keyboard](virtual_keyboard.md).
 
 ## Editing with the "Transcription" panel
 
@@ -68,7 +68,7 @@ You can also modify an existing transcription. The technique is the same as for 
 
 Line ordering is automatically calculated during [segmentation](segment.md).  
 
-When [controlling lines order](segment.md)<!-- todo: add a more precise link to controlling line ordering -->, you may notice that some lines are mixed up. It is possible de manually change the order inside the "Text" panel, by clicking on the "Toggle sorting mode" button, at the top of the panel.  
+When [controlling lines order](segment.md)<!-- todo: add a more precise link to controlling line ordering -->, you may notice that some lines are mixed up. It is possible to manually change the order inside the "Text" panel, by clicking on the "Toggle sorting mode" button, at the top of the panel.  
 
 In Sorting mode, you can select one or several lines at a time before using drag and drop to place them in the rightful place.
 

@@ -79,7 +79,7 @@ A pop-up allows you to set several actions before clicking "Start importing":
 ![image: Demonstration of importing a transcription from a series of XML files](img/import/import_xml.gif "Importing segmentation and transcription from XML files")
 
 !!! Warning
-    There is a [known bug](https://gitlab.com/scripta/escriptorium/-/issues/752) where If you delete a [transcription version](transcribe.md#transcription-versions) named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
+    There is a [known bug](https://gitlab.com/scripta/escriptorium/-/issues/752) where if you delete a [transcription version](transcribe.md#transcription-versions) named "A" and try to import a transcription from an XML file naming it "A" as well, then the new transcription version will not be created: you need to use another name.
 
 !!! Tip  
     When importing XML files generated with other tools such as [Transkribus](https://readcoop.eu/transkribus/), it can be useful to run a segmentation task targeting only the [line masks](segment.md) or to pre-process the file with a tool such as [LSS](https://github.com/ponteineptique/lss).[^lss]
