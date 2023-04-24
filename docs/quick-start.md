@@ -38,7 +38,7 @@ In eScriptorium, the data is organized inside **projects** which contain **docum
 
 You need to have at least one project in your dashboard to create and/or access a document and use eScriptorium's annotation features. Let's create a new project then!
 
-Go to "My Projects" (`{base_url}/projects/`) by clicking on "My Projects" in the nav bar. It will display a list of projects, or an empty page. Now click on the "Create new Project" button: it will open a new page where you can simply type the name of your future project before clicking on "Create".
+Go to "My Projects" (`{base_url}/projects/`) by clicking on "My Projects" in the nav bar. It will display a list of projects, or an empty page. Now click on the "Create new Project" button: it will open a new page where you can simply type the name of your future project before clicking on "Create". For this tutorial, let's name the project "Sandbox project".
 
 !!! Danger "Before creating a new project"
     Currently, **it is not possible to delete or rename a project**. We strongly advise you to first consider the actual necessity of creating a new project, and secondly to give enough reflection time to choosing the name of your new project. For example, you should avoid names such as "1" or "project" or "blah blah" to make it easier for you identify your projects later, when you will have several projects.  
@@ -48,7 +48,31 @@ Go to "My Projects" (`{base_url}/projects/`) by clicking on "My Projects" in the
 
 ## Creating a new document
 
-As detailed in the [walkthrough](walkthrough.md) section, you can only [import](walkthrough_import.md) images and data inside a document. Let's now create a document!
+As detailed in the [walkthrough](walkthrough.md) section, you can only [import](walkthrough_import.md) images and data inside a document. So, let's now create a document!
+
+To access your project dashboard, go to "My Projects" (`{base_url}/projects/`), then click on the name of your project (it should be "Sandbox project" if you followed the instructions from the previous step). The project dashboard displays a list of documents belonging to the project. It is currently empty since we just created the project. Click on "Create new Document" to open a form and create a new document. 
+
+This form is much more detailed than the one to create a project, but many of these fields are optional:
+
+- **(mandatory) the document's name:** it will be the name of the document as displayed on the project dashboard, you will be able to change it as many time as you want, but you should probably not make it too long. Let's fill it with "Gallery of Fashion (01/1800)".
+- **(optional) the main script:** this is an element of metadata, it will not have any impact of the way the document is handled by the application. In the case of our tutorial, we will import a printed document written in English, so we select "Latin": English is written with the Latin alphabet. You could decide to leave it empty.
+- **(mandatory) read direction:** you mush choose the reading direction of your document (left to right or right to left). For this tutorial, since the document is in English, we opt for "left to right". This parameter is very important because it will change how eScriptorium handles the reading direction of your [segments](walkthrough_segment.md). <!-- todo: add link to section of segment that would explain what happens when not set correctly -->
+- **(mandatory) line offset:** let's set it to "baseline" (if you want more information on this option, see the [segment](walkthrough_segment.md) <!-- todo: add link to section of segment that would normally explain that --> section.)
+- **confidence visualization checkbox:** as explained further in the documentation <!-- todo: add a link when the doc exists --> checking this box will slightly change the way the transcription appear in the application. Let's leave it unchecked.
+- **(optional) metadata:** this is a series of free fields where you can associate a value to a key. For example, this allows you to keep track of all the annotators working on your document. When [importing images via IIIF](walkthrough_import.md#3-from-iiif), this section of the document is automatically filled with the metadata contained in the IIIF manifest. You can add, remove or modify this section as many times as you want. For now, let's just put the ARK identifier from the French national library, where the images were taken from: "BnF ID" = "ark:/12148/bpt6k10750420"[^1].
+
+[^1]: If you add `https://gallica.bnf.fr/` in front of this value, you will be able to view [the whole document on Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k10750420/), the French national library's online library.
+
+Once you click on "Create", at the bottom of the form, a green message will appear, confirming the creation of the new document. You can modify any information in this form and click on the button now displaying "Update" to save the change.
+
+![image: creating a new document in eScriptorium](img/quick_start/create_my_first_document.gif "From the homepage to a project dashboard, where we create a new document (v. v0.13.4b)")
+
+Before moving on to the next step, make sure your form contain the following information:
+
+![image: screenshot of the form filled with the correction values (name, main script, read direction, line offset, metadata)](img/quick_start/document_description.png "Make sure the form is filled as shown in this image")
+
+
+
 
 
 
@@ -67,8 +91,6 @@ Let's import images [from the local file system](walkthrough_import.md#1-from-th
 
 Remaining steps:
 
-- go inside sandbox tutorial and create a document
-- fill the metadata of the document
 - then load images with IIIF (have a backup with locally saved images)
 - then apply segmentation
 - then download a transcription model (EN ?)
