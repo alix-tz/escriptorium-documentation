@@ -1,16 +1,16 @@
 ---
-title: Exporting models and annotations from eScriptorium
+title: Exporting data from eScriptorium
 summary: Tutorial on export features in eScriptorium.
 authors:
     - Hugo Scheithauer, Alix Chagué, Floriane Chiffoleau
 date: 2023-02-13
 ---
 
-# Walkthrough: Export from eScriptorium
+# Export data from eScriptorium
 
 ## Export transcription and segmentation models
 
-eScriptorium allows users to export models that were previously imported, or models they trained. 
+eScriptorium allows users to export models that were previously imported, or models they trained.
 
 To do so, go to the "My Models" page, accessible via the navigation bar, in the upper right section of the interface, or via `{base_url}/models/`.
 
@@ -19,7 +19,7 @@ All models linked to a specific account are listed there with their metadata.
 You can export a model with the download button, located after all its metadata on the right. It will then download a file with the `.mlmodel` extension.
 
 !!! Note
-    A model will either have the `Segment` role if it is a segmentation model, or the `Recognize` role if it is a transcription model.  <!-- todo: add link to train -->
+    A model will either have the `Segment` role if it is a segmentation model, or the `Recognize` role if it is a transcription model. See the [train](train.md) section for more details.
 
 ![Image: Illustration of the download button for downloading transcription and segmenting models.](img/export/escriptorium_export_model.png "Downloading a model with the download button.")
 
@@ -42,8 +42,8 @@ In the first drop-down menu, you can select which transcription version is to be
 
 !!! Note
     - Manual transcriptions are registered as the **manual** version.
-    - Imported transcriptions, when batch imported with a zip file, are registered as the **Zip import** version by default. You can name a transcription version during import. <!-- todo: add link to import -->
-    - Transcriptions predicted with a model are named after the model. <!-- todo: add link to predict transcription -->
+    - Imported transcriptions, when batch imported with a zip file, are registered as the **Zip import** version by default. You can name a transcription version during [import](import.md#import-segmentation-and-transcription).
+    - Transcriptions [predicted with a model](predict.md#predict-the-transcription) are named after the model.
 
 ![image: Illustration of the drop-down menu for selecting the version of the transcription](img/export/escriptorium_export_transcription_version.gif "Choosing a transcription version")
 
@@ -92,15 +92,15 @@ Once all options are set, click on the "Export" button at the bottom of the pop-
 
 As soon as the export is ready, a green message box will appear in the upper-right section of the interface, providing you with a download link. Click on "Download" to download the txt file or the zip file resulting from your export.
 
-When exporting ALTO and PAGE, the exported file is saved as a zip file containg an XML file per document-part, the corresponding images if included, as well as a METS XML file describing the ensemble.
+When exporting ALTO and PAGE, the exported file is saved as a zip file containing an XML file per document-part, the corresponding images if included, as well as a METS XML file describing the ensemble.
 
 When exporting plain text, clicking on "Download" will redirect you to a new URL, displaying the plain text. All the transcriptions are concatenated as a single text file.
 
 ![image: Illustration of the export](img/export/escriptorium_export_download.gif "Stating the export task and downloading the result.")
 
 !!! Tip
-    If you plan on doing several exports, we recommand to close the green message-box after each export (after downloading the file of course).  
+    If you plan on doing several exports, we recommend to close the green message-box after each export (after downloading the file of course).  
 
 ### Find previous exports
 
-Each export is provided a unique permanent link. You can save it, for example to automatically re-download it later without having to set the whole export again but it is also possible to find the links to all your previous exports in the Profile page, under the "Files" tab.<!-- todo: add link to "review and edit your profile" which should logically be : [Profile page, under the "Files" tab](walkthrough_users.md#review-and-edit-your-profile)-->  
+Each export is provided a unique permanent link. You can save it, for example to automatically re-download it later without having to set the whole export again but it is also possible to find the links to all your previous exports in the [Profile page, under the "Files" tab](users.md#review-and-edit-your-profile).

@@ -6,9 +6,28 @@ authors:
 date: 2023-04-18
 ---
 
-# Walkthrough: predict with eScriptorium
+# Predict with eScriptorium
 
-In eScriptorium, it is possible to automatically generated a transcription or a segmentation, i.e. to predict it, generally after you [trained a model](walkthrough_train.md) for it. This prediction, whether it is of the segmentation or the transcription, is managed from the "Images" tab: `{base_url}/document/{document-id}/images/`
+Prediction is a central task when using automatic transcription: it refers to the act of using a model to generate (or predict) a layout recognition or a text recognition using an [image](import.md#import-images) and a segmentation or a transcription model.
+
+Prediction tasks fall within several categories:
+
+- segment: detect the layout of the document and generate coordinates or baseline and regions
+- recognize: for each detected segment, generate a text
+<!-- todo: when it is stable, include alignment -->
+<!-- todo: when it is available/stable, include detection of line order -->
+
+They are all started from the "Images" tab, inside a document's dashboard (generally under a URL such as `{base_url}/document/{document-id}/images/`).
+
+## Obtaining a model
+
+There are multiple ways to obtain a model:
+
+- [training a model](train.md) using the application;
+- have another user of the application [share](collaborate.md#share-a-model) a model with you;
+- [importing a model](import.md#import-models) in the application
+
+On top of importing models after training via the command line and [kraken](https://kraken.re), you can find such models online (in particular in the the [Zenodo community](https://zenodo.org/communities/ocr_models/) dedicated to Kraken models), or have someone send it to you has a `.mlmodel` file.
 
 ## Predict the segmentation
 

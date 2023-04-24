@@ -6,7 +6,7 @@ authors:
 date: 2023-02-24
 ---
 
-# Walkthrough: collaborate within eScriptorium
+# Collaborate within eScriptorium
 
 eScriptorium allows collaboration between users of the same instance with features such as teams and sharing.
 
@@ -14,7 +14,7 @@ eScriptorium allows collaboration between users of the same instance with featur
 
 Users can be grouped inside a team. The main purpose of teams is to facilitate [sharing documents or projects](#share-a-project-or-a-document). Teams are also helpful to identify a group of people working on the same project or coming from the same institution. Users can be part of several teams at a time.  
 
-It is possible to manage teams from the [Profile page](walkthrough_users.md#review-and-edit-your-profile). Team management includes:  
+It is possible to manage teams from the [Profile page](users.md#review-and-edit-your-profile). Team management includes:  
 
 - Creating a team,  
 - Leaving a team,  
@@ -23,17 +23,17 @@ It is possible to manage teams from the [Profile page](walkthrough_users.md#revi
 
 Only the owner of a team is allowed to add or remove members or to transfer ownership. The owner of a team cannot leave it without first transferring the ownership to another user.
 
-??? Note "No deleting, no renaming"
+!!! Note "No deleting, no renaming"
     It is currently impossible to delete a team or to rename a team.
 
-??? Note "One owner per team"
+!!! Note "One owner per team"
     There can only be one owner at a time.
 
 ## Invite a user
 
 In eScriptorium, some users can have the right to invite new users. The invitation rights are not activated for everyone.
 
-You can find more information about inviting new users in the [user-related features walkthrough](walkthrough_users.md#invite) section.
+You can find more information about inviting new users in the [user-related features walkthrough](users.md#invite) section.
 
 ## Share a project or a document
 
@@ -52,7 +52,6 @@ Then you can click on the "Share" button, a green pop-up message will then be di
 
 !!! Note
     If you enter an incorrect username, the application will still consider that sharing was successful and will then displayed the green pop-up message. One way to make sure the project is actually shared to the user you want is to click again on "Share this project" and check that they appear in the list of Users, with the box checked.
-
 
 ### Share a document
 
@@ -77,7 +76,6 @@ Click on the "Share model" button. It will open a new URL, `{base_url}/models/{y
 Choose a user or a team from either one of the two dropdown menus, and click on the "Add right" button.
 
 All users or teams you shared the model with are also listed here. Users will have the `User` type, and teams the `Group` type. You also have the name of the user or the team, and the full name or identifier.
-
 
 !!! Note
     You can only share a model that you own.

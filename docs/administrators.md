@@ -1,12 +1,12 @@
 ---
-title: eScriptorium's administration
-summary: About the back end of eScriptorium.
+title: Administration of eScriptorium
+summary: About the back end of eScriptorium and other administrator-related features.
 authors:
     - Alix Chagué
 date: 2023-01-31
 ---
 
-# Walkthrough :  eScriptorium's administration
+# Administration of eScriptorium
 
 ## Back-end
 
@@ -26,10 +26,10 @@ The page displays information on CPU, GPU and Disk usage from the users of the a
 
 ## Task monitoring and task reports
 
-!!! Warning 
+!!! Warning  
     The documentation on these features is not complete.
 
-See in [User-related features](walkthrough_users.md):
+See in [User-related features](users.md):
 
-- [Task reports](walkthrough_users.md#task-reports)
-- [Task monitoring](walkthrough_users.md#task-monitoring)
+- [Task reports](users.md#task-reports)
+- [Task monitoring](users.md#task-monitoring)

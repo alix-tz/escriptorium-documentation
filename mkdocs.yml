@@ -81,17 +81,17 @@ nav:
         - Quick-start: quick-start.md
         - FAQ : FAQ.md
     - Walkthrough: 
-        - "Import images, transcriptions or models": walkthrough_import.md
-        - "Predict a segmentation or a transcription": walkthrough_predict.md
-        - "Segment": walkthrough_segment.md
-        - "Annotate": walkthrough_annotate.md
-        - "Transcribe": walkthrough_transcribe.md
-        - "Virtual Keyboard": walkthrough_virtual_keyboard.md
-        - "Train models": walkthrough_train.md
-        - "Export images, transcriptions or models": walkthrough_export.md
-        - "Collaborate with other users": walkthrough_collaborate.md
-        - "Search": walkthrough_search.md
-        - "User-related features": walkthrough_users.md
-        - "eScriptorium's API": walkthrough_api.md
-        - "Administrators": walkthrough_administrators.md
+        - "Import data": import.md
+        - "Automatic prediction": predict.md
+        - "Manual segmentation": segment.md
+        - "Manual transcription": transcribe.md
+        - "Manual annotation": annotate.md
+        - "Virtual keyboard": virtual_keyboard.md
+        - "Train models": train.md
+        - "Export data": export.md
+        - "Collaborate with other users": collaborate.md
+        - "Search": search.md
+        - "User-related features": users.md
+        - "eScriptorium's API": api.md
+        - "Administrators": administrators.md
         

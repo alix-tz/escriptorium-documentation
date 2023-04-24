@@ -6,9 +6,7 @@ authors:
 date: 2023-02-22
 ---
 
-# Frequently asked questions about eScriptorium
-
-???+ Tip "Missing answers!"
+!!! Tip
     Feeling like we missed an important question? See how to [contribute](contribute.md) to this tutorial and submit your idea!
 
 [TOC]
@@ -63,7 +61,7 @@ If you use a [local deployment](https://gitlab.com/scripta/escriptorium/-/wikis/
 
 eScriptorium is a decentralized software, which means that there are as many databases as there are instances of eScriptorium. It is impossible to synchronize two instances, unless they share the same database, which is unlikely.
 
-You can, however, update the content of your projects and documents from one instance to another with the help of the [export](walkthrough_export.md) and [import](walkthrough_import.md) features. For this, you need to have an account on both the source and the target instances.
+You can, however, update the content of your projects and documents from one instance to another with the help of the [export](export.md) and [import](import.md) features. For this, you need to have an account on both the source and the target instances.
 
 ## Who can I contact to request a new feature or signal a bug?
 
@@ -95,4 +93,4 @@ Onboarding is a mini tutorial explaining the basics of eScriptorium to new users
 Any user can reset onboarding by going into their profile and clicking "Reset onboarding".
 
 !!! Tip "More info"  
-     For more information on the Profile page, see [user-related features](walkthrough_users.md)
+     For more information on the Profile page, see [user-related features](users.md)
