@@ -21,7 +21,7 @@ eScriptorium is a decentralized application, meaning it can be deployed on many 
 
 ## Logging into the application
 
-As long as you are not logged in the application, many pages will not be accessible to you. To log in the application, go to your application homepage, and click on "Login", then enter your username and your password. You can find more information about this step [here](walkthrough_users.md#login-and-logout).
+As long as you are not logged in the application, many pages will not be accessible to you. To log in the application, go to your application homepage, and click on "Login", then enter your username and your password. You can find more information about this step [here](users.md#login-and-logout).
 
 ![image: scrolling on the homepage of eScriptorium and logging into the application](img/quick_start/browsing_homepage_and_login.gif "Browsing the homepage before logging into the application (v. v0.13.4b)")
 
@@ -48,7 +48,7 @@ Go to "My Projects" (`{base_url}/projects/`) by clicking on "My Projects" in the
 
 ## Creating a new document
 
-As detailed in the [walkthrough](walkthrough.md) section, you can only [import](walkthrough_import.md) images and data inside a document. So, let's now create a document!
+As detailed in the [walkthrough](walkthrough.md) section, you can only [import](import.md) images and data inside a document. So, let's now create a document!
 
 To access your project dashboard, go to "My Projects" (`{base_url}/projects/`), then click on the name of your project (it should be "Sandbox project" if you followed the instructions from the previous step). The project dashboard displays a list of documents belonging to the project. It is currently empty since we just created the project. Click on "Create new Document" to open a form and create a new document. 
 
@@ -56,10 +56,10 @@ This form is much more detailed than the one to create a project, but many of th
 
 - **(mandatory) the document's name:** it will be the name of the document as displayed on the project dashboard, you will be able to change it as many time as you want, but you should probably not make it too long. Let's fill it with "Gallery of Fashion (01/1800)".
 - **(optional) the main script:** this is an element of metadata, it will not have any impact of the way the document is handled by the application. In the case of our tutorial, we will import a printed document written in English, so we select "Latin": English is written with the Latin alphabet. You could decide to leave it empty.
-- **(mandatory) read direction:** you mush choose the reading direction of your document (left to right or right to left). For this tutorial, since the document is in English, we opt for "left to right". This parameter is very important because it will change how eScriptorium handles the reading direction of your [segments](walkthrough_segment.md). <!-- todo: add link to section of segment that would explain what happens when not set correctly -->
-- **(mandatory) line offset:** let's set it to "baseline" (if you want more information on this option, see the [segment](walkthrough_segment.md) <!-- todo: add link to section of segment that would normally explain that --> section.)
+- **(mandatory) read direction:** you mush choose the reading direction of your document (left to right or right to left). For this tutorial, since the document is in English, we opt for "left to right". This parameter is very important because it will change how eScriptorium handles the reading direction of your [segments](segment.md). <!-- todo: add link to section of segment that would explain what happens when not set correctly -->
+- **(mandatory) line offset:** let's set it to "baseline" (if you want more information on this option, see the [segment](segment.md) <!-- todo: add link to section of segment that would normally explain that --> section.)
 - **confidence visualization checkbox:** as explained further in the documentation <!-- todo: add a link when the doc exists --> checking this box will slightly change the way the transcription appear in the application. Let's leave it unchecked.
-- **(optional) metadata:** this is a series of free fields where you can associate a value to a key. For example, this allows you to keep track of all the annotators working on your document. When [importing images via IIIF](walkthrough_import.md#3-from-iiif), this section of the document is automatically filled with the metadata contained in the IIIF manifest. You can add, remove or modify this section as many times as you want. For now, let's just put the ARK identifier from the French national library, where the images were taken from: "BnF ID" = "ark:/12148/bpt6k10750420"[^1].
+- **(optional) metadata:** this is a series of free fields where you can associate a value to a key. For example, this allows you to keep track of all the annotators working on your document. When [importing images via IIIF](import.md#3-from-iiif), this section of the document is automatically filled with the metadata contained in the IIIF manifest. You can add, remove or modify this section as many times as you want. For now, let's just put the ARK identifier from the French national library, where the images were taken from: "BnF ID" = "ark:/12148/bpt6k10750420"[^1].
 
 [^1]: If you add `https://gallica.bnf.fr/` in front of this value, you will be able to view [the whole document on Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k10750420/), the French national library's online library.
 
@@ -81,12 +81,12 @@ Before moving on to the next step, make sure your form contain the following inf
 ## Importing images
 
 <!-- todo: doable only when IIIF import from Gallica will not be so limited that import misses some images... -->
-<!--We will use the [IIIF import](walkthrough_import.md#3-from-iiif) feature, but if it does not work correctly for you, you can also download the corresponding images [here](#) -->
+<!--We will use the [IIIF import](import.md#3-from-iiif) feature, but if it does not work correctly for you, you can also download the corresponding images [here](#) -->
 <!-- todo: add link to a downloadable .zip file containing images -->
-<!-- and follow the documentation on how to [import images from the local file system](walkthrough_import.md#1-from-the-local-file-system). -->
+<!-- and follow the documentation on how to [import images from the local file system](import.md#1-from-the-local-file-system). -->
 <!-- example images are taken from https://gallica.bnf.fr/iiif/ark:/12148/bpt6k10750420/manifest.json -->
 
-Let's import images [from the local file system](walkthrough_import.md#1-from-the-local-file-system). First, you need to download the file located [here](#)<!-- todo: add link a repo with the demo images -->.
+Let's import images [from the local file system](import.md#1-from-the-local-file-system). First, you need to download the file located [here](#)<!-- todo: add link a repo with the demo images -->.
 
 
 Remaining steps:
