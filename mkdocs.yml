@@ -1,8 +1,8 @@
-site_name: eScriptorium Tutorial
+site_name: eScriptorium Documentation
 
 repo_url: https://github.com/alix-tz/escriptorium-tutorial/
 edit_uri: edit/main/docs/
-site_description: A collaborative tutorial to use the eScriptorium application.
+site_description: A collaborative documentation to use the eScriptorium application.
 
 theme:
     name: readthedocs
