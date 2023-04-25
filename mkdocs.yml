@@ -90,6 +90,7 @@ nav:
         - "Train models": train.md
         - "Export data": export.md
         - "Collaborate with other users": collaborate.md
+        - "Manage documents with tags": tags.md
         - "Search": search.md
         - "User-related features": users.md
         - "eScriptorium's API": api.md
