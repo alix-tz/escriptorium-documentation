@@ -82,16 +82,24 @@ Before moving on to the next step, make sure your form contain the following inf
 
 <!-- todo: doable only when IIIF import from Gallica will not be so limited that import misses some images... -->
 <!--We will use the [IIIF import](import.md#3-from-iiif) feature, but if it does not work correctly for you, you can also download the corresponding images [here](#) -->
-<!-- todo: add link to a downloadable .zip file containing images -->
 <!-- and follow the documentation on how to [import images from the local file system](import.md#1-from-the-local-file-system). -->
 <!-- example images are taken from https://gallica.bnf.fr/iiif/ark:/12148/bpt6k10750420/manifest.json -->
 
-Let's import images [from the local file system](import.md#1-from-the-local-file-system). First, you need to download the file located [here](#)<!-- todo: add link a repo with the demo images -->.
+Let's import images [from the local file system](import.md#1-from-the-local-file-system) in order to process them with eScriptorium.
+
+First, you need to download the file located [here](files/demo_images.zip) and unzip the resulting file.
+
+It contains 5 images taken from the French national Library's online library, Gallica, in particular from the document called "[Gallery of Fashion](https://gallica.bnf.fr/ark:/12148/bpt6k10750420)", printed in London in january 1800. The images contain text blocks and illustrations with legends.
+
+![image: screenshot of the file explorer showing the 5 image files in the downloadable archive](img/quick_start/demo_images_content.png "There are five images in the downloadable demo file, all taken from the same Gallica document.")
+
+To import them in the application, got to the corresponding document's dashboard and click on the "Images" tab (`{base_url}/document/{document_id}/images/`). Click in the "dropping" area to open the file explorer and select the images. Do not refresh the page until all the images are loaded: for each of the image, a new thumbnail appear. If you go back to the project's dashboard, you can see that our document now contains 5 images.
+
+![image: animation showing the process to open a document and import images, following the instruction given above. At the end, we show that the document now contains 5 images](img/quick_start/import_images.gif "Once import is over, we should have 5 images in the document we previously created")
 
 
 Remaining steps:
 
-- then load images with IIIF (have a backup with locally saved images)
 - then apply segmentation
 - then download a transcription model (EN ?)
 - then correct the segmentation, maybe remove some lines and/or add regions
