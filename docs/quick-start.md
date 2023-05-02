@@ -50,33 +50,28 @@ Go to "My Projects" (`{base_url}/projects/`) by clicking on "My Projects" in the
 
 As detailed in the [walkthrough](walkthrough.md) section, you can only [import](import.md) images and data inside a document. So, let's now create a document!
 
-To access your project dashboard, go to "My Projects" (`{base_url}/projects/`), then click on the name of your project (it should be "Sandbox project" if you followed the instructions from the previous step). The project dashboard displays a list of documents belonging to the project. It is currently empty since we just created the project. Click on "Create new Document" to open a form and create a new document. 
+To access your project dashboard, go to "My Projects" (`{base_url}/projects/`), then click on the name of your project (it should be "Sandbox project" if you followed the instructions from the previous step). The project dashboard displays a list of documents belonging to the project. It is currently empty since we just created the project. Click on "Create new Document" to open a form and create a new document.
 
 This form is much more detailed than the one to create a project, but many of these fields are optional:
 
-- **(mandatory) the document's name:** it will be the name of the document as displayed on the project dashboard, you will be able to change it as many time as you want, but you should probably not make it too long. Let's fill it with "Gallery of Fashion (01/1800)".
+- **(mandatory) the document's name:** it will be the name of the document as displayed on the project dashboard, you will be able to change it as many times as you want, but you should probably not make it too long. Let's fill it with "Gallery of Fashion (01/1800)".
 - **(optional) the main script:** this is an element of metadata, it will not have any impact of the way the document is handled by the application. In the case of our tutorial, we will import a printed document written in English, so we select "Latin": English is written with the Latin alphabet. You could decide to leave it empty.
 - **(mandatory) read direction:** you mush choose the reading direction of your document (left to right or right to left). For this tutorial, since the document is in English, we opt for "left to right". This parameter is very important because it will change how eScriptorium handles the reading direction of your [segments](segment.md). <!-- todo: add link to section of segment that would explain what happens when not set correctly -->
 - **(mandatory) line offset:** let's set it to "baseline" (if you want more information on this option, see the [segment](segment.md) <!-- todo: add link to section of segment that would normally explain that --> section.)
 - **confidence visualization checkbox:** as explained further in the documentation <!-- todo: add a link when the doc exists --> checking this box will slightly change the way the transcription appear in the application. Let's leave it unchecked.
-- **(optional) metadata:** this is a series of free fields where you can associate a value to a key. For example, this allows you to keep track of all the annotators working on your document. When [importing images via IIIF](import.md#3-from-iiif), this section of the document is automatically filled with the metadata contained in the IIIF manifest. You can add, remove or modify this section as many times as you want. For now, let's just put the ARK identifier from the French national library, where the images were taken from: "BnF ID" = "ark:/12148/bpt6k10750420"[^1].
+- **(optional) metadata:** this is a series of free fields where you can associate a value to a key. For example, this allows you to keep track of all the annotators working on your document. When [importing images via IIIF](import.md#3-from-iiif), this section of the document is automatically filled with the metadata contained in the IIIF manifest. You can edit this section as many times as you want. For now, let's just put the ARK <!-- todo: add explanation on what ARK is --> identifier from the French national library, where the images were taken from: 
+
+    > "BnF ID" = "ark:/12148/bpt6k10750420"[^1].
 
 [^1]: If you add `https://gallica.bnf.fr/` in front of this value, you will be able to view [the whole document on Gallica](https://gallica.bnf.fr/ark:/12148/bpt6k10750420/), the French national library's online library.
 
-Once you click on "Create", at the bottom of the form, a green message will appear, confirming the creation of the new document. You can modify any information in this form and click on the button now displaying "Update" to save the change.
+Once you click on "Create", at the bottom of the form, a green message will appear, confirming the creation of the new document. You can modify any information in this form and click on the button now displaying "Update" to save the changes.
 
 ![image: creating a new document in eScriptorium](img/quick_start/create_my_first_document.gif "From the homepage to a project dashboard, where we create a new document (v. v0.13.4b)")
 
 Before moving on to the next step, make sure your form contain the following information:
 
 ![image: screenshot of the form filled with the correction values (name, main script, read direction, line offset, metadata)](img/quick_start/document_description.png "Make sure the form is filled as shown in this image")
-
-
-
-
-
-
-
 
 ## Importing images
 
@@ -97,15 +92,57 @@ To import them in the application, got to the corresponding document's dashboard
 
 ![image: animation showing the process to open a document and import images, following the instruction given above. At the end, we show that the document now contains 5 images](img/quick_start/import_images.gif "Once import is over, we should have 5 images in the document we previously created")
 
+## Detecting the Layout of the documents
+
+Now that the images are loaded on the application, we need to apply a segmentation model in order to detect the layout of the documents and locate the lines of text. This step is necessary before applying a recognition model to predict the transcription.
+
+Let's go back to the document's dashboard and click on the "Images" tab (`{base_url}/document/{document_id}/images/`). Each thumbnail allows us to interact with one of the document's pages. Select the first page by click on the checkbox at the top of thumbnail (it should become black) and then click on the "Segment" button just above.
+
+As explained [in the documentation](segment.md#overview-of-the-segmentation-panel), it will open a panel where we can enter a configuration for the segmentation and layout detection task.
+
+To familiarize with the segmentation interface, we will start with solely detecting the lines on the image. Select the default segmentation model ("default (blla.mlmodel)"), the "Lines Baselines and Masks" and the "Horizontal l2r" options. Make sure the "Override" box is checked and click on "Segment". While the segmentation task in running, a yellow button appears on the thumbnail: it allows you to stop the process if necessary.
+
+Once the task is over, it is possible to see the result by clicking on the "Edit" button, on the thumbnail.
+
+![image: animation showing the process to start a segmentation task on a document part following the instructions given above. At the end, we show that the document part now displays blues lines marking the location of text lines](img/quick_start/segment_one_page.gif "After the segmentation task is over, blue lines indicate the location of the text lines.")
+
+![image: screenshot of the segmentation panel showing which options are used for this step, as listed in the instructions above](img/quick_start//segment_config_lines.png "Make sure the form is filled as shown in this image")
+
+## Loading and applying a transcription model
+
+Ideally, you should always control the result of the segmentation step before starting a text recognition task. To demonstrate the importance of this control, let's skip it for now and move on to apply a recognition model.
+
+Contrary to the segmentation task, eScriptorium does not systematically provide a default recognition model for the transcription task. Since our document contains printed English, we will use the Manu McFrench model. It is normally designed for French texts, but it is capable of reading printed English as well with relatively good results.
+
+!!! Note
+    You can skip this part if you already have access to the Manu McFrench model in your application. To know whether or not it is the case, go to the models page by clicking on "My Models" in the top nav bar.
+    
+    On Inria's eScriptorium server, for example, several models are "public", which means they are accessible to all users. Manu McFrench is among them.
+
+    ![image: screenshot of the list of models on Inria's server, including 4 public models](img/quick_start/inria_s_public_models.png "Inria's server offers at least 4 public models to all the users")
+
+Click on [this link](https://doi.org/10.5281/zenodo.6657809) and download the "HTR-United-Manu_McFrench.mlmodel" file. Let's now [import the model](import.md#import-models) on the application: click on "My Models" in the navigation menu at the top of the window, then click on "Import a model". It will open a new page (`{base_url}/models/new/`) where you select the model to upload and give it a name ("HTR-United-Manu_McFrench (demo)" in the case of our demo). Click on "Upload" and wait until the model is loaded: it now appears in the list of models.
+
+![image: animation showing the process to upload a model in the application. At the end, we show that the model now appears in the list of available models.](img/quick_start/import_model.gif "Uploading a model is straightforward but you should avoid uploading several times the same model.")
+
+Now that we have a transcription model, let's go back to our document dashboard. Starting a recognition task is similar to starting a segmentation tasks: we select the first image (the image we previously segmented) by checking the box at the top of the thumbnail and click on the "Transcribe" button. A shorter form appear, where we select the recognition model used to transcribe the document. If you successfully uploaded Manu McFrench previously, the model now appears in the list of available models. Select it, and click on "Transcribe". Like before, a yellow button appears on the thumbnail, allowing you to stop the process if necessary.
+
+Once the task is over, it is possible to see the result by clicking on the "Edit" button, on the thumbnail.
+
+![image: animation showing the process to apply a recognition model to a document. At the end, we show that the page now displays a transcription generated automatically.](img/quick_start/transcribe_one_page.gif "Transcribing a document with a model creates a new transcription version named after the model.")
+
+!!! Note
+    When you click on "Edit" after transcribing a document for the first time, you may not see an text at first: it is because you are, by default, viewing the "manual" transcription version. You need to [switch the displayed transcription version](transcribe.md#transcription-versions) to the one generated during the transcription in order to see the generated text.
+
+
+
 
 Remaining steps:
 
-- then apply segmentation
-- then download a transcription model (EN ?)
 - then correct the segmentation, maybe remove some lines and/or add regions
 - verify that the lines are associated with a regions, and verify the reading order
 - then apply a transcription model
 - then manually correct the transcription
 - then export the result with the images
 
-Then point to other useful pages to go further. 
+Then point to other useful pages to go further.
