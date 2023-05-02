@@ -15,7 +15,7 @@ Since you are free to set the labels you want, it is difficult to illustrate all
 - tagging the script or language used in a document when the project combines several languages, it allows you to filter by language or script;
 - tagging the state of a document (for example "to segment", "segmented", "to transcribe", "to review", etc.);
 - tagging the team or people in charge of annotating/reviewing a document, it allows them to easily retrieve the document they have to work on;
-- tagging a bugged document to later resolution;
+- tagging a bugged document for a later resolution;
 - tagging the state of publication of a document composing a dataset;
 - tagging the quality of a document's transcription (ex: "ground truth", "gold", "silver", etc)
 
@@ -49,9 +49,9 @@ A tag's color can be changed in the "Manage Tags" module. This is particularly u
 
 ![image: clicking on 'Manage Tags' will open a module where you can change the label or the color given to a tag](img/tags/change_tag_color_or_text.gif "'Manage Tags' allow you to change the color of a tag or to change its label")
 
-## Assign or a unassign a tag
+## Assign or unassign a tag
 
-To unassign a tag from a document, click on "Assign Tags" in the document's row. Then, use the select menu to uncheck the tags to assign one or several an existing tag or unassign tags. The modification will only affect the current document.
+To unassign a tag from a document, click on "Assign Tags" in the document's row. Then, use the select menu to uncheck the tags to assign one or several existing tag(s) or unassign tags. The modification will only affect the current document.
 
 ![image: click on "Assign Tags" to open the corresponding module, then use the select menu to activate or deactivate existing tags for the current document.](img/tags/change_tag_color_or_text.gif "clicking on 'Assign Tags' will open a module where you can assign or unassign tags to/from the document")
 
