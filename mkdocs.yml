@@ -61,8 +61,8 @@ markdown_extensions:
                 'page-up': '⇞ Page Up',
                 'tab': 'Tab ⇥',
                 'enter': 'Enter ⏎',
-                'left-button': '→🖰 Left Click',
-                'right-button': '🖰← Right Click'
+                'left-button': '→🖯 Left Click',
+                'right-button': '🖯← Right Click'
             }
 
 extra_css:
