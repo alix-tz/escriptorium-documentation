@@ -1,6 +1,6 @@
 site_name: eScriptorium Documentation
 
-repo_url: https://github.com/alix-tz/escriptorium-tutorial/
+repo_url: https://github.com/alix-tz/escriptorium-documentation/
 edit_uri: edit/main/docs/
 site_description: A collaborative documentation to use the eScriptorium application.
 
@@ -9,7 +9,7 @@ theme:
     locale: en
     prev_next_buttons_location: both
     navigation_depth: 3
-    logo: img/logo_esriptorium_tutorial.png
+    logo: img/logo_escriptorium_documentation.png
 
 markdown_extensions:
     - abbr
