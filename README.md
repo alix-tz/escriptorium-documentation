@@ -1,8 +1,8 @@
-<img src="./docs/img/logo_esriptorium_tutorial.png" width=500 align="center" alt="eScriptorium Tutorial">
+<img src="./docs/img/logo_escriptorium_documentation.png" width=500 align="center" alt="eScriptorium Tutorial">
 
-This GitHub repository stores the source code for the [eScriptorium tutorial](https://escriptorium-tutorial.readthedocs.io). It is a collective initiative, open to anyone and designed to be modified by anyone.
+This GitHub repository stores the source code for the [eScriptorium documentation](https://escriptorium.readthedocs.io). It is a collective initiative, open to anyone and designed to be modified by anyone.
 
-The eScriptorium Tutorial website is powered by MkDocs and hosted on readthedocs. All the source files of the pages are written in Markdown, which is a light markup language facilitating future editions.
+The eScriptorium Documentation website is powered by MkDocs and hosted on readthedocs. All the source files of the pages are written in Markdown, which is a light markup language facilitating future editions.
 
 For more information on Markdown's syntax, see the [cheat-sheet](https://github.com/alix-tz/escriptorium-tutorial/wiki/Markdown-in-Mkdocs).
 
@@ -23,7 +23,7 @@ The following steps will allow you to locally test the success of the website's 
 1. Clone this repository and move to the corresponding directory
 
 ``` sh
-git clone git@github.com:alix-tz/escriptorium-tutorial.git
+git clone git@github.com:alix-tz/escriptorium-documentation.git
 cd escriptorium-tutorial/
 ```
 
