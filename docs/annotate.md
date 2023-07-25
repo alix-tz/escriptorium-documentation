@@ -16,7 +16,7 @@ Annotation can be performed at two levels:
 - at image level
 - at text level
 
-The different catagories that you want to use for annotation are activated and managed from a document's "Ontology" page (also accessible at `{base_url}/document/{doc_id}/ontology`). See in particular in the 3 last items of the page:  
+The different categories that you want to use for annotation are activated and managed from a document's "Ontology" page (also accessible at `{base_url}/document/{doc_id}/ontology`). See in particular in the 3 last items of the page:  
 
 - Annotation components
 - Image Annotations
@@ -53,7 +53,14 @@ Once a new category is created, the value of "Abbreviation" will be used to crea
 
 To draw an annotation on an image, go to the "Edit" page and activate the "Source Image" panel (++control+1++). Click on the button corresponding to the desired category, then draw the shape on the image. If commenting is allowed, a dialog box will appear with a text field.  
 
-![image: illustration of the process to draw an image annotation over a fingerprint](img/annotate/use_image_annotation.gif "Draw an annotation over a fingerprint, in the Source Image panel, after activating the 'FP' button")
+As mentioned above, there is two markers type (rectangle or polygon) and the method to draw them is different:
+
+- To draw a rectangle, put the mouse on the top left corner of the part to annotate. Click on the mouse while sliding to the bottom right corner and then stop clicking. The rectangle will be created.
+- To draw a polygon, click on the mouse from one point around the part to annotate to another not far from it. Then, release the mouse and go to another point, click on the mouse and continue until the polygon is drawn. Once at the last point of the polygon, double click on the mouse to release. The polygon will be created.
+
+![image: illustration of the process to draw an image annotation (rectangle) over a fingerprint](img/annotate/use_image_annotation.gif "Draw an annotation (rectangle) over a fingerprint, in the Source Image panel, after activating the 'FP' button")
+
+![image: illustration of the process to draw an image annotation (polygon) over a fingerprint](img/annotate/use_image_annotation_polygon.gif "Draw an annotation (polygon) over a fingerprint, in the Source Image panel, after activating the 'FP' button")
 
 ### Remove an annotation from the image
 
