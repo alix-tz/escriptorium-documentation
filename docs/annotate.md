@@ -2,8 +2,8 @@
 title: Annotation in eScriptorium
 summary: About the annotation features in eScriptorium.
 authors:
-    - Alix Chagué
-date: 2023-04-21
+    - Alix Chagué, Floriane Chiffoleau
+date: 2023-09-01
 ---
 
 # Annotation in eScriptorium
@@ -40,7 +40,7 @@ To create an new category for image annotation, go to the "Ontology" tab, then i
 - Type
 - Select the marker type (rectangle or polygon) depending on the type of shape you want to draw
 - Leave the default color or change it
-- Check "Allow Comments" if you want to be able users to comment on the annotations
+- Check "Allow Comments" if you want to able users to comment on the annotations
 
 ![image: illustration of the process to create a new category for image annotation](img/annotate/create_image_annotation.gif "Create a new category named 'Fingerprints' for image annotation, in the Ontology panel")
 
@@ -53,9 +53,9 @@ Once a new category is created, the value of "Abbreviation" will be used to crea
 
 To draw an annotation on an image, go to the "Edit" page and activate the "Source Image" panel (++control+1++). Click on the button corresponding to the desired category, then draw the shape on the image. If commenting is allowed, a dialog box will appear with a text field.  
 
-As mentioned above, there is two markers type (rectangle or polygon) and the method to draw them is different:
+As mentioned above, there is two types of markers (rectangle or polygon) and the method to draw them is different:
 
-- To draw a rectangle, put the mouse on the top left corner of the part to annotate. Click on the mouse while sliding to the bottom right corner and then stop clicking. The rectangle will be created.
+- To draw a rectangle, put the mouse on the top left corner of the part to annotate. Click on the mouse while sliding to the bottom right corner and then stop clicking. The rectangle will be created when you release the click button.
 - To draw a polygon, click on the mouse from one point around the part to annotate to another not far from it. Then, release the mouse and go to another point, click on the mouse and continue until the polygon is drawn. Once at the last point of the polygon, double click on the mouse to release. The polygon will be created.
 
 ![image: illustration of the process to draw an image annotation (rectangle) over a fingerprint](img/annotate/use_image_annotation.gif "Draw an annotation (rectangle) over a fingerprint, in the Source Image panel, after activating the 'FP' button")
