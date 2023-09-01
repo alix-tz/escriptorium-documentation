@@ -25,6 +25,8 @@ There are multiples wats to access the edition page, for example:
 - from the document dashboard, by clicking on `Edit last updated Element`,
 - from a document's Images page, by clicking on the "Edit" button on one of the thumbnails.
 
+![image: a screenshot of the Edit page with all the panels activated](img/terminology/panels.png "From left to right: Metadata, Source Image, Segmentation, Transcription, Text")
+
 There are 5 panels:
 
 1. **Metadata** (++control+1++), used for:
@@ -47,9 +49,11 @@ There are 5 panels:
     - adding [textual annotations](annotate.md#text-annotations)
     - changing the [order of the lines](segment.md#reordering)
 
-You can toggle as many as you want at once. It is not advised to have all of them active at the same, though, because it limits the readability of the documents and you may unintentionally call some shortcuts.
 
-![image: a screenshot of the Edit page with all the panels activated](img/terminology/panels.png "From left to right: Metadata, Source Image, Segmentation, Transcription, Text")
+!!! Tip
+    You can toggle as many panel as you want at once. It is not advised to have all of them active at the same time, though, because it limits the readability of the documents and you may unintentionally call some shortcuts.
+
+
 
 <!--
 ## Do you speak training?
