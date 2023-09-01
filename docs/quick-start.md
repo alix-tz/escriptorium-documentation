@@ -3,11 +3,8 @@ title: Quickly starting with eScriptorium
 summary: About where to start with eScriptorium.
 authors:
     - Alix Chagué
-date: 2023-04-24
+date: 2023-09-01
 ---
-
-!!! warning
-    The section needs to be completed.
 
 In this section, we offer a short tutorial whose goal is to get you acquainted with the interface of eScriptorium and some basic actions that can be performed on the application.
 
@@ -38,7 +35,7 @@ In eScriptorium, the data is organized inside **projects** which contain **docum
 
 - A *document-part* is simply an image (a digitization) of a document: it can be the photography of a double page, a single page, or even cropped portion of such images.  
 - A *document* is a collection of such images, similar to how you would organize a directory containing images on your file system.
-- *Projects* can be understood as one more level to gather documents (themselves groups of images), but they can be envisioned as workspaces for a group of users working for the same project. For example, tags <!--todo: add link to page explaining tag when available --> are managed at project level, available for all the documents inside the given project.<!-- todo: send to voc section once there is one -->
+- *Projects* can be understood as one more level to gather documents (themselves groups of images), but they can be envisioned as workspaces for a group of users working for the same project. For example, [tags](tags.md) are managed at project level, available for all the documents inside the given project.
 
 You need to have at least one project in your dashboard to create and/or access a document and use eScriptorium's annotation features. Let's create a new project then!
 
@@ -225,7 +222,7 @@ Now, let's click on the first line, in the ["Transcription" panel](transcribe.md
 
 At this point, we have covered a lot of common features for eScriptorium and got you familiar with the interface. You can keep practicing with the 4 remaining document parts, or you can load some of you own documents to start practicing on more familiar pages. Once you are satisfied with you transcription, you can [export](export.md) the corresponding transcription to different formats. You can also try [sharing](collaborate.md#share-a-project-or-a-document) your project or your documents with other users. Once you have annotated enough images, you can even try [training](train.md#training-models-with-escriptorium) a transcription or a segmentation model.
 
-There many advanced features that are worth reading about: the [virtual keyboard](virtual_keyboard.md), the [API](api.md), the [tags](#)<!--todo: add the link --> to name a few! <!-- we could add: the typing system and the ontology tab, the annotation too!, the repot tabs -->
+There many advanced features that are worth reading about: the [tags](tags.md), the [virtual keyboard](virtual_keyboard.md), the [API](api.md), the [annotation tool](annotate.md), ... .<!--todo: add the link --> to name a few! <!-- we could add: the typing system and the ontology tab, the [annotation too!](annotate.md), the report tabs -->
 
 !!! Note
     IF you liked this tutorial and found it useful, or if on the contrary you found it could be improved, please, send us a message or [contribute](contribute.md) to this documentation!
