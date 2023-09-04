@@ -87,3 +87,12 @@ With the transcription pop-up active:
 If text annotation is available:
 
 - ++escape++: cancel the annotation in progress
+
+If sorting mode is activated:
+
+- ++shift+left-button++: select an interval of lines
+- ++control+left-button++ add/remove line from the selection
+
+## Virtual Keyboard
+
+It is possible to add key binding in the configuration of the [virtual keyboard](virtual_keyboard.md#customize-a-virtual-keyboard), which are a sort of shortcut. You can use the creation/edition interface for virtual keyboard to manually set the key bindings.
