@@ -2,11 +2,20 @@
 title: Segment with eScriptorium
 summary: About segmentation features in eScriptorium.
 authors:
-    - Alix Chagué, Floriane Chiffoleau
+    - Alix Chagué, Floriane Chiffoleau, Hugo Scheithauer
 date: 2023-04-07
 ---
 
 # Segment with eScriptorium
+
+This section mainly introduces the **segmentation panels** and some related features. The segmentation panel is one of the panels available in the "Edit" page, inside a the dashboard of a document (`{base_url}/document/{document-id}/images/`), which is available:
+
+- by clicking on the "Edit" button once you are in your document dashboard (it will send you to the last edited page of the document),
+- or by clicking on the "Edit" button of a page thumbnail, in the Images tab.
+
+The segmentation panel is toggled by clicking on the "Segmentation" button at the top of the page (or by pressing ++control+3++).
+
+![image: Screenshot of the 5 activated panels (Segmentation panel framed in red) ](img/segment/segment_panel.png "The 3d panel is used to manually edit the segmentation")
 
 <!-- todo:
 
@@ -16,24 +25,60 @@ It should also make sure that the importance of when segmentation is done is und
 
 -->
 
+Segmentation, also called zoning, layout analysis, document analysis, or even optical layout analysis, refers to two processes:
+
+- Extracting and labeling the structure of a document, such as text, images, tables, columns, headings, footers, etc. The goal is to segment the document into meaningful regions, or bounding boxes, that can be further processes or analyzed. This step is optional for transcription, but can be important for later post-processing in an editorial or archiving context.
+
+- Precisely detecting lines of text in an image, which is mandatory in eScriptorium for transcribing said lines later.
+
+## Text regions segmentation
+
+In the following example, we segmented and labeled the zones that bear a semantic role for our comprehension of the text. We are dealing with a poem, so we drew with eScriptorium bounding boxes around the page number (in blue), the title (in purple), and the stanzas (in green).
+
+However, you could have decided to annotate the layout more precisely, for example, all the verses inside the stanzas. It is up to you to decide how deep you want to go into the text regions segmentation, depending on your needs.
+
+![image: Illustration of several segmented text regions ](img/segment/text_regions_segmentation.png "Several segmented text regions are visualized with eScriptorium interface")
+
+### Segmenting text regions with eScriptorium 
+
+You can draw manually draw bounding boxes inside the Segmentation panel. To do so, switch from baseline editing mode to region mode, by clicking the mosaic button, or by pressing ++r++. 
+
+You can now draw bounding boxes around the text regions you want to annotate by clicking and dragging a zone (green by default).
+
+![image: Drawing bounding boxes in the Segmenting panel of eScriptorium ](img/segment/bounding_boxes_drawing.gif "Several bounding boxes are drawn around meaningful text regions.")
+
+### Labeling segmented text regions with an ontology
+
+eScriptorium allows to label segmented text regions with an ontology that you can customize. 
+
+The ontology panel is one of the tabs you can access once you are working in a document. It is accessible with (`{base_url}/document/{document-id}/ontology/`).
+
+![image: Ontology tab ](img/segment/ontology_tab.png "Illustration of the ontology tab.")
+
+eScriptorium uses four region types by default:
+- Commentary
+- Illustration
+- Main
+- Title
+
+You can use them, or create your own. To deactivate default text regions, you can deactivate them by unticking the ones you want to discard, and then by clicking on the update button.
+
+![image: Deactivating default text regions ](img/segment/default_text_regions.gif "")
+
+You can then create your own by writing the text region name you want into the dedicated field and then the '+' button. Don't forget to click on the update button to save your modifications!
+
+![image: Creating a custom ontology ](img/segment/create_text_regions_ontology.gif "")
+
 Segmentation consists in locating lines of text on the image and identifying the layout. Segmentation includes drawing **baselines** <!-- todo: add a definition -->, **polygones** (or masks) <!-- todo: add a definition --> and **regions** (or zones)<!--todo: add a definition -->. Such 
 
 It is possible to perform [segmentation automatically](predict.md#predict-the-segmentation) or manually. This section covers how to create segmentation information from scratch as well as how to modify an existing segmentation.
 
-Therefore, this section mainly introduces the **segmentation panels** and some related features. The segmentation panel is one of the panels available in the "Edit" page, inside a document's dashboard (`{base_url}/document/{document-id}/images/`), which is available:
 
-- by clicking on the "Edit" button once you are in your document dashboard (it will send you to the last edited page of the document),
-- or by clicking on the "Edit" button of a page thumbnail, in the Images tab.
-
-The segmentation panel is toggled by clicking on the "Segmentation" button at the top of the page (or by pressing ++control+3++).
-
-![image: Screenshot of the 5 activated panels (Segmentation panel framed in red) ](img/segment/segment_panel.png "The 3d panel is used to manually edit the segmentation")
-
-## Overview of the segmentation panel
+## eScriptorium segmentation panel features
 
 <!-- rewrite this section-->
 
-The segment editing panel allows you to perform several essential operations:
+The Segmentation panel has several features:
 
 - Drawing baselines corresponding to the locations of the text on the image in two ways:
     - Point by point plot;
