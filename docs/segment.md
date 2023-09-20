@@ -47,6 +47,12 @@ You can now draw bounding boxes around the text regions you want to annotate by 
 
 ![image: Drawing bounding boxes in the Segmenting panel of eScriptorium ](img/segment/bounding_boxes_drawing.gif "Several bounding boxes are drawn around meaningful text regions.")
 
+You can modify a text region by clicking on it, and by dragging it to the dimensions you want.
+
+![image: Resizing a text region ](img/segment/resizing_text_region.gif "")
+
+You can delete a text region by clicking on it, still in region mode, and by clicking on the delete button, or by pressing ++delete++.
+
 ### Labeling segmented text regions with an ontology
 
 eScriptorium allows to label segmented text regions with an ontology that you can customize. 
@@ -65,9 +71,13 @@ You can use them, or create your own. To deactivate default text regions, you ca
 
 ![image: Deactivating default text regions ](img/segment/default_text_regions.gif "")
 
-You can then create your own by writing the text region name you want into the dedicated field and then the '+' button. Don't forget to click on the update button to save your modifications!
+You can then create your own by writing the text region name you want into the dedicated field and then the + button. Don't forget to click on the update button to save your modifications!
 
 ![image: Creating a custom ontology ](img/segment/create_text_regions_ontology.gif "")
+
+Then, once you are back to the segmentation panel, you can add a label to the bounding boxes you drew earlier by clicking on them, still in region mode, and then by clicking on the 'Set the type on all selected lines/regions' button, or by pressing ++t++. A dropdown menu should appear with the custom labels we created.
+
+![image: Labeling a text region ](img/segment/labeling_text_regions.gif "")
 
 Segmentation consists in locating lines of text on the image and identifying the layout. Segmentation includes drawing **baselines** <!-- todo: add a definition -->, **polygones** (or masks) <!-- todo: add a definition --> and **regions** (or zones)<!--todo: add a definition -->. Such 
 
