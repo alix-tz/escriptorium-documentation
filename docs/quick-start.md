@@ -90,17 +90,17 @@ Let's import images [from the local file system](import.md#1-from-the-local-file
 
 First, you need to download the file located [here](files/demo_images.zip) and unzip the resulting file.
 
-It contains 5 images taken from the French national Library's online library, [Gallica](https://gallica.bnf.fr), in particular from the document called "[Gallery of Fashion](https://gallica.bnf.fr/ark:/12148/bpt6k10750420)", printed in London in january 1800. The images contain text blocks and illustrations with legends.
+It contains 5 images taken from the French national Library's online library, [Gallica](https://gallica.bnf.fr), in particular from the document called "[Gallery of Fashion](https://gallica.bnf.fr/ark:/12148/bpt6k10750420)", printed in London in January 1800. The images contain text blocks and illustrations with legends.
 
 ![image: screenshot of the file explorer showing the 5 image files in the downloadable archive](img/quick_start/demo_images_content.png "There are five images in the downloadable demo file, all taken from the same Gallica document.")
 
 To import them in the application, got to the corresponding document's dashboard and click on the "Images" tab (`{base_url}/document/{document_id}/images/`). Click in the "dropping" area to open the file explorer and select the images. Do not refresh the page until all the images are loaded! 
 
-For each of the image, a new thumbnail appears. If you go back to the project's dashboard, you can see that our document now contains 5 images.
+For each of the image, a new thumbnail appears. If you go back to the project's dashboard, you can see that our document now contains five images.
 
 ![image: animation showing the process to open a document and import images, following the instruction given above. At the end, we show that the document now contains 5 images](img/quick_start/import_images.gif "Once import is over, we should have 5 images in the document we previously created")
 
-## Detecting the Layout of the documents
+## Detecting the layout of the documents
 
 Now that the images are loaded on the application, we need to apply a segmentation model in order to detect the layout of the documents and locate the lines of text. This step is necessary before applying a recognition model to predict the transcription.
 
@@ -148,14 +148,14 @@ Once the task is over, it is possible to see the result by clicking on the "Edit
 ![image: animation showing the process to apply a recognition model to a document. At the end, we show that the page now displays a transcription generated automatically.](img/quick_start/transcribe_one_page.gif "Transcribing a document with a model creates a new transcription version named after the model.")
 
 !!! Note "Where is the transcription?"
-    When you click on "Edit" after transcribing a document for the first time, you may not see an text at first: it is because you are, by default, viewing the "manual" transcription version. You need to [switch the displayed transcription version](transcribe.md#transcription-versions) to the one generated during the transcription in order to see the generated text.
+    When you click on "Edit" after transcribing a document for the first time, you may not see a text at first: it is because you are, by default, viewing the "manual" transcription version. You need to [switch the displayed transcription version](transcribe.md#transcription-versions) to the one generated during the transcription in order to see the generated text.
 
 
 ## Manually correct the segmentation and the transcription
 
 Let's look at the result of our automatic segmentation and transcription. Click on the "Edit" button and make sure to activate the "Segmentation" (++ctrl+3++) and "Transcription" (++ctrl+4++) panels. You can deactivate the other panels. <!-- todo: add a link to an overview description of the panels -->
 
-In the image below, we see that one line was incorrectly segmented (therefore its transcription is incomplete) and a total of 8 segments contains incorrect transcriptions. We highlighted the errors in red.
+In the image below, we see that one line was incorrectly segmented (therefore its transcription is incomplete) and a total of eight segments contains incorrect transcriptions. We highlighted the errors in red.
 
 ![image: annotated screenshot showing the predictions errors (segmentation and transcription).](img/quick_start/errors_in_seg_and_trans.png "The red squares show the incorrect segments and transcriptions.")
 
@@ -183,9 +183,9 @@ Let's do one more modification in the segmentation panel: we can add a region to
 
 Regions are essential to organize the lines on an image : they allow you to group lines together<!-- todo: add link to regions description in the segmentation page-->. Switch to "region mode" by clicking on the corresponding button at the top of the segmentation panel (or press ++r++). Now, if you click anywhere on the segmentation panel, you will start drawing a region (a rectangle). Click anywhere else on the image to finish drawing the region.
 
-As for lines, you can activate a region by clicking on it. You can then change its shape by moving the points (click and hold next to a point then move the cursor), or even double click inside the active region, next to a border to create a new point. Note that there more things to do with regions, they are described in the [segmentation page](segment.md).
+Similarly to lines, you can activate a region by clicking on it. You can then change its shape by moving the points (click and hold next to a point then move the cursor), or even double click inside the active region, next to a border to create a new point. Note that there are more things to do with regions, they are described in the [segmentation page](segment.md).
 
-Once you are satisfied with the shape of you region, click outside the segmentation panel to deactivate the region. You can also directly switch back to line mode by clicking on the corresponding button at the top of the segmentation panel.
+Once you are satisfied with the shape of your region, click outside the segmentation panel to deactivate the region. You can also directly switch back to line mode by clicking on the corresponding button at the top of the segmentation panel.
 
 Back in line mode, you can select several lines at a time : hold ++shift++ down and click and hold anywhere on the segmentation panel to start drawing a selection region. Then use the button on the left side of the image to link the selected line to the region (or press ++y++). You can also unlink them (++u++).
 
@@ -220,9 +220,9 @@ Now, let's click on the first line, in the ["Transcription" panel](transcribe.md
 
 ## What next?
 
-At this point, we have covered a lot of common features for eScriptorium and got you familiar with the interface. You can keep practicing with the 4 remaining document parts, or you can load some of you own documents to start practicing on more familiar pages. Once you are satisfied with you transcription, you can [export](export.md) the corresponding transcription to different formats. You can also try [sharing](collaborate.md#share-a-project-or-a-document) your project or your documents with other users. Once you have annotated enough images, you can even try [training](train.md#training-models-with-escriptorium) a transcription or a segmentation model.
+At this point, we have covered a lot of common features for eScriptorium and got you familiar with the interface. You can keep practicing with the four remaining document parts, or you can load some of you own documents to start practicing on more familiar pages. Once you are satisfied with you transcription, you can [export](export.md) the corresponding transcription to different formats. You can also try [sharing](collaborate.md#share-a-project-or-a-document) your project or your documents with other users. Once you have annotated enough images, you can even try [training](train.md#training-models-with-escriptorium) a transcription or a segmentation model.
 
-There many advanced features that are worth reading about: the [tags](tags.md), the [virtual keyboard](virtual_keyboard.md), the [API](api.md), the [annotation tool](annotate.md), ... .<!--todo: add the link --> to name a few! <!-- we could add: the typing system and the ontology tab, the [annotation too!](annotate.md), the report tabs -->
+There are many advanced features that are worth reading about: the [tags](tags.md), the [virtual keyboard](virtual_keyboard.md), the [API](api.md), the [annotation tool](annotate.md), ... .<!--todo: add the link --> to name a few! <!-- we could add: the typing system and the ontology tab, the [annotation too!](annotate.md), the report tabs -->
 
 !!! Note
     IF you liked this tutorial and found it useful, or if on the contrary you found it could be improved, please, send us a message or [contribute](contribute.md) to this documentation!
