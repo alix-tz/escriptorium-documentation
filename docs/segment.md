@@ -21,15 +21,15 @@ The segmentation panel is toggled by clicking on the "Segmentation" button at th
 
 Segmentation refers to two parallel processes:
 
-- at line level: precisely detecting the location of lines of text in an image. Each line is called a "segment" and this step is mandatory in eScriptorium for transcribing said lines later. <!-- the segments can also be bounding boxes when they are the old fashion approach --> <!-- todo: add link to drawing and modifying lines -->
+- [at line level](#draw-baselines-or-toplines): precisely detecting the location of lines of text in an image. Each line is called a "segment" and this step is mandatory in eScriptorium for transcribing said lines later. <!-- the segments can also be bounding boxes when they are the old fashion approach --> <!-- remark: I put segment lines before regions because the other one is optional. It makes more sense here to start with what is mandatory. -->
 
-- at region level: extracting and labeling the physical/logical structure of an image by identifying blocks of pixels. Each block is called a "region" or a "zone". The goal is to divide the document into meaningful regions that can be further processed or analyzed. This step is optional for transcription, but can be important for later post-processing tasks. <!-- todo: add link to drawing and modifying regions -->
+- [at region level](#region-segmentation): extracting and labeling the physical/logical structure of an image by identifying blocks of pixels. Each block is called a "region" or a "zone". The goal is to divide the document into meaningful regions that can be further processed or analyzed. This step is optional for transcription, but can be important for later post-processing tasks.
 
-Additionnally, lines and regions are ordered: usually the from top to bottom, but indents and multiple columns can cause surprising results. 
+Additionnally, [lines and regions are ordered](#reordering-lines): usually the from top to bottom, but indents and multiple columns can cause surprising results. 
 
-Regions are useful to logically organize the segments: lines can be associated to a region (meaning the lines are contained in the region and form a logical/physical group) or they can be "orphan lines". Likewise, regions can be empty, meaning they are not associated with any line. When lines are associated to a region, their reading ordered is calculated within a group of lines belonging to the same region. <!-- todo: add link to associating lines with regions and to export -->
+Regions are useful to logically organize the segments: lines can be [associated to a region](#associate-lines-to-a-regions) (meaning the lines are contained in the region and form a logical/physical group) or they can be "orphan lines". Likewise, regions can be empty, meaning they are not associated with any line. When lines are associated to a region, their reading ordered is calculated within a group of lines belonging to the same region.
 
-One of the reasons why segmentation, be it at line level or region level, is very powerful for later post-processes is because each line and region can be "labeled" or "typed". It makes it possible to distinguish between regions identifying a paragraph of text, images, tables, columns, headings, footers, etc. <!-- todo: add link to typing and ontology -->
+One of the reasons why segmentation, be it at line level or region level, is very powerful for later post-processes is because [each line and region can be "labeled" or "typed"](#using-the-ontology-feature-and-labeling-lines-and-regions). It makes it possible to distinguish between regions identifying a paragraph of text, images, tables, columns, headings, footers, etc.
 
 Segmentation can result [from a prediction](./predict.md#predict-the-segmentation), can be performed manually, or can [be imported](import.md#import-segmentation-and-transcription) with the **import** button when you import an XML file directly from the **Images** tab inside a document.
 
