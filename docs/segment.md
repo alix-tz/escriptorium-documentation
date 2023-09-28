@@ -3,187 +3,263 @@ title: Segment with eScriptorium
 summary: About segmentation features in eScriptorium.
 authors:
     - Alix Chagué, Floriane Chiffoleau, Hugo Scheithauer
-date: 2023-04-07
+date: 2023-09-28
 ---
 
 # Segment with eScriptorium
 
-This section introduces the **segmentation panels** and some related features. The segmentation panel is one of the panels available in the "Edit" tab, once you are in a document (`{base_url}/document/{document-id}/images/`).
+This section introduces the **segmentation panel** and some related features. The segmentation panel is one of the panels available in the "Edit" tab, once you are in a document (`{base_url}/document/{document-id}/images/`). <!-- todo: add link to terminology page -->
 
 The segmentation panel is toggled by clicking on the "Segmentation" button at the top of the page (or by pressing ++control+3++).
 
-![image: Navigating to the segmentation panel in the edit tab](img/segment/segmentation_panel.gif "The 3rd panel is used to manually edit the segmentation")
+![image: Activation of the segmentation panel in eScriptorium](img/segment/segmentation_panel.gif "The 3rd panel is used to manually edit the segmentation")
 
-Segmentation, also called zoning, layout analysis, document analysis, or even optical layout analysis, refers to two processes:
+## Forewords on segmentation
 
-- Extracting and labeling the structure of a document, such as text, images, tables, columns, headings, footers, etc. The goal is to segment the document into meaningful regions, or bounding boxes, that can be further processes or analyzed. This step is optional for transcription, but can be important for later post-processing in an editorial or archiving context.
+!!! Note "Many names"
+    What we refer to with "segmentation" in the following page can also be called many names: zoning, layout analysis, document analysis, optical layout analysis, etc.
 
-- Precisely detecting lines of text in an image, which is mandatory in eScriptorium for transcribing said lines later.
+Segmentation refers to two parallel processes:
 
-Segmentation can result from a prediction, can be performed manually, or can be imported with the **import** button when you import an XML file directly from the **Images** tab inside a document.
+- at line level: precisely detecting the location of lines of text in an image. Each line is called a "segment" and this step is mandatory in eScriptorium for transcribing said lines later. <!-- the segments can also be bounding boxes when they are the old fashion approach --> <!-- todo: add link to drawing and modifying lines -->
 
-!!! warning
-    Please make sure to segment your document before transcribing, otherwise, you will risk erasing your transcribed data.
+- at region level: extracting and labeling the physical/logical structure of an image by identifying blocks of pixels. Each block is called a "region" or a "zone". The goal is to divide the document into meaningful regions that can be further processed or analyzed. This step is optional for transcription, but can be important for later post-processing tasks. <!-- todo: add link to drawing and modifying regions -->
 
-## Text regions segmentation
+Additionnally, lines and regions are ordered: usually the from top to bottom, but indents and multiple columns can cause surprising results. 
+
+Regions are useful to logically organize the segments: lines can be associated to a region (meaning the lines are contained in the region and form a logical/physical group) or they can be "orphan lines". Likewise, regions can be empty, meaning they are not associated with any line. When lines are associated to a region, their reading ordered is calculated within a group of lines belonging to the same region. <!-- todo: add link to associating lines with regions and to export -->
+
+One of the reasons why segmentation, be it at line level or region level, is very powerful for later post-processes is because each line and region can be "labeled" or "typed". It makes it possible to distinguish between regions identifying a paragraph of text, images, tables, columns, headings, footers, etc. <!-- todo: add link to typing and ontology -->
+
+Segmentation can result [from a prediction](./predict.md#predict-the-segmentation), can be performed manually, or can [be imported](import.md#import-segmentation-and-transcription) with the **import** button when you import an XML file directly from the **Images** tab inside a document.
+
+!!! warning "Complete segmentation before transcribing"
+
+    You should make sure that your line segments are correct before moving on to transcribing. Otherwise, you risk having to erase some of your transcription while correcting the segmentation.
+
+## Region segmentation
 
 In the following example, we segmented and labeled the zones that bear a semantic role for our comprehension of the text. We are dealing with a poem, so we drew with eScriptorium bounding boxes around the page number (in blue), the title (in purple), and the stanzas (in green).
 
-However, you could have decided to annotate the layout more precisely, for example, all the verses inside the stanzas. It is up to you to decide how deep you want to go into the text regions segmentation, depending on your needs.
+However, you could have decided to annotate the layout more precisely. For example, the printed page number on the top right corner could have been annotated too. It is up to you to decide how deep you want to go into the text regions segmentation, depending on your needs.
 
 ![image: Illustration of several segmented text regions](img/segment/text_regions_segmentation.png "Several segmented text regions are visualized with eScriptorium interface")
 
 ### Segmenting text regions with eScriptorium 
 
-You can draw manually draw bounding boxes inside the Segmentation panel. To do so, switch from baseline editing mode to region mode, by clicking the **mosaic** button, or by pressing ++r++.
+!!! note
+    
+    We show here how to manually create segments, but it is possible to automatically perform [regions segmentation](predict.md#predict-the-segmentation) with a machine learning model! 
 
-You can now draw bounding boxes around the text regions you want to annotate by clicking and dragging a zone (green by default).
+You can manually draw bounding boxes inside the Segmentation panel. To do so, switch from baseline editing mode to region mode, by clicking the **mosaic** button, or by pressing ++r++.
+
+You can now draw bounding boxes on the image, covering the portion of the image you want to annotate by clicking. To draw a rectangle, click on where you want one of the corner and then where you want the opposite corner. You draw green rectangles by default.
 
 ![image: Drawing bounding boxes in the Segmenting panel of eScriptorium](img/segment/bounding_boxes_drawing.gif "Several bounding boxes are drawn around meaningful text regions.")
 
-You can modify a text region by clicking on it, and by dragging it to the dimensions you want.
+You can modify a text region by clicking on it to make it "active". Once active, the region will be displayed with little white squares symbolizing the points (or vertexes) of the polygon. You can click inside the polygon, close to a point and hold and drag your mouse to move the closest point. This allows you to draw the shape you want.
 
-![image: Resizing a text region](img/segment/resizing_text_region.gif "")
+![image: illustration of how to make a region active before changing the location of its vertexes](img/segment/resizing_text_region.gif "Resizing a text region")
 
-You can delete a text region by clicking on it, still in region mode, and by clicking on the delete button, or by pressing ++delete++.
+You can delete an active region by clicking on the red trashcan button, or by pressing ++delete++.
 
-!!! note
-    Keep in mind that you can always press ++ctrl+z++ to undo any modification.
+<!--!!! note
+    Keep in mind that you can always press ++ctrl+z++ to undo any modification.-->
 
-### Labeling segmented text regions with an ontology
-
-eScriptorium allows to label segmented text regions with an ontology that you can customize.
-
-The ontology panel is one of the tabs you can access once you are working in a document. It is accessible with (`{base_url}/document/{document-id}/ontology/`). Text regions have a dedicated field named *region types*.
-
-![image: Ontology tab](img/segment/ontology_tab.png "Illustration of the ontology tab.")
-
-eScriptorium uses four region types by default:
-
-- Commentary
-
-- Illustration
-
-- Main
-
-- Title
-
-You can use them, or create your own. To deactivate default region types, you can deactivate them by unticking the ones you want to discard, and then by clicking on the update button.
-
-![image: Deactivating default text regions](img/segment/default_text_regions.gif "Modifying the text region ontology by deactivating default region types.")
-
-You can then create your own by writing the text region name you want into the dedicated field and then the + button. Don't forget to click on the update button to save your modifications!
-
-![image: Creating a custom ontology](img/segment/create_text_regions_ontology.gif "Adding region types to the text region ontology.")
-
-Then, once you are back to the segmentation panel, you can add a label to the bounding boxes you drew earlier by clicking on them, still in region mode, and then by clicking on the 'Set the type on all selected lines/regions' button, or by pressing ++t++. A dropdown menu should appear with the custom labels you created.
-
-![image: Labeling a text region ](img/segment/labeling_text_regions.gif "We click on a text region and label it with a label from the text region ontology.")
+!!! Tip "More features"
+    
+    Several common shortcuts available in vectorial drawing software like GIMP or Adobe Illustrator can be used in the segmentation panel when drawing or modifying regions OR lines. Some of them are described in the "Text line segmentation" section. You should check it out.
 
 !!! tip
-    You can change the color of a text region in eScriptorium in the **images** tab by clicking on **editor settings**. 
+    
+    All advanced features are described in a help window, just click on **`?`** in the Segmentation panel.  
+
+    You should also check the shortcut page in this documentation! <!-- todo: add link to shortcut page -->
+
 
 !!! note
-    It is possible to create nested text regions, just draw another bounding box on top of the text regions you want to annotate!
+    
+    It is possible to create nested text regions or to have several regions overlapping. Note, however that this may cause strange behaviour when you want to associate a series of lines to their corresponding regions, and above all that it is not possible to efficiently train a segmentation model to produce overlapping regions: kraken segmentation models are currently able assign only one type to a pixel.
 
-!!! note
-    It is possible to automatically perform [text regions segmentation](predict.md#predict-the-segmentation) with a machine learning model.
 
-## Text lines segmentation
 
-Text lines segmentation is a mandatory process in eScriptorium in order to transcribe a text. In eScriptorium, text lines are composed with two elements:
+## Text line segmentation
+
+Text line segmentation is a mandatory step in eScriptorium in order to transcribe a text: you cannot have a transcription without first having defined the text segment to transcribe.
+
+In eScriptorium, segments are made of two elements:
 
 ![image: Illustration of a baseline and its mask](img/segment/baseline.png "Illustration of a baseline and its mask.")
 
-- a **baseline**, or a **topline** (here in red), which is a virtual line passing through at least two coordinate points. It is on this line that the text is written, or from which it is hanging.
+- a **baseline** (here in red), or a **topline**,  which is a defined by at least two points. It is the virtual line on which the text is written, or from which it is hanging.
 
-- a **mask** (here in purple), which is a polygon defined by at least three coordinates points. It delimits the area of pixels containing the text of the baseline or topline, and is calculated automatically by eScriptorium based on its coordinates.
+- a **mask** (here in purple), which is a polygon defined by at least three coordinates points. It delimits the area of pixels containing the text, for a given baseline or topline. It is automatically calculated by eScriptorium.
 
-### Segmenting text lines with eScriptorium
+### Draw baselines or toplines
 
-When segmenting text lines with eScriptorium, you will generally want to draw baseline. If you are in text region mode, the **mosaic** button should be in green meaning it is activate. Unclick it, or just press ++r++. The text regions should now just be the outlines of the different bounding boxes.
+!!! Note "Deactivate region mode"
+    
+    First of all, make sure you are not in "region mode": the **mosaic** button should be blue and not green and clicking on the image should make you draw blue lines instead of green rectangles. If there are any region drawn on the image, they should appear as colored outlines in stead of fully colored rectangles.
 
-To segment text lines, you can:
+    To deactivate the "region mode", click on the **mosaic button**, or just press ++r++.
 
-- Click and drag to underline a line of text. It is similar to a freehand drawing mode. It is generally not recommended, unless you have a specific use case.
+
+!!! note
+    
+    We show here how to manually create segments, but it is possible to automatically perform [text lines segmentation](predict.md#predict-the-segmentation) with a machine learning model! 
+
+
+To segment text lines, do the following:
+
+<!--
+remark: I almost don't want to mention it, or as a side information, so that people don't actually do it.
+
+- Click and drag to underline a line of text. It is similar to a freehand drawing mode. It is not recommended, unless you have a specific use case. It is a difficult way to draw the lines and you will create a more complex line than necessary.
 
 ![image: Drawing a baseline freehand.](img/segment/baseline_freehand.gif "You can freehand draw baselines on eScriptorium, however it is not recommended.")
+-->
 
-- We recommend to segment text lines by clicking on the beginning of your text lines, and then clicking where you want your text line to end. The text line will be straight.
+- Click on the image where you want the line to start and then click on the image where you want the line to stop. It will create a simple line passing through 2 points.
 
 ![image: Drawing a straight baseline.](img/segment/baseline_straight.gif "You can draw straight baselines.")
 
-The mask of the segmented text line is then automatically calculated by eScriptorium by clicking on the **thumbs up** button. You can display three views of the baselines with the **toggle line masks and stroke width** button, or by pressing ++m++. One of them will let the mask appear.
+- If your text is not straight, you can add more points afterwards by clicking once on the line to make it "active", then by double-clicking, still on the line, where you want the new point to be drawn. 
 
-eScriptorium also calculate the mask associated with each line asynchronously, you do not need to always press the dedicated button.
+![image: Adding new coordinates points to a baseline.](img/segment/adding_point_baseline.gif "You can add coordinate points on a text line by double-clicking  at the desired location on the baseline.")
 
-You can delete a baseline by selecting it, and by clicking on the thrash button, or by pressing ++delete++.
 
-You can change the reading order of a baseline by selecting it, and then clicking on the **reverse selected lines** button or by pressing ++i++.
+- While the line is active, you can move a point with a simple click and drag: it will move the closest point, allowing you to adjust the line to the text.
 
-![image: Calculating the masks.](img/segment/calculate_masks.gif "You can manually activate the mask calculation by pressing the calculate masks button.")
+![image: Moving the points of a baseline.](img/segment/move_point_baseline.gif "You can move a coordinate point with a simple click and drag.")
+
+Other line manipulations include: 
+
+- Deleting a point in an active line by clicking on it, then click on the yellow thrashcan button or press ++ctrl+delete++. Be careful, clicking on the red trashcan or press ++delete++ will delete the whole line and not just the active point.
+
+![image: Deleting coordinates point on a baseline.](img/segment/delete_point_baseline.gif "You can delete a coordinate point on a baseline by clicking on it, then click on the thrash button or press ++ctrl+delete++.")
+
+!!! tip "More dexterity to activate a point"
+    
+    Selecting/Activating a point can be difficult (click quite not exactly on it and you start drawing a new segment...). This is why you should know that the lasso technique will make you life easier: make sure your line is active, then hold ++shift++ and click and drag on the image to create a selection rectangle over the squares you want to select. Once active, they will appear in black.  
+
+- Cutting through one or several text lines using the scissors tool (++c++). This is particularly helpful for documents with multiple columns. But, you will only be able to draw a straight rectangle so if your image is skewed, it will require more work. 
+
+![image: Cutting a text line.](img/segment/scissors.gif "You can cut one or several text lines using the scissors tool (++c++).")
+
+- Inverting the reading direction of a line by selecting it, then clicking on the **reverse selected lines** button or by pressing ++i++ (not available for regions).
+
+- Merging two or more active lines by clicking on the **join selected lines** button or pressing ++j++ (not available for regions).
 
 !!! tip
-    You can select several text lines by pressing ++shift++ and by click and drag around them.
+    
+    All advanced features are described in a help window, just click on **`?`** in the Segmentation panel. 
 
-!!! note
-    Keep in mind that you can always press ++ctrl+z++ to undo any modification.
+    You should also check the shortcut page in this documentation! <!-- todo: add link to shortcut page -->
 
-### Labeling segmented text lines with an ontology
 
-eScriptorium allows to label segmented text lines with an ontology that you can customize. **This process is exactly the same as the one we described earlier for text regions.**
+### Draw the masks
 
-The ontology panel is one of the tabs you can access once you are working in a document. It is accessible with (`{base_url}/document/{document-id}/ontology/`). Text lines have a dedicated field named *line types*.
+By default, only the baselines are shown in the "Segmentation" panel: you can toggle the display of the masks by clicking on the "mask button" (shortcut ++m++). Masks appear as more or less complex polygons, sometimes missing the highest or lowest part of the letters, or missing diacritics. 
 
-eScriptorium uses four line types by default:
+eScriptorium asynchronously calculates the mask associated with each segment. When it is the first time that a line is manually drawn on an image, you have to manually trigger the mask calculation. The reason is to let you finish drawing all the baselines you want before starting a background job. When mask calculation is not automatically active, a **thumbs up** button will appear at the top of the panel. Simply click on the **thumbs up** button to start it. 
+
+![image: Triggering the automatic calculation of masks](img/segment/calculate_masks.gif "You can manually activate the mask calculation by pressing the calculate masks button.")
+
+!!! warning "Don't fix the masks"
+    
+    Unless you have a good reason to, it is not recommanded to manually modify the masks: it would be a tedious task and the risk of the modifications being overwritten by an automatic mask calculation is too high.
+
+## Reordering lines
+
+As mentioned above, regions and lines are ordered. The reading order of the text lines is calculated automatically. There are two ways to control line order:
+
+- You can display the reading order of the lines on the “Segmentation” panel by clicking on the **Toggle ordering display** button or by pressing ++l++.
+
+- You can also use the “Text” panel (shortcut ++ctrl+5++) where the transcription will appear as a succession of lines. Each line is associated to a number, corresponding to the reading order.
+
+Reading order doesn't affect the transcription task but it will affect how the text is exported. In some cases correcting the reading order is not important but you might want to correct it. 
+
+
+!!! warning "Fix reading order last"
+    
+    It is possible to fix the reading order at any time, before or after running the transcription task, but in general, it is recommanded to do it only after you are done fixing the regions and the lines because in some verions of the software, creating, deleting or modifying a line will start an automatic recalculation of the reading order : you don't want to work for nothing.
+
+Manually modifying the reading order is done in the "Text" panel (where, after the transcription, reading order problems would be the most visible). Click on “Toggle sorting mode”: now a simple drag and drop is enough to carry out the modifications.
+
+![image: Line reordering](img/segment/line_order.gif "You can reorder text lines in eScriptorium.")
+
+## Associate lines to a regions
+
+To associate a series of lines to a region, you must have drawn at least one region and a line and the line must be, for the most part at least, located inside the region. 
+
+In line segmentation mode, select one or several lines and click on the **link selected lines to the background region**, or press ++y++. You can do it for all the lines at once even if you have drawn several regions: the lines will be associated to the regions containing them. 
+
+If no region is drawn behind a segment, it will remain an orphan line. 
+
+You can revert this step by selecting lines and clicking on **Unlink selected lines from their regions**, or pressing ++u++.
+
+<!-- todo: add illustration -->
+
+## Using the Ontology feature and labeling lines and regions
+
+Labeling lines and regions allows you to associate types to them. Labeling is handle at two levels: 
+
+- defining the ontology (the terms available to type the line and regions), which is done outside of the Segmentation panel.
+
+- typing the lines and regions, which is done in the Segmentation panel.
+
+
+### Define the ontology
+
+The ontology panel is one of the tabs you can access when you are working in a document (also accessible via `{base_url}/document/{document-id}/ontology/`). 
+
+Region types and lines types are defined in two different sections of the form. 
+
+![image: Ontology tab](img/segment/ontology_tab.png "Illustration of the ontology tab.")
+
+By default, eScriptorium documents are created with four active region types:
+
+- Commentary
+- Illustration
+- Main
+- Title
+
+And four inactive line types:
 
 - Correction
 - Main
 - Numbering
 - Signature
 
-You can use them, or create your own. To deactivate default line types, you can deactivate them by unticking the ones you want to discard, and then by clicking on the update button.
+You can use them or deactivate them to use your own. Simply check or uncheck the box next to a type to activate/deactivate it. Remember to click on the "Update" button to save the changes. 
 
-You can then create your own by writing the text region name you want into the dedicated field and then the **+** button, and then save your modifications with the **upload** button.
+![image: Deactivating default text regions](img/segment/default_text_regions.gif "Modifying the text region ontology by deactivating default region types.")
 
-Then, once you are back to the segmentation panel, you can add a label to the text line you drew earlier by clicking on them and then by clicking on the 'Set the type on all selected lines/regions' button, or by pressing ++t++. A dropdown menu should appear with the custom labels you created.
+!!! note "More region/line types"
 
-!!! warning
-    If you created text regions to annotate text lines, you will usually want your text lines to be linked to them. To do so, select your baselines, and click on the **link selected lines to the background region**, or press ++y++. If you want to unlink them, just press the button again, or press ++u++.
+    When you import the segmentation/transcription [from XML files](import.md#import-segmentation-and-transcription), new region and line types are created automatically to match the ontology used in the imported documents.
 
-!!! note
-    It is possible to automatically perform [text lines segmentation](predict.md#predict-the-segmentation) with a machine learning model. 
+To create your own types, write writing the desired name for the new region in the dedicated field and then click on the **`+`** button. Again, remember to click on the "Update" button to save the changes.
 
-### Reordering text lines
+![image: Creating a custom ontology](img/segment/create_text_regions_ontology.gif "Adding region types to the text region ontology.")
 
-The reading order of the text lines is calculated automatically. You can display the order number of each text lines from the “Segmentation” panel by clicking on the **Toggle ordering display** button or by pressing ++l++.
+!!! Tip "Use SegmOnto"
+    
+    Efforts to homogenize the names of custom regions have lead to the creation of the [SegmOnto vocabulary](https://segmonto.github.io/). On top of making your data compatible with others', it will help you decide faster what types are commonly used for regions and lines.
 
-You can also go to the “Text” panel (also accessible with the shortcut ++ctrl+5++) where the lines are displayed in the reading order.
 
-In this panel, and after the text lines are transcribed, it is possible to modify the reading order by clicking “Toggle sorting mode.” A simple drag and drop is enough to carry out the modifications.
+### Typing lines and regions
 
-![image: Line reordering](img/segment/line_order.gif "You can reorder text lines in eScriptorium.")
+Back to the segmentation panel: you can add a label to a region or a line by clicking on them and then by clicking on the 'Set the type on all selected lines/regions' button, or by pressing ++t++. A dropdown menu should appear with the custom labels you created, along with some custom shortcuts. Remember to toggle the region edition mode to assign types to regions!
 
-!!! warning
-    Please make sure the quality of the segmentation is good enough before changing the order of the lines because adding or deleting lines restarts the line ordering, overwriting manual modifications in the process.
-
-### Advanced text lines segmentation features
-
-- You can add coordinate points on a text line by double-clicking  at the desired location on the baseline.
-
-![image: Adding new coordinates points to a baseline.](img/segment/adding_point_baseline.gif "You can add coordinate points on a text line by double-clicking  at the desired location on the baseline.")
-
-- You can move a coordinate point with a simple click and drag.
-
-![image: Moving coordinates point on a baseline.](img/segment/move_point_baseline.gif "You can move a coordinate point with a simple click and drag.")
-
-- You can delete a coordinate point on a baseline by clicking on it, then click on the thrash button or press ++ctrl+delete++.
-
-![image: Deleting coordinates point on a baseline.](img/segment/delete_point_baseline.gif "You can delete a coordinate point on a baseline by clicking on it, then click on the thrash button or press ++ctrl+delete++.")
-
-- You can cut one or several text lines using the scissors tool (++c++).
-
-![image: Cutting a text line.](img/segment/scissors.gif "You can cut one or several text lines using the scissors tool (++c++).")
+![image: Labeling a text region ](img/segment/labeling_text_regions.gif "We click on a text region and label it with a label from the text region ontology.")
 
 !!! tip
-    All advanced features are described in a help window, just click on **?** in the segmentation panel.
+    
+    You can change the color of a text region in eScriptorium in the **images** tab by clicking on **editor settings**. 
+
+
+
+
+
+
