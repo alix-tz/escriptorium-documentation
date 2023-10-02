@@ -2,8 +2,8 @@
 title: Shortcuts and tips
 summary: About shortcuts and tips in eScriptorium
 authors:
-    - Alix Chagué
-date: 2023-09-04
+    - Alix Chagué, Floriane Chiffoleau
+date: 2023-10-02
 ---
 
 # Shortcuts and Tips
@@ -38,6 +38,16 @@ Typical URL: `base_url/document/{doc_id}/part/{doc_part}/edit/`.
 - ++control+4++: toggle on/off the Transcription panel
 - ++control+5++: toggle on/off the Text panel
 
+??? Note "Mac keyboard variants"
+
+    - ++shift+control+arrow-right++ OR ++fn+page-down++: go to the next element (or document-part)
+    - ++shit+control+arrow-left++ OR ++fn+page-up++: go to the previous element
+    - ++shift+control+1++: toggle on/off the Metadata panel
+    - ++shift+control+2++: toggle on/off the Source image panel
+    - ++shift+control+3++: toggle on/off the Segmentation panel
+    - ++shift+control+4++: toggle on/off the Transcription panel
+    - ++shift+control+5++: toggle on/off the Text panel
+
 ### Edition Page - Source Image panel
 
 - ++control+backspace++: reset the zoom
@@ -47,6 +57,11 @@ If image annotation is available:
 
 - ++escape++: cancel the annotation in progress or cancel the modification
 - ++delete++ with an active annotation: delete the annotation
+
+??? Note "Mac keyboard variants"
+
+    - on the Mac trackpad, right click is performed by clicking with two fingers on the right side of the trackpad.
+    - ++fn+backspace++ with an active annotation: delete the annotation
 
 ### Edition Page - Segmentation panel
 
@@ -73,6 +88,12 @@ The segmentation panel gathers the biggest amount of shortcuts. They are all des
 - ++j++ with an active selection of at least two lines: join the selection lines into a single segment
 - ++y++ with an active selection of lines, and at least one regions drawn on the image: link selected lines to the corresponding background region(s)
 - ++u++ with an active selection of lines, and at least one regions drawn on the image: unlink selected lines from their background region(s)
+
+??? Note "Mac keyboard variants"
+    
+    - on the Mac trackpad, right click is performed by clicking with two fingers on the right side of the trackpad.
+    - ++fn+backspace++ with an active selection: delete the selected lines or the regions
+    - ++fn+control+backspace++ with an active selection of points: delete the selected points, but not the whole line or the whole region
 
 ### Edition Page - Transcription panel
 
