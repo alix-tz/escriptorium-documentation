@@ -79,6 +79,7 @@ nav:
     - About this documentation: about.md
     - Quick-start:
         - Quick-start: quick-start.md
+        - Terminology: terminology.md
         - FAQ : FAQ.md
     - Walkthrough: 
         - "Import data": import.md

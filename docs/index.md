@@ -3,7 +3,7 @@ title:  Welcome to the eScriptorium Tutorial
 summary:  Welcome page of the eScriptorium Tutorial.
 authors:
     - Alix Chagué
-date: 2023-04-21
+date: 2023-10-02
 ---
 
 
@@ -15,22 +15,26 @@ You can find more information about eScriptorium and the context of its producti
 
 The goal of this documentation is to facilitate learning how to use the application as beginners or advanced users.
 
-## Quick start
+## Quick start 🚀
 
 The [**Quick-start**](quick-start.md) is intended as a tutorial to introduce completely new users to the basics of using eScriptorium. It should be envisioned as a gateway to the walkthrough section which is much more detailed.
 
-## FAQ
+## Walkthrough 🚶🏽
+
+Covering every features in an application like eScriptorium produces a long documentation, so we have broken it down into several pages in the "Walkthrough" section.
+
+For example, [**Import data**](import.md) covers features related to importing images, transcriptions or models in the application. The [**Automatic prediction**](predict.md) section covers features related to using models to predict the lay out (segmentation) or the transcription of a document.
+
+For a more detailed index of the walkthrough section, see [**Walkthrough**](walkthrough.md).
+
+## Terminology 📑
+
+The [**Terminology**](terminology.md) section covers some definitions for special features or concepts relevant to HTR and/or eScriptorium.
+
+## FAQ 🤔
 
 The [**FAQ**](FAQ.md) section covers frequent questions around the application and the documentation.
 
-## Walkthrough
-
-Covering every features in an application like eScriptorium produces a long documentation, so we have broken it down into several pages in the "Walkthrough" section. 
-
-For example, [**Import data**](import.md) covers feature related to importing images, transcriptions or models in the application. The [**Automatic prediction**](predict.md) section covers features related to using models to predict the lay out (segmentation) or the transcription of a document.
-
-For a more details index of the walkthrough section, see [**Walkthrough**](walkthrough.md).
-
-## Contribute
+## Contribute 🤝
 
 The contribute section provides you instructions on how to contribute to the current documentation.
