@@ -42,11 +42,6 @@ Typical URL: `base_url/document/{doc_id}/part/{doc_part}/edit/`.
 
     - ++shift+control+arrow-right++ OR ++fn+page-down++: go to the next element (or document-part)
     - ++shit+control+arrow-left++ OR ++fn+page-up++: go to the previous element
-    - ++shift+control+1++: toggle on/off the Metadata panel
-    - ++shift+control+2++: toggle on/off the Source image panel
-    - ++shift+control+3++: toggle on/off the Segmentation panel
-    - ++shift+control+4++: toggle on/off the Transcription panel
-    - ++shift+control+5++: toggle on/off the Text panel
 
 ### Edition Page - Source Image panel
 
