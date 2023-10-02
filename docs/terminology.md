@@ -20,7 +20,7 @@ In eScriptorium, the data is organized inside **projects** which contain **docum
 
 The edition panels refer to the panels (5) available in the edition page. This page is accessed via the following URL: `{base_url}/document/{doc_id}/part/{part_id}/edit/` (where `base_url` is the URL of the server where the application is deployed, `doc_id` the id of your document, and `part_id` the id of the document part being edited).
 
-There are multiples wats to access the edition page, for example:
+There are multiples was to access the edition page, for example:
 
 - from the document dashboard, by clicking on `Edit last updated Element`,
 - from a document's Images page, by clicking on the "Edit" button on one of the thumbnails.
@@ -51,7 +51,7 @@ There are 5 panels:
 
 
 !!! Tip
-    You can toggle as many panel as you want at once. It is not advised to have all of them active at the same time, though, because it limits the readability of the documents and you may unintentionally call some shortcuts.
+    You can toggle as many panels as you want at once. It is not advised to have all of them active at the same time, though, because it limits the readability of the documents and you may unintentionally call some shortcuts.
 
 
 
