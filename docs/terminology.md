@@ -3,7 +3,7 @@ title: Terminology
 summary: A list of vocabulary for the HTR and eScriptorium.
 authors:
     - Alix Chagué
-date: 2023-09-01
+date: 2023-10-02
 ---
 
 # Terminology
