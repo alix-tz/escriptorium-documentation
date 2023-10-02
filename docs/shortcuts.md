@@ -41,7 +41,7 @@ Typical URL: `base_url/document/{doc_id}/part/{doc_part}/edit/`.
 ??? Note "Mac keyboard variants"
 
     - ++shift+control+arrow-right++ OR ++fn+page-down++: go to the next element (or document-part)
-    - ++shit+control+arrow-left++ OR ++fn+page-up++: go to the previous element
+    - ++shift+control+arrow-left++ OR ++fn+page-up++: go to the previous element
 
 ### Edition Page - Source Image panel
 
