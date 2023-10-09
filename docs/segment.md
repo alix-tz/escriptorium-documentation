@@ -52,7 +52,7 @@ However, you could have decided to annotate the layout more precisely. For examp
 
 You can manually draw bounding boxes inside the Segmentation panel. To do so, switch from baseline editing mode to region mode, by clicking the **mosaic** button, or by pressing ++r++.
 
-You can now draw bounding boxes on the image, covering the portion of the image you want to annotate by clicking. To draw a rectangle, click on where you want one of the corner and then where you want the opposite corner. You draw green rectangles by default.
+You can now draw bounding boxes on the image, covering the portion of the image you want to annotate. To draw a rectangle, click on where you want one of the corner and then where you want the opposite corner. You draw green rectangles by default.
 
 ![image: Drawing bounding boxes in the Segmenting panel of eScriptorium](img/segment/bounding_boxes_drawing.gif "Several bounding boxes are drawn around meaningful text regions.")
 
@@ -74,7 +74,7 @@ You can delete an active region by clicking on the red trashcan button, or by pr
     You should also check [the shortcut page](shortcuts.md#edition-page---segmentation-panel) in this documentation!
 
 !!! note
-    It is possible to create nested text regions or to have several regions overlapping. Note, however that this may cause strange behavior when you want to associate a series of lines to their corresponding regions, and above all that it is not possible to efficiently train a segmentation model to produce overlapping regions: kraken segmentation models are currently able assign only one type to a pixel.
+    It is possible to create nested text regions or to have several regions overlapping. Note, however that this may cause strange behavior when you want to associate a series of lines to their corresponding regions, and above all that it is not possible to efficiently train a segmentation model to produce overlapping regions: currently kraken segmentation models are not able to assign more than one type to a pixel.
 
 ## Text line segmentation
 
