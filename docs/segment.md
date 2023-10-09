@@ -78,7 +78,7 @@ You can delete an active region by clicking on the red trashcan button, or by pr
 
 ## Text line segmentation
 
-Text line segmentation is a mandatory step in eScriptorium in order to transcribe a text: you cannot have a transcription without first having defined the text segment to transcribe.
+Text line segmentation is a mandatory step in eScriptorium in order to transcribe a document: you cannot have a transcription without first defining the text segment to transcribe.
 
 In eScriptorium, segments are made of two elements:
 
