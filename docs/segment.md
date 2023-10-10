@@ -155,13 +155,13 @@ eScriptorium asynchronously calculates the mask associated with each segment. Wh
 
 ## Reordering lines
 
-As mentioned above, regions and lines are ordered. The reading order of the text lines is calculated automatically. There are two ways to control line order:
+As mentioned above, regions and lines are ordered. The reading order of the text lines is calculated automatically as a background task (asynchronously). There are two ways to control hhe line order:
 
 - You can display the reading order of the lines on the “Segmentation” panel by clicking on the **Toggle ordering display** button or by pressing ++l++.
 
 - You can also use the “Text” panel (shortcut ++ctrl+5++) where the transcription will appear as a succession of lines. Each line is associated to a number, corresponding to the reading order.
 
-Reading order doesn't affect the transcription task but it will affect how the text is exported. In some cases correcting the reading order is not important but you might want to correct it.
+Reading order doesn't affect the transcription task but it will affect how the text is exported. In some cases the reading order is crucial so you will want to control and correct it, while in other cases it is not important or not necessary.
 
 !!! warning "Fix reading order last"
     It is possible to fix the reading order at any time, before or after running the transcription task, but in general, it is recommended to do it only after you are done fixing the regions and the lines because in some versions of the software, creating, deleting or modifying a line will start an automatic recalculation of the reading order : you don't want to work for nothing.
