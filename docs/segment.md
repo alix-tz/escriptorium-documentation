@@ -155,7 +155,7 @@ eScriptorium asynchronously calculates the mask associated with each segment. Wh
 
 ## Reordering lines
 
-As mentioned above, regions and lines are ordered. The reading order of the text lines is calculated automatically as a background task (asynchronously). There are two ways to control hhe line order:
+As mentioned above, regions and lines are ordered. The reading order of the text lines is calculated automatically as a background task (asynchronously). There are two ways to control the line order:
 
 - You can display the reading order of the lines on the “Segmentation” panel by clicking on the **Toggle ordering display** button or by pressing ++l++.
 
