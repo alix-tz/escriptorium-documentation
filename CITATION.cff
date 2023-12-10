@@ -21,6 +21,8 @@ authors:
     family-names: Scheithauer
     affiliation: Inria
     orcid: 'https://orcid.org/0000-0002-5659-4675'
+  - given-names: Jennifer
+    family-names: Carrow
 url: 'https://escriptorium.readthedocs.io'
 abstract: >-
   Source code for the documentation website for the web
