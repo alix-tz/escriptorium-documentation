@@ -1,0 +1,35 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: eScriptorium Documentation (source code)
+message: >-
+  If you use this source code, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Alix
+    family-names: Chagué
+    email: alix.chague@inria.fr
+    affiliation: Inria
+    orcid: 'https://orcid.org/0000-0002-0136-4434'
+  - given-names: Floriane
+    family-names: Chiffoleau
+    affiliation: Inria
+    orcid: 'https://orcid.org/0000-0003-4482-7897'
+  - given-names: Hugo
+    family-names: Scheithauer
+    affiliation: Inria
+    orcid: 'https://orcid.org/0000-0002-5659-4675'
+  - given-names: Jennifer
+    family-names: Carrow
+url: 'https://escriptorium.readthedocs.io'
+abstract: >-
+  Source code for the documentation website for the web
+  application eScriptorium.
+keywords:
+  - eScriptorium
+  - documentation
+  - Handwritten Text Recognition
+  - Automatique Text Recognition
+license: MIT
