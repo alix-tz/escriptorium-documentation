@@ -25,7 +25,7 @@ Segmentation refers to two parallel processes:
 
 - [at region level](#region-segmentation): extracting and labeling the physical/logical structure of an image by identifying blocks of pixels. Each block is called a "region" or a "zone". The goal is to divide the document into meaningful regions that can be further processed or analyzed. This step is optional for transcription, but can be important for later post-processing tasks.
 
-Additionnally, [lines and regions are ordered](#reordering-lines): usually from top to bottom, but indents and multiple columns can cause surprising results.
+Additionally, [lines and regions are ordered](#reordering-lines): usually from top to bottom, but indents and multiple columns can cause surprising results.
 
 Regions are useful to logically organize the segments: lines can be [associated to a region](#associate-lines-to-a-regions) (meaning the lines are contained in the region and form a logical/physical group) or they can be "orphan lines". Likewise, regions can be empty, meaning they are not associated with any line. When lines are associated to a region, their reading order is calculated within a group of lines belonging to the same region.
 
@@ -151,7 +151,7 @@ eScriptorium asynchronously calculates the mask associated with each segment. Wh
 ![image: Triggering the automatic calculation of masks](img/segment/calculate_masks.gif "You can manually activate the mask calculation by pressing the calculate masks button.")
 
 !!! warning "Don't fix the masks"
-    Unless you have a good reason to, it is not recommanded to manually modify the masks: it would be a tedious task and the risk of the modifications being overwritten by an automatic mask calculation is too high.
+    Unless you have a good reason to, it is not recommended to manually modify the masks: it would be a tedious task and the risk of the modifications being overwritten by an automatic mask calculation is too high.
 
 ## Reordering lines
 
