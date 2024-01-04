@@ -18,7 +18,7 @@ When search is activated, it appears as a search bar in the middle of the naviga
 
 ## Search scope
 
-A search query can be performed in all the projects at once, or inside only one project, or, withing a document, on a specific [transcription version](transcribe.md#transcription-versions).
+A search query can be performed in all the projects at once, or inside only one project, or, within a document, on a specific [transcription version](transcribe.md#transcription-versions).
 
 On the home page and on the "My Project", the scope of the search will be, by default, set to "all projects", as mentioned in the search hint.
 

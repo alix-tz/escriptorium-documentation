@@ -19,7 +19,7 @@ It is possible to manage teams from the [Profile page](users.md#review-and-edit-
 - Creating a team,  
 - Leaving a team,  
 - Adding or removing members from a team,  
-- Transfering ownership to another member.  
+- Transferring ownership to another member.
 
 Only the owner of a team is allowed to add or remove members or to transfer ownership. The owner of a team cannot leave it without first transferring the ownership to another user.
 

@@ -83,7 +83,7 @@ Not all users are allowed to send invitations. If you have that right, you will 
 
 The corresponding page contains a form where the recipient's information can be filled in. Only the email address is mandatory, other information are optional. When a user sends an invitation, they can associate the future user to a [Team](collaborate.md#teams) they already belong to.
 
-![Image: Demonstration of inviting a new user to a eScriptorium instance.](img/users/invite.gif "Demonstration of inviting a new user to a eScriptorium instance.")
+![Image: Demonstration of inviting a new user to an eScriptorium instance.](img/users/invite.gif "Demonstration of inviting a new user to an eScriptorium instance.")
 
 On the other side, the sign-up form looks like this:
 
