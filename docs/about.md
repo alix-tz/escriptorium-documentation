@@ -25,5 +25,6 @@ If you want to contribute to the discussions around this documentation, see "[Ho
 | <img src="../img/about/blossom_1f33c.png" width="30px" />                        | Hugo Scheithauer    | *Editor*      |
 | <img src="../img/about/taco_1f32e.png" width="30px" />                           | Jennifer Carrow     | *Contributor* |
 | <img src="../img/about/smiling-face-with-smiling-eyes_1f60a.png" width="30px" /> | Stefan Weil         | *Contributor* |
+| <img src="../img/about/smiling-face-with-smiling-eyes_1f60a.png" width="30px" /> | Roland Gonsalès     | *Contributor* |
 
 <!-- We use <img src="../img/about/smiling-face-with-smiling-eyes_1f60a.png" width="30px" /> for occasional contributors or those who haven't set which emoji they want to use. -->
