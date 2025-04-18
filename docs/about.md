@@ -8,11 +8,11 @@ date: 2023-04-21
 
 # About this eScriptorium documentation
 
-This website was created with the intention to provide the community with a useful platform to share a clear and up-to-date documentation on [SCRIPTA](https://scripta.psl.eu/)'s eScriptorium application.
+This website was created with the intention to provide the community with a useful platform to share a clear and up-to-date documentation on the eScriptorium application developed at the [EPHE–PSL](https://www.ephe.psl.eu).
 
-This documentation is not run by [SCRIPTA](https://scripta.psl.eu/) and is instead created by the community of eScriptorium users, for the community.  
+This documentation is not run by the [eScriptorium development team](https://escriptorium.readthedocs.io/en/latest/FAQ/#who-is-responsible-for-escriptorium) and is instead created by the community of eScriptorium users, for the community.
 
-If you want to know more about eScriptorium and its context of creation, you can read the [FAQ](FAQ.md) or go to [SCRIPTA](https://scripta.psl.eu/)'s website.
+If you want to know more about eScriptorium and its context of creation, you can read the [FAQ](FAQ.md).
 
 If you want to contribute to the discussions around this documentation, see "[How to contribute](contribute.md)"!
 
