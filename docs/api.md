@@ -15,4 +15,4 @@ eScriptorium has an RESTful API endpoint accessible at `{base_url}/api/`.
 
 > For example : `escriptorium.example/api`.
 
-You can use the escriptorium-connector Python library to interact with the application's API. You can find more information about it here: https://pypi.org/project/escriptorium-connector/
+You can use the escriptorium-connector Python library to interact with the application's API. You can find more information about it here: [https://pypi.org/project/escriptorium-connector/](https://pypi.org/project/escriptorium-connector/)
